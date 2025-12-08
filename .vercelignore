@@ -1,0 +1,11 @@
+# Ignore SASS source files (not needed for deployment)
+assets/sass/
+*.scss
+*.map
+
+# Ignore documentation
+../Documentation/
+
+# Ignore README files
+README*.md
+

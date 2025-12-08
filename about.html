@@ -1,0 +1,1713 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Wellnez - Spa Beauty & Wellness Salon HTML5 Template - About Us</title>
+    <meta name="author" content="Vecuro">
+    <meta name="description" content="Wellnez - Spa Beauty & Wellness Salon HTML5 Template">
+    <meta name="keywords"
+        content="beauty, beauty salon, beauty shop, beauty spa, cosmetics, hairdresser, health, lifestyle, massage, salon, spa, spa booking, wellness, wellness template, yoga">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Marcellus&display=swap"
+        rel="stylesheet">
+
+
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/app.min.css"> -->
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Layerslider -->
+    <link rel="stylesheet" href="assets/css/layerslider.min.css">
+    <!-- jQuery DatePicker -->
+    <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+    <style>
+        :root {
+            --heading-font: 'Marcellus', serif;
+            --body-font: 'Lato', sans-serif;
+        }
+
+        .main-header {
+            background: transparent;
+            padding: 20px 60px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            height: 40px !important;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-family: var(--heading-font);
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--dark-brown);
+            letter-spacing: 2px;
+        }
+
+        .logo-text span {
+            display: block;
+            font-size: 12px;
+            letter-spacing: 4px;
+            color: var(--primary-gold);
+        }
+
+        /* Navigation */
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-nav ul li a {
+            font-family: var(--body-font);
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--text-dark);
+            text-decoration: none;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .main-nav ul li a:hover,
+        .main-nav ul li a.active {
+            color: #B2A69B;
+        }
+
+        /* Header Icons */
+        .header-icons {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .header-icons button,
+        .header-icons a {
+            background: none;
+            border: none;
+            font-size: 20px;
+            color: var(--text-dark);
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .header-icons button:hover,
+        .header-icons a:hover {
+            color: var(--primary-gold);
+        }
+
+        .grid-menu {
+            display: flex;
+            flex-wrap: wrap;
+            width: 20px;
+            gap: 3px;
+        }
+
+        .grid-menu span {
+            width: 5px;
+            height: 5px;
+            background: var(--text-dark);
+            border-radius: 50%;
+        }
+
+        @media (max-width: 992px) {
+            .main-header {
+                padding: 15px 30px;
+            }
+
+            .main-nav {
+                display: none;
+            }
+        }
+
+
+
+        .about-section {
+            display: flex;
+            height: 100vh;
+            margin-top: 5rem;
+        }
+
+        /* LEFT IMAGE SECTION */
+        .image-section {
+            width: 50%;
+            position: relative;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* NATURAL BADGE */
+        .badge {
+            position: absolute;
+            top: 10%;
+            left: 80%;
+            transform: translateX(-50%);
+        }
+
+        .circle {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 2px solid #c5b79a;
+            color: #6b5c47;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* font-family: "Cormorant Garamond", serif; */
+            font-size: 26px;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        /* RIGHT CONTENT */
+        .content {
+            width: 50%;
+            padding: 90px 70px;
+            color: #4b4235;
+        }
+
+        .content h1 {
+            /* font-family: "Cormorant Garamond", serif; */
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            margin-bottom: 40px;
+            color: #7b7368;
+        }
+
+        .list {
+            display: flex;
+            gap: 80px;
+            margin-bottom: 40px;
+        }
+
+        .list ul {
+            list-style: none;
+        }
+
+        .list li {
+            margin-bottom: 12px;
+            position: relative;
+            font-size: 16px;
+        }
+
+        .list li::before {
+            content: "✤";
+            margin-right: 10px;
+            color: #c5a880;
+        }
+
+        /* BUTTON */
+        .btn {
+            background: #A37528;
+            color: white;
+            border: none;
+            padding: 12px 35px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+
+        .btn:hover {
+            color: white;
+        }
+
+        /* SUPPORT BOX */
+        .support {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .support small {
+            font-size: 12px;
+            color: #a39a8e;
+            letter-spacing: 1.2px;
+        }
+
+        .support p {
+            font-size: 14px;
+        }
+
+        .icon {
+            font-size: 32px;
+        }
+
+        @media (max-width: 992px) {
+
+            .about-section {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .image-section,
+            .content {
+                width: 100%;
+            }
+
+            .image-section {
+                height: 60vh;
+            }
+
+            .badge {
+                top: 10%;
+            }
+
+            .content {
+                padding: 60px 40px;
+            }
+
+            .content h1 {
+                font-size: 40px;
+            }
+
+            .list {
+                gap: 40px;
+            }
+        }
+
+        /* --- MOBILE (max-width: 768px) --- */
+        @media (max-width: 768px) {
+
+            .image-section {
+                height: 55vh;
+            }
+
+            .circle {
+                width: 110px;
+                height: 110px;
+                font-size: 22px;
+            }
+
+            .content {
+                padding: 40px 25px;
+                text-align: center;
+            }
+
+            .content h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 13px;
+                margin-bottom: 30px;
+            }
+
+            /* List becomes 1 column */
+            .list {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .list ul li {
+                font-size: 15px;
+            }
+
+            .btn {
+                width: 100%;
+                padding: 14px;
+                font-size: 15px;
+            }
+
+            .support {
+                justify-content: center;
+            }
+        }
+
+        /* --- SMALL MOBILE (max-width: 480px) --- */
+        @media (max-width: 480px) {
+
+            .image-section {
+                height: 50vh;
+            }
+
+            .circle {
+                width: 95px;
+                height: 95px;
+                font-size: 18px;
+            }
+
+            .content {
+                padding: 28px 18px;
+            }
+
+            .content h1 {
+                font-size: 28px;
+            }
+
+            .list li {
+                font-size: 14px;
+            }
+
+            .gallery-strip-item {
+                flex: 0 0 50%;
+            }
+
+            .footer {
+                padding: 60px 30px 0;
+            }
+
+            .footer-logo-img {
+                width: 160px;
+            }
+        }
+
+        /* ======================================================
+    CONSULTATION SECTION
+====================================================== */
+
+        .consultation {
+            text-align: center;
+            padding: 60px 20px;
+            background: #FAFAFA;
+        }
+
+        .consultation h2 {
+            font-size: 42px;
+            margin-bottom: 8px;
+        }
+
+        .consultation .sub {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 12px;
+            color: #a6a198;
+            margin-bottom: 50px;
+        }
+
+        form {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 35px;
+        }
+
+        .field {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .field label {
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            color: #7b756d;
+        }
+
+        input,
+        select {
+            border: none;
+            border-bottom: 1px solid #E8D1BB;
+            padding: 8px 0;
+            outline: none;
+            background: transparent;
+        }
+
+        /* input::placeholder{
+    color: #4B4036;
+} */
+
+        .center {
+            text-align: center;
+        }
+
+        .btn {
+            background: #A37528;
+            color: #fff;
+            padding: 12px 40px;
+            border: none;
+            cursor: pointer;
+            /* font-weight: lighter; */
+            /* border-radius: 4px; */
+            letter-spacing: 1px;
+        }
+
+        /* ======================================================
+    WELLNESS SECTION
+====================================================== */
+
+        .wellness {
+            padding: 5rem 9rem;
+            position: relative;
+            display: flex;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .flower-left {
+            position: absolute;
+            left: -9%;
+            top: -19%;
+            width: 22rem;
+            opacity: 0.9;
+        }
+
+        .text {
+            width: 50%;
+            z-index: 2;
+        }
+
+        .text h3 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #A37528;
+        }
+
+        .subtitle {
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: #a9a49b;
+        }
+
+        .text p {
+            margin: 25px 0;
+            line-height: 1.7;
+            color: #A37528;
+        }
+
+        /* Stats */
+
+        /* .stats {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+} */
+
+        /* .stats div h2 {
+} */
+
+        .details {
+            background: #A37528;
+            color: #fff;
+            padding: 0.4rem 1.6rem;
+            border: none;
+            font-size: 0.7rem;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 2rem;
+            letter-spacing: 1.5px;
+
+        }
+
+        /* Right side blob photo */
+
+        .blob-wrapper {
+            position: relative;
+        }
+
+        .blob {
+            width: 360px;
+            clip-path: path("M70 30 Q180 0 260 30 Q300 120 260 200 Q180 240 80 200 Q0 120 70 30 Z");
+            border-radius: 40px;
+        }
+
+        .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .leaves {
+            position: absolute;
+            right: 0;
+            top: 5%;
+            width: 22rem;
+            opacity: 0.9;
+            /* z-index: ; */
+        }
+
+        /* ======================================================
+    RESPONSIVE
+====================================================== */
+
+        @media (max-width: 900px) {
+            .row {
+                flex-direction: column;
+            }
+
+            .wellness {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .text,
+            .blob-wrapper {
+                width: 100%;
+            }
+
+            .flower-left,
+            .leaves {
+                display: none;
+            }
+        }
+
+        .stats-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .stats-left {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: var(--heading-font);
+            font-size: 48px;
+            font-weight: 400;
+            color: #A37528;
+            line-height: 1;
+        }
+
+        .stat-number span {
+            font-size: 36px;
+        }
+
+        .stat-stars {
+            display: flex;
+            gap: 2px;
+            justify-content: center;
+            margin: 8px 0;
+        }
+
+        .stat-stars i {
+            color: #E8D1BB;
+            font-size: 12px;
+        }
+
+        .stat-label {
+            font-family: #B2A69B;
+            font-size: 11px;
+            font-weight: 500;
+            color: #4B4036;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Avatar Group */
+        .avatar-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .avatar-stack {
+            display: flex;
+        }
+
+        .avatar-stack img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 3px solid var(--cream-bg);
+            margin-left: -15px;
+            object-fit: cover;
+        }
+
+
+         .gallery-strip {
+            display: flex;
+            flex-wrap: nowrap;
+            background: #1a1a1a;
+        }
+
+        .gallery-strip-item {
+            position: relative;
+            overflow: hidden;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .gallery-strip-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            /* object-position: center; */
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-strip-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-strip-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0);
+            transition: background 0.3s;
+            z-index: 1;
+        }
+
+        .gallery-strip-item:hover::before {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        /* ====== Footer ====== */
+        .footer {
+            background: #996B1E;
+            padding: 80px 60px 0;
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 60px;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-bottom: 60px;
+        }
+
+        /* Left Column - Follow Us */
+        .footer-left {
+            text-align: left;
+        }
+
+        .footer-left h4 {
+            /* font-family: ; */
+            font-size: 24px;
+            font-style: italic;
+            color: var(--white);
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        .footer-contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-contact-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 15px;
+            color: #B2A69B;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-contact-list li i {
+            color: #B2A69B;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        /* Center Column - Logo */
+        .footer-center {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-logo-img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .footer-social a {
+            width: 45px;
+            height: 45px;
+            background: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #996B1E;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .footer-social a:hover {
+            background: var(--dark-brown);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        /* Right Column - Newsletter */
+        .footer-right {
+            text-align: right;
+        }
+
+        .footer-right h4 {
+            font-family: var(--heading-font);
+            font-size: 24px;
+            font-style: italic;
+            color: var(--white);
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        .newsletter-form {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .newsletter-form input {
+            width: 100%;
+            padding: 15px 50px 15px 0;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+            background: transparent;
+            color: var(--white);
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .newsletter-form input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 2px;
+        }
+
+        .newsletter-form input:focus {
+            outline: none;
+            border-bottom-color: var(--white);
+        }
+
+        .newsletter-form button {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 18px;
+            cursor: pointer;
+            padding: 10px;
+            transition: transform 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            transform: translateY(-50%) translateX(5px);
+        }
+
+        .newsletter-note {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 25px;
+        }
+
+        .payment-methods {
+            display: flex;
+            gap: 10px;
+                justify-content: flex-end;
+        }
+
+        .payment-methods img {
+            height: 28px;
+            background: var(--white);
+            border-radius: 4px;
+            padding: 4px 10px;
+        }
+
+        /* Footer Bottom */
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 25px 0;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 13px;
+        }
+
+        .footer-bottom a {
+            color: #B2A69B;
+            text-decoration: none;
+        }
+
+        /* .footer-bottom a:hover {
+            color: var(--white);
+        } */
+
+
+
+        @media (max-width: 992px) {
+            .gallery-strip {
+                flex-wrap: wrap;
+            }
+
+            .gallery-strip-item {
+                flex: 0 0 33.333%;
+            }
+
+            .footer-main {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .footer-left,
+            .footer-right {
+                text-align: center;
+            }
+
+            .footer-contact-list li {
+                justify-content: center;
+            }
+
+            .payment-methods {
+                justify-content: center;
+            }
+        }
+
+
+
+        @media (max-width: 576px) {
+            .gallery-strip-item {
+                flex: 0 0 50%;
+            }
+
+            .gallery-strip-item img {
+                height: 150px;
+            }
+
+            .footer {
+                padding: 40px 20px 0;
+            }
+
+            .footer-left h4,
+            .footer-right h4 {
+                font-size: 18px;
+            }
+
+            .payment-methods {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!--[if lte IE 9]>
+    	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+
+    <!--********************************
+   		Code Start From Here 
+	******************************** -->
+
+
+
+
+    <!--==============================
+     Preloader
+  ==============================-->
+    <div class="preloader  ">
+        <button class="vs-btn preloaderCls">Cancel Preloader </button>
+        <div class="preloader-inner">
+            <div class="loader"></div>
+        </div>
+    </div><svg viewBox="0 0 150 150" class="svg-hidden">
+        <path id="textPath" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
+    </svg><!--==============================
+    Mobile Menu
+  ============================== -->
+    <div class="vs-menu-wrapper">
+        <div class="vs-menu-area text-center">
+            <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><img src="assets/img/logo.svg" alt="Wellnez"></a>
+            </div>
+            <div class="vs-mobile-menu">
+                <ul>
+                    <li class="menu-item-has-children">
+                        <a href="index.html">Demos</a>
+                        <ul class="sub-menu">
+                            <li><a href="index.html">Demo Style 1</a></li>
+                            <li><a href="index-2.html">Demo Style 2</a></li>
+                            <li><a href="index-3.html">Demo Style 3</a></li>
+                            <li><a href="index-4.html">Demo Style 4</a></li>
+                            <li><a href="index-5.html">Demo Style 5</a></li>
+                            <li><a href="index-6.html">Demo Style 6</a></li>
+                            <li><a href="index-7.html">Demo Style 7<span class="new-label">New</span></a></li>
+                            <li><a href="index-8.html">Demo Style 8<span class="new-label">New</span></a></li>
+                            <li><a href="index-9.html">Demo Style 9<span class="new-label">New</span></a></li>
+                            <li><a href="index-10.html">Demo Style 10<span class="new-label">New</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="match.html">Service</a>
+                        <ul class="sub-menu">
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="service-details.html">Service Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="blog.html">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="blog.html">Blog One</a></li>
+                            <li><a href="blog-2.html">Blog Two</a></li>
+                            <li><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="shop-details.html">Shop Details</a></li>
+                            <li><a href="gallery.html">Portfolio</a></li>
+                            <li><a href="gallery-details.html">Portfolio Details</a></li>
+                            <li><a href="appointment.html">Appointment</a></li>
+                            <li><a href="price-plan.html">Price Plan</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="error.html">Error Page</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    Sidemenu
+============================== -->
+    <div class="sidemenu-wrapper d-none d-lg-block  ">
+        <div class="sidemenu-content">
+            <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
+            <div class="widget  ">
+                <div class="footer-logo">
+                    <img src="assets/img/logo.svg" alt="logo">
+                </div>
+                <div class="info-media1">
+                    <div class="media-icon"><i class="fal fa-map-marker-alt"></i></div>
+                    <span class="media-label">Centerl Park West La, New York</span>
+                </div>
+                <div class="info-media1">
+                    <div class="media-icon"><i class="far fa-phone-alt "></i></div>
+                    <span class="media-label"><a href="tel:+01234567890" class="text-inherit">+0 123 456 7890</a></span>
+                </div>
+                <div class="info-media1">
+                    <div class="media-icon"><i class="fal fa-envelope"></i></div>
+                    <span class="media-label"><a class="text-inherit"
+                            href="mailto:info@example.com">info@example.com</a></span>
+                </div>
+            </div>
+            <div class="widget  ">
+                <h3 class="widget_title">Latest post</h3>
+                <div class="recent-post-wrap">
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-details.html"><img src="assets/img/widget/recent-post-1-1.jpg"
+                                    alt="Blog Image"></a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Skinscent Experience
+                                    Oskarsson</a></h4>
+                            <div class="recent-post-meta">
+                                <a href="blog.html"><i class="fas fa-calendar-alt"></i>march 10, 2023</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-details.html"><img src="assets/img/widget/recent-post-1-2.jpg"
+                                    alt="Blog Image"></a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Lorem ipsum is
+                                    placeholder recent popular</a></h4>
+                            <div class="recent-post-meta">
+                                <a href="blog.html"><i class="fas fa-calendar-alt"></i>Augest 10, 2023</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-details.html"><img src="assets/img/widget/recent-post-1-3.jpg"
+                                    alt="Blog Image"></a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">From its medieval
+                                    origins health custom</a></h4>
+                            <div class="recent-post-meta">
+                                <a href="blog.html"><i class="fas fa-calendar-alt"></i>July 11, 2023</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-details.html"><img src="assets/img/widget/recent-post-1-4.jpg"
+                                    alt="Blog Image"></a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Letraset's
+                                    dry-transfer sheets later</a></h4>
+                            <div class="recent-post-meta">
+                                <a href="blog.html"><i class="fas fa-calendar-alt"></i>March 05, 2023</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--==============================
+    Popup Search Box
+    ============================== -->
+    <div class="popup-search-box d-none d-lg-block  ">
+        <button class="searchClose"><i class="fal fa-times"></i></button>
+        <form action="#">
+            <input type="text" class="border-theme" placeholder="What are you looking for">
+            <button type="submit"><i class="fal fa-search"></i></button>
+        </form>
+    </div>
+    <!--==============================
+    Header Area
+    ==============================-->
+    <header class="main-header">
+        <div class="header-inner">
+            <div style="display: flex; gap: 3rem; align-items: center;"> <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="assets/img/home/goldlogo.png" alt="Logo" class="logo-img">
+                </a>
+
+                <!-- Navigation -->
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html" class="active">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <!-- Header Icons -->
+            <div class="header-icons">
+                <button type="button" aria-label="Search">
+                    <i class="far fa-search"></i>
+                </button>
+                <a href="shop.html" aria-label="Cart">
+                    <i class="far fa-shopping-bag"></i>
+                </a>
+                <button type="button" class="grid-menu" aria-label="Menu">
+                    <span></span><span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header><!--==============================
+    Breadcumb
+============================== -->
+    <div class="breadcumb-wrapper " style="background: #FDF9F580;">
+        <div class="container z-index-common">
+            <div class="breadcumb-content">
+                <h1 class="breadcumb-title">About Us</h1>
+                <div class="breadcumb-menu-wrap">
+                    <ul class="breadcumb-menu">
+                        <li><a style="font-size: 0.6rem;" href="index.html">Home</a></li>
+                        <li style="font-size: 0.6rem;">About Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="about-section">
+        <div class="image-section">
+            <img src="assets/img/hallo-about-img.jpg" alt="spa">
+            <div class="badge">
+                <svg width="150" height="150" viewBox="0 0 176 167" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="160" height="167" rx="80" fill="#F3F3F3" />
+                    <path
+                        d="M43.2656 96.1359V95.3659H43.7276C44.9596 95.3659 45.5756 94.7499 45.5756 93.0559V81.8139C45.5756 77.9639 44.3436 75.4999 41.5716 75.4999C39.4156 75.6539 37.4136 77.0399 36.6436 79.0419V93.0559C36.6436 95.0579 36.9516 95.3659 39.1076 95.3659H39.4156V96.1359H30.4836V95.3659H30.7916C32.7936 95.3659 33.2556 95.0579 33.2556 93.0559V78.2719C33.2556 76.5779 32.6396 75.8079 31.2536 75.8079H30.4836V75.0379H36.6436V77.3479C37.8756 75.6539 39.8776 74.7299 42.0336 74.7299C45.4216 74.7299 48.9636 76.5779 48.9636 81.9679V93.2099C48.9636 95.2119 49.2716 95.5199 51.2736 95.5199H51.7356V96.2899L43.2656 96.1359Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M72.5305 93.0559C72.5305 95.3659 71.2985 96.2899 69.4505 96.2899C67.2945 96.2899 65.9085 94.9039 65.6005 92.7479C63.7525 95.2119 61.9045 96.2899 59.7485 96.2899C57.1305 96.2899 54.6665 94.7499 54.6665 91.8239C54.6665 87.9739 57.1305 85.6639 60.8265 84.8939L65.7545 83.6619V80.5819C65.7545 78.2719 65.6005 75.6539 62.3665 75.6539C60.9805 75.6539 59.5945 75.9619 58.3625 76.7319C58.2085 76.8859 58.2085 76.8859 58.2085 76.8859C58.2085 76.8859 58.2085 77.0399 58.3625 77.0399C59.2865 77.3479 59.7485 78.1179 59.7485 79.0419C59.7485 80.2739 58.8245 81.1979 57.5925 81.1979C56.5145 81.1979 55.7445 80.4279 55.5905 79.3499C55.5905 76.1159 59.4405 74.7299 62.2125 74.7299C65.4465 74.7299 68.9885 76.5779 68.9885 80.2739V93.2099C68.9885 93.8259 69.1425 95.5199 70.2205 95.5199C71.2985 95.5199 71.4525 94.2879 71.4525 93.2099V90.1299H72.3765L72.5305 93.0559ZM65.6005 84.5859C62.3665 85.3559 60.3645 85.9719 59.9025 86.4339C58.6705 87.3579 58.0545 88.8979 58.0545 91.3619C58.0545 93.0559 59.4405 94.5959 61.1345 94.5959C61.2885 94.5959 61.2885 94.5959 61.4425 94.5959C63.2905 94.5959 64.8305 92.4399 65.6005 91.2079V84.5859Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M84.851 92.286C84.851 94.75 84.235 96.598 81.155 96.598C78.537 96.598 77.305 95.212 77.305 92.44V75.962H74.533V75.038H75.765C77.767 75.038 79.769 71.804 79.769 67.954H80.693V75.038H84.697V75.962H80.693V93.21C80.693 94.134 81.309 94.904 82.233 94.904C83.157 94.904 83.927 94.134 83.773 93.21V89.822H84.697L84.851 92.286Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M103.326 96.136V93.826C101.94 95.52 99.9376 96.444 97.7816 96.444C93.7776 96.444 91.0056 93.672 91.0056 88.898V78.272C91.0056 76.116 90.5436 75.808 88.6956 75.808H88.2336V75.038H94.3936V89.206C94.3936 93.056 95.6256 95.52 98.3976 95.52C100.708 95.366 102.71 93.826 103.326 91.516V78.272C103.326 76.116 102.71 75.808 100.862 75.808H100.554V75.038H106.714V92.902C106.714 94.596 107.484 95.366 108.87 95.366H109.486V96.136H103.326Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M125.352 81.0439C124.274 81.1979 123.504 80.4279 123.35 79.3499C123.35 79.1959 123.35 79.0419 123.35 78.8879C123.35 77.8099 124.274 76.8859 125.352 76.8859C125.506 76.8859 125.506 76.7319 125.506 76.7319C125.506 76.4239 124.736 75.6539 123.042 75.6539C120.578 75.6539 118.268 78.7339 118.268 81.3519V92.9019C118.268 94.9039 118.576 95.2119 120.732 95.2119H121.04V95.9819H112.108V95.2119H112.416C114.418 95.2119 114.88 94.9039 114.88 92.9019V77.8099C114.88 76.1159 114.11 75.4999 112.878 75.4999H112.108V74.7299H118.268V77.6559C119.192 75.8079 121.04 74.7299 123.196 74.4219C126.738 74.4219 127.508 76.7319 127.508 78.1179C127.2 79.6579 126.584 81.0439 125.352 81.0439Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M147.523 93.0559C147.523 95.3659 146.291 96.2899 144.443 96.2899C142.287 96.2899 140.901 94.9039 140.593 92.7479C138.745 95.2119 136.897 96.2899 134.741 96.2899C132.123 96.2899 129.659 94.7499 129.659 91.8239C129.659 87.9739 132.123 85.6639 135.819 84.8939L140.747 83.6619V80.5819C140.747 78.2719 140.593 75.6539 137.359 75.6539C135.973 75.6539 134.587 75.9619 133.355 76.7319C133.201 76.8859 133.201 76.8859 133.201 76.8859C133.201 76.8859 133.201 77.0399 133.355 77.0399C134.279 77.3479 134.741 78.1179 134.741 79.0419C134.741 80.2739 133.817 81.1979 132.585 81.1979C131.507 81.1979 130.737 80.4279 130.583 79.3499C130.583 76.1159 134.433 74.7299 137.205 74.7299C140.439 74.7299 143.981 76.5779 143.981 80.2739V93.2099C143.981 93.8259 144.135 95.5199 145.213 95.5199C146.291 95.5199 146.445 94.2879 146.445 93.2099V90.1299H147.369L147.523 93.0559ZM140.747 84.5859C137.513 85.3559 135.511 85.9719 135.049 86.4339C133.817 87.3579 133.201 88.8979 133.201 91.3619C133.201 93.0559 134.587 94.5959 136.281 94.5959C136.435 94.5959 136.435 94.5959 136.589 94.5959C138.437 94.5959 139.977 92.4399 140.747 91.2079V84.5859Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M149.529 96.136V95.366H149.837C151.685 95.366 152.301 94.75 152.301 92.902V67.8C152.301 66.106 151.531 65.336 150.145 65.336H149.375V64.566H155.535V92.902C155.535 94.596 155.997 95.366 157.999 95.366H158.461V96.136H149.529Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M72.2194 34.844C72.5274 34.69 72.9894 34.536 73.2974 34.69L73.9134 34.844L74.3754 32.688L74.9914 32.842L74.0674 38.078L72.6814 37.77C72.3734 37.77 72.0654 37.616 71.9114 37.308C71.7574 36.846 71.7574 36.384 71.9114 36.076C71.7574 35.614 72.0654 35.152 72.2194 34.844ZM72.3734 36.538C72.3734 37 72.6814 37.154 73.1434 37.154H73.4514L73.7594 35.46L73.2974 35.306C72.9894 35.306 72.6814 35.152 72.5274 35.46C72.3734 35.614 72.3734 35.768 72.3734 36.076C72.3734 36.23 72.3734 36.384 72.3734 36.538Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M66.2119 31.61L66.9819 34.074H67.5979L67.7519 31.764H68.3679L68.0599 37.154H66.8279C66.2119 37.308 65.5959 36.846 65.4419 36.076C65.4419 35.922 65.4419 35.768 65.4419 35.614C65.4419 35.46 65.4419 35.152 65.5959 34.998C65.5959 34.844 65.7499 34.536 65.9039 34.382C66.0579 34.228 66.2119 34.228 66.3659 34.074L65.5959 31.61H66.2119ZM66.2119 36.076C66.3659 36.538 66.6739 36.538 66.9819 36.538H67.2899L67.4439 34.69H67.1359C66.9819 34.69 66.6739 34.69 66.5199 34.69C66.2119 34.844 66.2119 35.306 66.2119 35.614C66.2119 35.614 66.2119 35.922 66.2119 36.076Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M61.4431 31.61L61.7511 37L59.4411 37.154V36.538L61.1351 36.384L60.9811 34.844L59.4411 34.998V34.382H60.9811L60.8271 32.38H59.1331V31.764L61.4431 31.61Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M52.0455 32.688L52.8155 37.462L52.6615 32.534L53.4315 32.38L55.1255 37L54.2015 32.38L54.8175 32.226L55.7415 37.462L54.8175 37.616L53.2775 33.15L53.4315 37.924L52.5075 38.078L51.5835 32.842L52.0455 32.688Z"
+                        fill="#4B4036" />
+                    <path d="M47.2742 33.92L48.8142 39.002L48.1982 39.156L46.6582 34.074L47.2742 33.92Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M40.9561 36.3839C41.1101 36.2299 41.4181 36.0759 41.5721 35.9219C41.8801 35.7679 42.1881 35.7679 42.6501 35.7679C42.8041 35.7679 42.9581 35.9219 42.9581 36.0759C43.1121 36.2299 43.2661 36.5379 43.2661 36.6919L44.8061 40.3879L44.1901 40.6959L42.9581 37.4619C42.8041 37.1539 42.6501 36.8459 42.4961 36.5379C42.3421 36.3839 42.1881 36.3839 42.0341 36.3839C41.8801 36.3839 41.8801 36.3839 41.7261 36.3839C41.5721 36.3839 41.4181 36.5379 41.4181 36.6919V36.8459C41.4181 36.9999 41.5721 37.3079 41.5721 37.4619L43.1121 41.0039L42.4961 41.3119L40.9561 37.6159C40.6481 37.3079 40.6481 36.8459 40.9561 36.3839Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M34.0247 39.926L36.3347 44.084L34.4867 39.464L35.2567 39.002L38.3367 42.698L35.7187 38.54L36.3347 38.232L39.1067 42.852L38.3367 43.622L35.2567 39.926L37.1047 44.392L36.1807 44.854L33.4087 40.234L34.0247 39.926Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M23.8625 46.702H24.9405C25.0945 46.548 25.0945 46.548 25.2485 46.394C25.7105 45.932 26.3265 45.932 26.6345 46.394C26.9425 46.702 27.2505 47.01 27.5585 47.318C27.8665 47.626 28.3285 48.088 28.6365 48.396C28.9445 48.704 29.0985 49.012 29.2525 49.32C29.4065 49.782 29.0985 50.244 28.7905 50.552C28.4825 51.014 27.8665 51.014 27.4045 50.86C26.9425 50.552 26.6345 50.244 26.3265 49.936C26.0185 49.474 25.5565 49.166 25.2485 48.704C24.9405 48.396 24.6325 48.088 24.6325 47.626C24.6325 47.472 24.6325 47.318 24.6325 47.164H23.7085L23.8625 46.702ZM27.5585 50.09C27.7125 50.244 28.0205 50.706 28.4825 50.244C28.6365 50.09 28.6365 49.936 28.6365 49.782C28.6365 49.628 28.6365 49.474 28.4825 49.474C28.1745 49.012 27.8665 48.704 27.4045 48.396C27.0965 48.088 26.7885 47.78 26.6345 47.472C26.4805 47.318 26.3265 47.164 26.0185 47.01C25.8645 47.01 25.5565 47.01 25.4025 47.164C25.2485 47.318 25.0945 47.472 25.2485 47.78C25.4025 48.088 25.7105 48.55 26.0185 48.858L26.4805 49.474C26.9425 49.474 27.2505 49.782 27.5585 50.09Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M20.0164 52.246C20.0164 51.938 20.1704 51.784 20.3244 51.476C20.4784 51.168 20.7864 51.014 21.2484 50.86C21.4024 50.86 21.5564 50.86 21.7104 50.86C21.8644 51.014 22.1724 51.168 22.3264 51.322L25.4064 53.94L24.9444 54.402L22.3264 52.4C22.1724 52.246 21.8644 51.938 21.5564 51.784C21.4024 51.784 21.2484 51.784 21.0944 51.784C20.9404 51.784 20.9404 51.938 20.9404 51.938C20.7864 52.092 20.7864 52.246 20.7864 52.4C20.7864 52.4 20.7864 52.554 20.9404 52.554C21.0944 52.708 21.2484 52.862 21.4024 53.016L24.3284 55.48L23.8664 55.942L20.7864 53.324C20.3244 53.17 20.0164 52.862 20.0164 52.246Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M16.0118 57.79L16.9358 58.252L17.5518 57.174L16.7818 56.404L17.0898 55.788L20.9398 59.638L20.6318 60.254L15.5498 58.406L16.0118 57.79ZM20.1698 59.484L18.1678 57.636L17.5518 58.56L20.1698 59.484Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M13.8531 61.64L18.6271 63.95L18.3191 64.72L14.0071 62.564L13.2371 63.95L12.7751 63.642L13.8531 61.64Z"
+                        fill="#4B4036" />
+                    <path d="M11.3913 67.184L16.3193 69.032L16.0113 69.648L11.0833 67.8L11.3913 67.184Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M14.0114 74.114L9.39136 72.882L9.54536 72.266L14.1654 73.498L14.4734 72.574L15.0894 72.728L14.3194 75.346L13.7034 75.192L14.0114 74.114Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M10.3142 79.504L8.1582 79.196L8.3122 78.58L10.4682 78.888L13.7022 78.272L13.5482 79.042L10.7762 79.35L13.2402 80.582L13.0862 81.352L10.3142 79.504Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M7.6955 90.592L12.1615 89.36L7.5415 89.668V89.052L12.9315 88.744V89.668L8.3115 91.054L12.9315 90.746V91.362L7.5415 91.67L7.6955 90.592Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M8.4662 97.676L9.3902 97.368L9.2362 96.136H8.1582V95.52L13.5482 95.828L13.7022 96.29L8.6202 98.292L8.4662 97.676ZM12.6242 96.136H9.8522L10.0062 97.06L12.6242 96.136Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M14.3157 101.834L9.69575 103.066L9.54175 102.45L14.1617 101.218L13.8537 100.294L14.4697 100.14L15.2397 102.604L14.6237 102.758L14.3157 101.834Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M12.3157 109.688C12.1617 109.534 12.0077 109.226 11.8537 109.072C11.6997 108.764 11.6997 108.456 11.6997 107.994C11.6997 107.84 11.8537 107.686 12.0077 107.686C12.1617 107.532 12.4697 107.378 12.6237 107.378L16.3197 105.838L16.6277 106.454L13.2397 107.84C12.9317 107.994 12.6237 108.148 12.3157 108.302C12.1617 108.456 12.1617 108.61 12.1617 108.764C12.1617 108.918 12.1617 108.918 12.1617 109.072C12.1617 109.226 12.3157 109.38 12.4697 109.38H12.6237C12.7777 109.38 13.0857 109.226 13.2397 109.226L16.7817 107.686L17.0897 108.302L13.3937 109.842C13.2397 109.996 12.6237 109.996 12.3157 109.688Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M15.3947 116.002L16.9347 114L16.6267 113.538L14.6247 114.77L14.3167 114.154L18.9366 111.536L19.5527 112.46C19.8607 112.922 19.8607 113.692 19.3987 114.154C19.2447 114.308 19.0907 114.308 18.9366 114.462C18.7826 114.616 18.4747 114.616 18.3207 114.77C18.1667 114.924 17.8587 114.924 17.7047 114.924C17.5507 114.924 17.3967 114.77 17.2427 114.616L15.5487 116.618L15.3947 116.002ZM18.9366 113.538C19.2446 113.23 18.9367 112.922 18.7827 112.614L18.6287 112.306L17.0886 113.23L17.2427 113.538C17.3967 113.692 17.3967 113.846 17.5507 114C17.8587 114.154 18.1667 114 18.4747 113.846C18.7827 113.846 18.9366 113.692 18.9366 113.538Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M19.09 121.392L19.86 120.622L19.09 119.698L18.012 120.16L17.55 119.544L22.478 117.388L22.94 117.85L19.398 122.008L19.09 121.392ZM22.016 118.158L19.552 119.39L20.168 120.16L22.016 118.158Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M22.0166 124.934L25.8666 121.238L26.3286 121.7L22.9406 125.088L24.0186 126.166L23.5566 126.628L22.0166 124.934Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M32.023 133.404V133.25H31.869C31.561 133.25 31.253 133.096 30.945 132.942C30.483 132.634 30.175 131.864 30.637 131.402C30.637 131.402 30.637 131.248 30.791 131.248C30.945 130.94 31.407 130.786 31.715 130.632C31.869 130.632 32.177 130.478 32.331 130.478C32.331 130.016 32.485 129.708 32.639 129.4C32.639 129.246 32.793 129.246 32.793 129.246C33.101 128.938 33.563 128.938 33.871 129.246C34.025 129.246 34.025 129.4 34.179 129.554C34.333 129.862 34.333 130.324 34.179 130.478C34.025 130.632 33.717 130.786 33.563 130.94C33.409 131.094 33.101 131.094 32.793 131.094C32.793 131.556 32.639 132.018 32.639 132.48C32.639 132.48 32.793 132.48 32.793 132.326C32.947 132.172 33.101 132.018 33.255 131.71L33.717 132.018L33.563 132.172C33.409 132.48 33.101 132.634 32.793 132.788C32.639 132.788 32.639 132.942 32.485 132.942V133.096C32.485 133.25 32.639 133.404 32.793 133.558L32.485 134.02C32.177 133.866 32.023 133.712 32.023 133.404ZM32.023 131.094H31.869C31.561 131.094 31.253 131.402 31.099 131.556C31.099 131.556 30.945 131.71 30.945 131.864C30.791 132.172 30.945 132.326 31.099 132.48C31.253 132.634 31.561 132.634 31.715 132.634C31.869 132.172 31.869 131.556 32.023 131.094ZM33.409 129.554C33.255 129.554 33.255 129.4 33.101 129.554C32.947 129.554 32.947 129.708 32.947 129.708C32.793 129.862 32.793 130.17 32.793 130.478H32.947C33.255 130.478 33.409 130.324 33.563 130.17C33.717 130.016 33.563 129.708 33.409 129.554Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M43.2679 137.716C43.2679 137.87 43.1139 138.024 43.1139 138.178C42.9599 138.486 42.6519 138.948 42.3439 139.102C42.0359 139.256 41.7279 139.102 41.4199 138.948C41.1119 138.794 40.8039 138.486 40.6499 138.178C40.6499 138.024 40.6499 137.87 40.6499 137.87C40.8039 137.254 40.9579 136.792 41.2659 136.33C41.4199 135.868 41.5739 135.406 41.8819 134.944C42.0359 134.482 42.1899 134.174 42.6519 134.02C42.9599 133.866 43.4219 133.866 43.8839 134.02C44.3459 134.174 44.6539 134.482 44.6539 134.944C44.6539 135.098 44.6539 135.252 44.6539 135.406C44.4999 135.714 44.1919 136.638 44.0379 136.946C43.5759 137.1 43.4219 137.408 43.2679 137.716ZM43.5759 135.56C43.7299 135.406 43.7299 135.098 43.7299 134.79C43.7299 134.636 43.5759 134.482 43.4219 134.328C43.2679 134.328 43.1139 134.328 42.9599 134.328C42.6519 134.482 42.4979 134.79 42.1899 135.252L42.0359 135.56C41.8819 136.022 41.5739 136.484 41.4199 136.946C41.2659 137.254 41.2659 137.408 41.1119 137.716C41.1119 138.024 41.4199 138.332 41.7279 138.332C41.8819 138.332 42.0359 138.332 42.1899 138.178C42.4979 137.87 42.6519 137.408 42.8059 137.1C42.9599 136.946 42.9599 136.638 43.1139 136.484C43.2679 136.176 43.4219 135.868 43.5759 135.56Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M48.6566 141.412L48.5026 138.948L48.0406 138.794L47.4246 141.104L46.8086 140.95L48.3486 135.868L49.4266 136.176C49.7346 136.176 50.0426 136.484 50.3506 136.638C50.5046 136.946 50.5046 137.408 50.3506 137.87C50.3506 138.024 50.1966 138.332 50.0426 138.486C49.8886 138.64 49.8886 138.794 49.7346 138.948C49.5806 139.102 49.4266 139.102 49.2726 139.102L49.5806 141.72L48.6566 141.412ZM49.7346 137.1C49.7346 136.638 49.2726 136.638 48.9646 136.484L48.6566 136.33L48.1946 138.178L48.5026 138.332C48.6566 138.332 48.8106 138.486 49.1186 138.486C49.4266 138.486 49.5806 138.024 49.7346 137.716C49.5806 137.408 49.7346 137.254 49.7346 137.1Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M55.4351 142.798V142.49C55.4351 142.49 55.2811 142.644 55.1271 142.644C54.8191 142.798 54.6651 142.798 54.3571 142.798C53.8951 142.798 53.5871 142.336 53.4331 141.874C53.4331 141.412 53.4331 141.104 53.5871 140.796C53.5871 140.488 53.7411 140.18 53.7411 140.026C53.7411 139.718 53.8951 139.256 53.8951 138.948C53.8951 138.64 54.0491 138.332 54.0491 138.178C54.3571 137.716 54.8191 137.408 55.4351 137.562C55.7431 137.562 56.0511 137.716 56.2051 137.87L56.3591 138.024C56.3591 138.178 56.5131 138.178 56.5131 138.332C56.5131 138.486 56.5131 138.794 56.5131 138.948V139.256L55.8971 139.102V138.794C55.8971 138.64 55.8971 138.64 55.8971 138.486C56.0511 138.178 55.8971 137.87 55.5891 137.87H55.4351C55.2811 137.87 55.1271 137.87 54.9731 137.87C54.9731 137.87 54.8191 137.87 54.8191 138.024L54.6651 138.178C54.5111 138.64 54.3571 139.102 54.3571 139.718L54.2031 140.334C54.2031 140.642 54.0491 140.95 54.0491 141.258C54.0491 141.412 54.0491 141.72 54.0491 141.874C54.0491 142.028 54.3571 142.182 54.5111 142.336C54.6651 142.336 54.8191 142.336 54.9731 142.182C55.1271 142.182 55.1271 142.028 55.1271 142.028C55.2811 141.72 55.2811 141.566 55.2811 141.258L55.4351 140.796L54.6651 140.642L54.8191 140.026L56.2051 140.18L55.7431 142.952L55.4351 142.798Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M62.0559 143.26L61.9019 142.182H60.6699L60.5159 143.26H59.8999L61.2859 138.024H61.9019L62.8259 143.414L62.0559 143.26ZM61.4399 138.948L60.8239 141.72H61.9019L61.4399 138.948Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M68.3687 143.106L66.9827 138.64L67.4447 143.26H66.8287L66.3667 138.024H67.2907L68.6767 142.644L68.2147 138.024H68.8307L69.2927 143.26L68.3687 143.106Z"
+                        fill="#4B4036" />
+                    <path d="M73.299 142.49L72.375 137.254L72.991 137.1L73.915 142.336L73.299 142.49Z" fill="#4B4036" />
+                    <path
+                        d="M80.0756 139.41C80.0756 139.564 80.2296 139.718 80.2296 139.872C80.3836 140.18 80.2296 140.642 79.9216 140.796C79.7676 140.95 79.6136 140.95 79.3056 141.104C78.9976 141.258 78.6896 141.258 78.5356 141.104C78.3816 141.104 78.3816 140.95 78.2276 140.95C77.9196 140.642 77.6116 140.18 77.6116 139.564L77.3036 138.794C77.1496 138.486 77.1496 138.178 76.9956 137.87C76.8416 137.408 76.8416 136.946 76.8416 136.484C76.9956 136.176 77.3036 135.868 77.7656 135.714C78.0736 135.56 78.3816 135.56 78.6896 135.714C78.9976 135.868 79.1516 136.022 79.3056 136.638C79.3056 136.792 79.3056 136.792 79.4596 136.946L78.8436 137.1C78.8436 136.946 78.6896 136.792 78.6896 136.484C78.6896 136.33 78.5356 136.176 78.3816 136.022C78.2276 136.022 78.0736 136.022 78.0736 136.022C77.7656 136.022 77.6116 136.33 77.6116 136.638C77.7656 137.254 77.9196 137.716 78.0736 138.332C78.2276 138.64 78.2276 139.102 78.3816 139.41C78.3816 139.718 78.5356 139.872 78.6896 140.026C78.8436 140.18 79.1516 140.18 79.3056 140.18C79.4596 140.18 79.6136 140.026 79.6136 140.026C79.7676 139.718 79.6136 139.41 79.6136 139.102L79.4596 138.794L80.0756 138.64C79.9216 139.102 79.9216 139.256 80.0756 139.41Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M89.4674 134.02C89.3134 134.328 89.0054 134.636 88.6974 134.79L88.2354 135.098L89.3134 137.1L88.6974 137.408L86.2334 132.634L87.4654 132.018C87.7734 131.864 88.0814 131.71 88.3894 131.864C88.8514 132.018 89.0054 132.48 89.1594 132.788C89.4674 133.096 89.4674 133.558 89.4674 134.02ZM88.3894 132.634C88.0814 132.172 87.7734 132.326 87.3114 132.634L87.0034 132.788L87.9274 134.482L88.3894 134.328C88.6974 134.174 88.8514 134.02 88.8514 133.712C88.8514 133.558 88.6974 133.25 88.6974 133.096C88.5434 132.942 88.5434 132.788 88.3894 132.634Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M96.241 132.634L94.085 131.248L93.623 131.556L95.009 133.404L94.547 133.712L91.467 129.4L92.391 128.784C92.699 128.476 93.007 128.476 93.315 128.476C93.777 128.63 94.085 128.784 94.393 129.246C94.547 129.4 94.701 129.554 94.701 129.862C94.855 130.016 94.855 130.17 94.855 130.478C94.855 130.632 94.701 130.786 94.701 130.94L96.857 132.326L96.241 132.634ZM93.469 129.246C93.161 128.938 92.853 129.246 92.545 129.4L92.237 129.708L93.315 131.248L93.623 131.094C93.777 130.94 93.931 130.786 94.085 130.786C94.239 130.478 93.931 130.17 93.777 129.862C93.777 129.554 93.623 129.4 93.469 129.246Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M100.708 126.628C100.862 126.782 100.862 126.936 101.016 126.936C101.324 127.244 101.478 127.552 101.478 128.014C101.478 128.322 101.17 128.63 101.016 128.784C100.708 129.092 100.4 129.246 99.9384 129.092C99.7844 129.092 99.6304 129.092 99.6304 128.938C99.1684 128.63 98.8604 128.168 98.3984 127.706C98.0904 127.398 97.7824 126.936 97.4744 126.628C97.1664 126.628 96.8584 126.32 96.8584 125.858C96.8584 125.396 97.0124 125.088 97.3204 124.78C97.6284 124.472 98.0904 124.318 98.5524 124.472C98.7064 124.472 98.8604 124.626 99.0144 124.78C99.3224 125.088 99.9384 125.704 100.092 126.012C100.246 126.166 100.4 126.474 100.708 126.628ZM98.8604 125.55C98.7064 125.396 98.5524 125.242 98.2444 125.088C98.0904 125.088 97.7824 125.088 97.6284 125.242C97.4744 125.396 97.4744 125.396 97.4744 125.55C97.4744 125.858 97.6284 126.166 98.0904 126.628L98.3984 126.936C98.7064 127.244 99.0144 127.706 99.4764 128.014C99.6304 128.168 99.7844 128.476 100.092 128.63C100.4 128.784 100.708 128.63 100.862 128.322C100.862 128.168 101.016 128.014 100.862 127.86C100.708 127.552 100.4 127.09 100.092 126.782C99.9384 126.628 99.7844 126.474 99.6304 126.32C99.3224 126.166 99.0144 125.858 98.8604 125.55Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M105.329 121.854C105.483 122.008 105.637 122.162 105.791 122.316C106.099 122.624 106.253 122.932 106.253 123.394C106.099 123.702 105.945 124.01 105.637 124.318L105.021 125.088L101.017 121.546L101.633 120.776C101.787 120.468 102.095 120.314 102.403 120.16C102.711 120.006 103.173 120.006 103.481 120.314C103.635 120.468 104.097 120.776 104.559 121.238C104.713 121.238 105.021 121.546 105.329 121.854ZM103.327 120.93C103.019 120.622 102.865 120.468 102.557 120.622C102.249 120.622 102.095 120.93 101.941 121.084L101.787 121.392L104.867 124.164L105.175 123.856C105.329 123.702 105.329 123.548 105.483 123.394C105.483 123.24 105.483 123.086 105.329 122.932C105.021 122.624 104.713 122.316 104.251 122.008C103.943 121.546 103.635 121.238 103.327 120.93Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M110.26 117.696C110.26 118.004 110.106 118.158 109.952 118.466C109.798 118.774 109.49 118.928 109.182 119.082C109.028 119.082 108.874 119.082 108.72 119.082C108.412 119.082 108.258 118.928 108.104 118.774L104.716 116.618L105.024 116.002L107.95 118.004C108.258 118.158 108.412 118.312 108.72 118.466C108.874 118.466 109.028 118.466 109.182 118.312L109.336 118.158C109.49 118.004 109.49 117.85 109.49 117.696C109.49 117.696 109.49 117.542 109.336 117.542C109.182 117.388 109.028 117.234 108.874 117.08L105.64 114.924L105.948 114.308L109.336 116.464C109.952 116.926 110.26 117.234 110.26 117.696Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M112.724 110.766C112.878 110.766 113.032 110.92 113.186 111.074C113.494 111.228 113.648 111.69 113.648 111.998C113.648 112.152 113.494 112.46 113.494 112.614C113.34 112.922 113.186 113.076 112.878 113.23C112.724 113.23 112.57 113.384 112.57 113.384C112.108 113.384 111.646 113.23 111.184 112.922L110.26 112.46C109.952 112.306 109.798 112.152 109.49 111.998C109.028 111.844 108.72 111.536 108.412 111.074C108.258 110.766 108.258 110.304 108.566 109.996C108.72 109.688 109.028 109.534 109.336 109.38C109.644 109.226 109.952 109.38 110.414 109.534C110.568 109.534 110.568 109.688 110.722 109.688L110.414 110.304C110.26 110.15 110.106 110.15 109.952 109.996C109.798 109.842 109.644 109.842 109.336 109.996C109.182 109.996 109.182 110.15 109.028 110.304C108.874 110.612 108.874 110.92 109.182 111.074C109.644 111.382 110.106 111.69 110.722 111.998C111.03 112.152 111.492 112.306 111.8 112.46C111.954 112.614 112.262 112.614 112.416 112.614C112.57 112.614 112.878 112.46 112.878 112.306C112.878 112.152 113.032 111.998 112.878 111.998C112.878 111.69 112.416 111.536 112.262 111.382L111.954 111.228L112.262 110.612C112.416 110.612 112.57 110.766 112.724 110.766Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M111.487 104.606L115.953 106.146L115.799 106.762L111.333 105.222L111.025 106.146L110.409 105.992L111.333 103.528L111.949 103.682L111.487 104.606Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M34.3354 106.454L33.1034 106.762L32.7954 105.53L34.7974 104.914H35.8754V111.998H34.3354V106.454Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M39.4202 108.456C39.4202 106.454 40.6522 104.76 42.5002 104.76C44.3482 104.76 45.5802 106.3 45.5802 108.302C45.5802 110.304 44.3482 111.998 42.5002 111.998C40.6522 111.998 39.4202 110.612 39.4202 108.456ZM44.0402 108.456C44.0402 107.224 43.4242 106.146 42.5002 106.146C41.5762 106.146 40.9602 107.07 40.9602 108.302C40.9602 109.534 41.5762 110.612 42.5002 110.612C43.4242 110.612 44.0402 109.842 44.0402 108.456Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M48.6616 108.456C48.6616 106.454 49.8936 104.76 51.7416 104.76C53.5896 104.76 54.8216 106.3 54.8216 108.302C54.8216 110.304 53.5896 111.998 51.7416 111.998C49.8936 111.998 48.6616 110.612 48.6616 108.456ZM53.2816 108.456C53.2816 107.224 52.6656 106.146 51.7416 106.146C50.8176 106.146 50.2016 107.07 50.2016 108.302C50.2016 109.534 50.8176 110.612 51.7416 110.612C52.8196 110.766 53.2816 109.842 53.2816 108.456Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M57.8958 106.762C57.8958 105.838 58.5117 105.068 59.5897 104.914C59.5897 104.914 59.5898 104.914 59.7438 104.914C60.6678 104.914 61.4378 105.684 61.4378 106.608C61.4378 106.608 61.4378 106.608 61.4378 106.762C61.4378 107.686 60.8218 108.456 59.7438 108.61C59.7438 108.61 59.7437 108.61 59.5897 108.61C58.6657 108.456 57.8958 107.686 57.8958 106.762ZM63.7478 104.914H64.9798L62.2078 108.764L59.8978 111.998H58.6658L61.4378 108.148L63.7478 104.914ZM58.9738 106.608C58.9738 107.07 59.2817 107.532 59.5897 107.532C60.0517 107.532 60.2058 107.07 60.2058 106.608C60.2058 106.146 59.8977 105.684 59.5897 105.684C59.1277 105.838 58.9738 106.146 58.9738 106.608ZM62.2078 110.304C62.2078 109.38 62.8237 108.61 63.9017 108.456C63.9017 108.456 63.9018 108.456 64.0558 108.456C64.9798 108.456 65.7498 109.226 65.7498 110.15C65.7498 110.15 65.7498 110.15 65.7498 110.304C65.7498 111.228 65.1338 111.998 64.0558 112.152C64.0558 112.152 64.0557 112.152 63.9017 112.152C62.9777 112.152 62.2078 111.382 62.2078 110.304ZM64.5178 110.304C64.5178 109.842 64.2097 109.38 63.9017 109.38C63.4397 109.38 63.2858 109.842 63.2858 110.304C63.2858 110.766 63.5937 111.228 63.9017 111.228C64.3637 111.228 64.5178 110.766 64.5178 110.304Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M85.3077 60.562L84.8457 59.792C94.7017 54.864 120.882 56.866 121.96 57.02V57.944C121.806 57.79 95.0097 55.788 85.3077 60.562Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M106.872 61.794C101.482 61.794 96.5536 60.562 93.3196 58.098L92.7036 57.636L93.3196 57.328C96.8616 55.48 100.712 54.248 104.716 53.786C111.8 52.862 118.422 54.094 122.58 57.174L123.196 57.636L122.58 57.944C119.038 59.792 115.188 61.024 111.184 61.486C109.798 61.794 108.412 61.794 106.872 61.794ZM94.5516 57.944C98.5556 60.408 104.716 61.486 111.184 60.716C114.726 60.254 118.268 59.33 121.502 57.636C117.498 55.172 111.338 54.094 104.87 54.864C101.328 55.172 97.7856 56.25 94.5516 57.944Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M91.3154 57.1739L90.5454 56.5579C91.9314 54.8639 98.3994 41.1579 99.6314 29.9159L100.555 30.0699C99.1694 41.7739 92.7014 55.4799 91.3154 57.1739Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M94.2392 51.6299L93.9312 50.8599C92.8532 47.0099 93.3152 41.7739 95.3172 36.8459C96.3952 34.0739 97.9352 31.6099 99.7832 29.4539L100.399 28.8379L100.553 29.6079C101.631 33.4579 101.169 38.6939 99.1672 43.6219C98.0892 46.3939 96.5492 48.8579 94.7012 51.0139L94.2392 51.6299ZM99.9372 30.6859C98.3972 32.5339 97.0112 34.8439 96.2412 37.1539C94.5472 41.4659 93.9312 46.2399 94.7012 49.7819C96.2412 47.9339 97.6272 45.6239 98.3972 43.3139C100.091 39.0019 100.707 34.2279 99.9372 30.6859Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M53.1247 66.106C43.7307 66.106 31.1027 66.106 30.1787 65.952V65.028C30.4867 65.028 59.9007 65.182 62.9807 65.028C79.7667 64.104 102.559 56.404 115.495 24.68C115.649 24.218 115.803 23.756 115.957 23.602L116.727 23.91C116.573 24.218 116.419 24.526 116.265 24.988C113.031 33.304 108.411 40.85 102.559 47.472C92.2407 58.868 78.8427 65.028 62.9807 65.952C62.0567 66.106 58.0527 66.106 53.1247 66.106Z"
+                        fill="#4B4036" />
+                    <path
+                        d="M104.715 44.7L104.561 43.93C104.099 39.926 105.793 34.69 109.335 30.07C111.337 27.452 113.801 25.142 116.573 23.448L117.189 22.986L117.343 23.756C117.805 27.76 116.111 32.996 112.569 37.616C110.567 40.234 108.103 42.544 105.331 44.238L104.715 44.7ZM116.573 24.834C114.109 26.374 112.107 28.376 110.259 30.686C107.179 34.69 105.485 39.31 105.639 43.006C108.103 41.466 110.105 39.464 111.953 37.154C115.033 32.996 116.727 28.376 116.573 24.834Z"
+                        fill="#4B4036" />
+                    <path d="M92.2394 108.148H71.2954V109.072H92.2394V108.148Z" fill="#4B4036" />
+                </svg>
+
+            </div>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="content">
+            <div style="position: relative;">
+                <div style=" position: absolute;
+                         left: 20%;
+                          top: 50%;
+                         transform: translate(-50%, -50%) rotate(90deg);
+                           z-index: 0;">
+                    <img class="overlay-1" src="assets/img/home/Section.png" alt=""
+                        style="height: auto; width: 10rem; opacity: 0.4;">
+                </div>
+                <h1 style="font-size: 2.5rem; color: #4B4036;">Classy Relaxing Treatment</h1>
+                <p class="subtitle">
+                    Vitae sapien pellentesque habitant morbi tristique
+                </p>
+            </div>
+            <div class="list">
+                <ul>
+                    <li> Aromatherapy </li>
+                    <li> Hydrotherapy </li>
+                    <li> Reflexology </li>
+                    <li> Stone Massage </li>
+                </ul>
+
+                <ul>
+                    <li> Myofascial Release </li>
+                    <li> Craniosacral Therapy </li>
+                    <li> Thai Massage </li>
+                    <li> Massage </li>
+                </ul>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+
+                <button class="btn">BOOK NOW</button>
+
+                <div class="support">
+                    <svg width="60" height="60" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M49.2339 30.5319H55.5579C61.8819 30.5319 66.9819 35.6319 66.9819 41.9559C66.9819 48.2799 61.8819 53.3799 55.5579 53.3799C53.9939 53.3799 53.9259 53.6519 53.9259 55.4879V56.8479C53.9259 58.1399 53.5179 59.2279 52.3619 58.5479C50.2539 57.3239 48.6899 56.2359 47.1939 55.3519C45.1539 54.1959 43.7259 53.3799 41.3459 53.3799C35.0899 53.3799 29.9899 48.3479 29.9219 42.0919C30.1939 41.9559 30.4659 41.8199 30.7379 41.7519C31.6899 41.4119 32.6419 41.2079 33.6619 41.2079C40.5299 41.1399 46.7179 36.9239 49.2339 30.5319Z"
+                            fill="black" />
+                        <path
+                            d="M33.66 11.22H15.98C8.63596 11.22 2.71996 17.136 2.71996 24.48C2.71996 31.824 8.63596 37.74 15.98 37.74C17.34 37.74 18.02 37.944 18.496 38.624C18.904 39.44 19.04 40.392 18.904 41.276V42.976C18.904 43.452 18.972 43.928 19.176 44.336C19.244 44.336 19.312 44.268 19.448 44.2C20.536 43.52 21.556 42.908 22.44 42.364C23.732 41.548 24.82 40.868 25.908 40.256C27.064 39.508 28.288 38.896 29.58 38.42C30.872 37.876 32.3 37.672 33.728 37.672C41.072 37.604 46.92 31.62 46.852 24.344C46.716 17.136 40.868 11.288 33.66 11.22ZM15.98 9.24799H33.66C42.024 9.38399 48.756 16.32 48.62 24.684C48.484 32.844 41.888 39.508 33.66 39.644C32.504 39.644 31.28 39.848 30.192 40.256C29.036 40.732 27.88 41.344 26.86 41.956C25.84 42.568 24.684 43.248 23.46 44.064C22.508 44.676 21.488 45.288 20.468 45.9C20.06 46.172 19.652 46.308 19.176 46.308C18.836 46.308 18.496 46.24 18.224 46.036C17.952 45.832 17.748 45.628 17.612 45.356C17.204 44.608 17.068 43.792 17.068 42.976V41.276C17.136 40.732 17.068 40.188 17 39.712C16.66 39.644 16.388 39.644 16.048 39.712C7.68396 39.576 0.951962 32.64 1.08796 24.276C1.15596 16.048 7.75196 9.38399 15.98 9.24799Z"
+                            fill="black" />
+                        <path
+                            d="M24.821 22.1679C26.045 22.1679 26.997 23.1199 26.997 24.3439C26.997 25.5679 26.045 26.5199 24.821 26.5199C23.597 26.5199 22.645 25.5679 22.645 24.3439C22.645 23.1199 23.597 22.1679 24.821 22.1679ZM34.341 22.1679C35.565 22.1679 36.517 23.1199 36.517 24.3439C36.517 25.5679 35.565 26.5199 34.341 26.5199C33.117 26.5199 32.165 25.5679 32.165 24.3439C32.165 23.1199 33.117 22.1679 34.341 22.1679ZM15.301 22.1679C16.525 22.1679 17.477 23.1199 17.477 24.3439C17.477 25.5679 16.525 26.5199 15.301 26.5199C14.077 26.5199 13.125 25.5679 13.125 24.3439C13.125 23.1199 14.077 22.1679 15.301 22.1679Z"
+                            fill="black" />
+                    </svg>
+
+                    <div>
+                        <small>GET SUPPORT</small>
+                        <p>0000 - 123 - 456789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======================= CONSULTATION FORM ======================= -->
+
+    <section class="consultation">
+
+        <div style="position: relative;">
+            <div style=" position: absolute;
+                         left: 50%;
+                          top: 50%;
+                         transform: translate(-50%, -50%) rotate(90deg);
+                           z-index: 0;">
+                <img class="overlay-1" src="assets/img/home/Section.png" alt=""
+                    style="height: auto; width: 8rem; opacity: 0.3;">
+            </div>
+            <h1 style="font-size: 2.5rem; color: #4B4036;">Schedule a <br>Consultation</h1>
+            <p class="subtitle">
+                Send as Message
+            </p>
+        </div>
+
+        <form>
+            <div class="row">
+                <div class="field">
+                    <!-- <label>Full Name</label> -->
+                    <input type="text" placeholder="FULL NAME">
+                </div>
+
+                <div class="field">
+                    <!-- <label>Email</label> -->
+                    <input type="email" placeholder="EMAIL">
+                </div>
+
+                <div class="field">
+                    <!-- <label>Date & Time</label> -->
+                    <input type="datetime-local" placeholder="DATE & TIME">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <!-- <label>Service Type</label> -->
+                    <select>
+                        <option>SERVICE TYPE</option>
+                        <option>Aromatherapy</option>
+                        <option>Hydrotherapy</option>
+                        <option>Massage</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <!-- <label>Write Message Here</label> -->
+                    <input type="text" placeholder="WRITE MESSAGE HERE">
+                </div>
+            </div>
+
+            <div class="center">
+                <button class="btn">SEND MESSAGE</button>
+            </div>
+        </form>
+
+    </section>
+
+    <!-- ======================= WELLNESS SECTION ======================= -->
+
+    <section class="wellness">
+
+        <!-- Left flowers image -->
+        <img src="assets/img/hallo-flower.png" class="flower-left">
+
+        <div class="text">
+            <div style="position: relative;">
+                <div style=" position: absolute;
+                         left: 20%;
+                          top: 50%;
+                         transform: translate(-50%, -50%) rotate(90deg);
+                           z-index: 0;">
+                    <img class="overlay-1" src="assets/img/home/Section.png" alt=""
+                        style="height: auto; width: 8rem; opacity: 0.3;">
+                </div>
+                <h1 style="font-size: 2.5rem; color: #A37528;">Exceptional Wellness <br>Treatments</h1>
+                <p class="subtitle" style="color: #B2A69B;">
+                    Best Skin Care
+                </p>
+            </div>
+
+            <p>
+                Quis varius quam quisque id. Nibh tellus molestie nunc non blandit massa.
+                Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor.
+                Nibh sit amet commodo nulla facilisi nullam. Lorem sed risus ultricies aenean.
+            </p>
+
+            <div class="stats-container">
+                <div class="stats-left">
+                    <!-- Rating -->
+                    <div class="stat-item">
+                        <div class="stat-number">4.4</div>
+                        <div class="stat-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-label">1500 Ratings</div>
+                    </div>
+
+                    <!-- Customers -->
+                    <div class="stat-item">
+                        <div class="stat-number">25<span>k</span></div>
+                        <div class="stat-label" style="margin-top: 15px;">World Wide<br>Customers</div>
+                    </div>
+
+                    <!-- Products -->
+                    <!-- <div class="stat-item">
+                    <div class="stat-number">10<span>M</span></div>
+                    <div class="stat-label" style="margin-top: 15px;">Products<br>Purchased</div>
+                </div> -->
+
+                    <!-- People -->
+                    <div class="stat-item">
+                        <div class="avatar-group">
+                            <!-- <div class="avatar-stack"> -->
+                            <img src="assets/img/hallo-avatar-stack.png" alt="">
+                            <!-- </div> -->
+                        </div>
+                        <div class="stat-label" style="margin-top: 15px;">Peoples<br>Tired Today</div>
+                    </div>
+                </div>
+
+                <!-- Badge -->
+
+            </div>
+
+            <button class="details">MORE DETAILS</button>
+        </div>
+
+
+        <!-- Right image blob -->
+        <div class="" style="z-index: 10;">
+            <img style="width: 25rem;" src="assets/img/hallo-about-img2.png" class="">
+            <!-- <div class="play-btn">▶</div> -->
+        </div>
+
+        <!-- Right decoration -->
+        <img src="assets/img/hallo-flower-gold.jpg" class="leaves">
+
+    </section>
+
+
+    <div class="gallery-strip">
+        <div class="gallery-strip-item">
+            <img src="assets/img/hallo-gallery1.png" alt="Gallery">
+        </div>
+        <div class="gallery-strip-item">
+            <img src="assets/img/hallo-gallery2.png" alt="Gallery">
+        </div>
+        <div class="gallery-strip-item">
+            <img src="assets/img/hallo-gallery3.png" alt="Gallery">
+        </div>
+        <div class="gallery-strip-item">
+            <img src="assets/img/hallo-gallery4.png" alt="Gallery">
+        </div>
+        <div class="gallery-strip-item">
+            <img src="assets/img/hallo-gallery5.png" alt="Gallery">
+        </div>
+        <!-- <div class="gallery-strip-item">
+            <img src="assets/img/home/blog/13.avif" alt="Gallery">
+        </div> -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <!-- Left Column - Follow Us -->
+            <div class="footer-left">
+                <h4 style="color: white;">Follow Us</h4>
+                <ul class="footer-contact-list">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+(1) 000 123 456 789</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>info@example.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>No: 58 A, East Madison Street,<br>Baltimore, MD, USA 4508</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Center Column - Logo -->
+            <div class="footer-center">
+                <img src="assets/img/home/whitelogo.png" alt="Hallo Point" class="footer-logo-img">
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Column - Newsletter -->
+            <div class="footer-right">
+                <h4 style="color: white;">Subscribe To Our Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="YOUR MAIL">
+                    <button type="submit"><i class="far fa-paper-plane"></i></button>
+                </form>
+                <p class="newsletter-note">We do not spam. We send offers instead.</p>
+                <div class="payment-methods">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="Skrill"
+                        style="background: #fff; padding: 6px 12px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa"
+                        style="background: #fff; padding: 6px 12px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard"
+                        style="background: #fff; padding: 6px 12px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" alt="Apple Pay"
+                        style="background: #fff; padding: 6px 12px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom" >
+            <p style="color: #B2A69B;">© 2023 <a href="#">Wedesigntech</a> | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!--==============================
+    About Area
+    ==============================-->
+     <!-- Scroll To Top -->
+    <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+
+    <!--********************************
+			Code End  Here 
+	******************************** -->
+
+    <!--==============================
+        All Js File
+    ============================== -->
+    <!-- Jquery -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- <script src="assets/js/app.min.js"></script> -->
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Parallax Scroll -->
+    <script src="assets/js/universal-parallax.min.js"></script>
+    <!-- Wow.js Animation -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- jQuery Datepicker -->
+    <script src="assets/js/jquery.datetimepicker.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Isotope Filter -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- Main Js File -->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

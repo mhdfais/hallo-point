@@ -1,0 +1,1131 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Hallo Point - Spa Beauty & Wellness Salon</title>
+    <meta name="author" content="Vecuro">
+    <meta name="description" content="Wellnez - Spa Beauty & Wellness Salon HTML5 Template">
+    <meta name="keywords"
+        content="beauty, beauty salon, beauty shop, beauty spa, cosmetics, hairdresser, health, lifestyle, massage, salon, spa, spa booking, wellness, wellness template, yoga">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Marcellus&display=swap"
+        rel="stylesheet">
+
+
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/app.min.css"> -->
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Layerslider -->
+    <link rel="stylesheet" href="assets/css/layerslider.min.css">
+    <!-- jQuery DatePicker -->
+    <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+    <style>
+        :root {
+            --heading-font: 'Marcellus', serif;
+            --body-font: 'Lato', sans-serif;
+        }
+
+        .main-header {
+            background: transparent;
+            padding: 20px 60px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            height: 40px !important;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-family: var(--heading-font);
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--dark-brown);
+            letter-spacing: 2px;
+        }
+
+        .logo-text span {
+            display: block;
+            font-size: 12px;
+            letter-spacing: 4px;
+            color: var(--primary-gold);
+        }
+
+        /* Navigation */
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-nav ul li a {
+            font-family: var(--body-font);
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--text-dark);
+            text-decoration: none;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .main-nav ul li a:hover,
+        .main-nav ul li a.active {
+            color: #B2A69B;
+        }
+
+        /* Header Icons */
+        .header-icons {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .header-icons button,
+        .header-icons a {
+            background: none;
+            border: none;
+            font-size: 20px;
+            color: var(--text-dark);
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .header-icons button:hover,
+        .header-icons a:hover {
+            color: var(--primary-gold);
+        }
+
+        .grid-menu {
+            display: flex;
+            flex-wrap: wrap;
+            width: 20px;
+            gap: 3px;
+        }
+
+        .grid-menu span {
+            width: 5px;
+            height: 5px;
+            background: var(--text-dark);
+            border-radius: 50%;
+        }
+
+        @media (max-width: 992px) {
+            .main-header {
+                padding: 15px 30px;
+            }
+
+            .main-nav {
+                display: none;
+            }
+        }
+
+
+
+        .gallery-strip {
+            display: flex;
+            flex-wrap: nowrap;
+            background: #1a1a1a;
+        }
+
+        .gallery-strip-item {
+            position: relative;
+            overflow: hidden;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .gallery-strip-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            /* object-position: center; */
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-strip-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-strip-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0);
+            transition: background 0.3s;
+            z-index: 1;
+        }
+
+        .gallery-strip-item:hover::before {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        /* ====== Footer ====== */
+        .footer {
+            background: #996B1E;
+            padding: 80px 60px 0;
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 60px;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-bottom: 60px;
+        }
+
+        /* Left Column - Follow Us */
+        .footer-left {
+            text-align: left;
+        }
+
+        .footer-left h4 {
+            /* font-family: ; */
+            font-size: 24px;
+            font-style: italic;
+            color: var(--white);
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        .footer-contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-contact-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 15px;
+            color: #B2A69B;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-contact-list li i {
+            color: #B2A69B;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        /* Center Column - Logo */
+        .footer-center {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-logo-img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .footer-social a {
+            width: 45px;
+            height: 45px;
+            background: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #996B1E;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .footer-social a:hover {
+            background: var(--dark-brown);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        /* Right Column - Newsletter */
+        .footer-right {
+            text-align: right;
+        }
+
+        .footer-right h4 {
+            font-family: var(--heading-font);
+            font-size: 24px;
+            font-style: italic;
+            color: var(--white);
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        .newsletter-form {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .newsletter-form input {
+            width: 100%;
+            padding: 15px 50px 15px 0;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+            background: transparent;
+            color: var(--white);
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .newsletter-form input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 2px;
+        }
+
+        .newsletter-form input:focus {
+            outline: none;
+            border-bottom-color: var(--white);
+        }
+
+        .newsletter-form button {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 18px;
+            cursor: pointer;
+            padding: 10px;
+            transition: transform 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            transform: translateY(-50%) translateX(5px);
+        }
+
+        .newsletter-note {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 25px;
+        }
+
+        .payment-methods {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+
+        .payment-methods img {
+            height: 28px;
+            background: var(--white);
+            border-radius: 4px;
+            padding: 4px 10px;
+        }
+
+        /* Footer Bottom */
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 25px 0;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 13px;
+        }
+
+        .footer-bottom a {
+            color: #B2A69B;
+            text-decoration: none;
+        }
+
+        /* .footer-bottom a:hover {
+            color: var(--white);
+        } */
+
+
+
+        @media (max-width: 992px) {
+            .gallery-strip {
+                flex-wrap: wrap;
+            }
+
+            .gallery-strip-item {
+                flex: 0 0 33.333%;
+            }
+
+            .footer-main {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .footer-left,
+            .footer-right {
+                text-align: center;
+            }
+
+            .footer-contact-list li {
+                justify-content: center;
+            }
+
+            .payment-methods {
+                justify-content: center;
+            }
+        }
+
+
+
+        @media (max-width: 576px) {
+            .gallery-strip-item {
+                flex: 0 0 50%;
+            }
+
+            .gallery-strip-item img {
+                height: 150px;
+            }
+
+            .footer {
+                padding: 40px 20px 0;
+            }
+
+            .footer-left h4,
+            .footer-right h4 {
+                font-size: 18px;
+            }
+
+            .payment-methods {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+
+        .contact-section {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 60px;
+            padding: 80px 80px;
+            position: relative;
+        }
+
+        /* LEFT DECOR IMAGE */
+        .decor-left {
+            position: absolute;
+            bottom: -97px;
+            left: 0%;
+            width: 14rem;
+            opacity: 0.7;
+        }
+
+        /* RIGHT DECOR IMAGE */
+        .decor-right {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 220px;
+            opacity: 0.7;
+        }
+
+        /* LEFT CONTENT */
+        .left-content h2 {
+            /* font-family: "Cormorant Garamond", serif; */
+            font-size: 42px;
+            color: #3f342c;
+            margin-bottom: 20px;
+        }
+
+        .left-content .desc {
+            color: #6a645e;
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            width: 90%;
+        }
+
+        .info {
+            margin-bottom: 12px;
+            color: #4d453e;
+            font-size: 15px;
+        }
+
+        .social-wrapper {
+            margin-top: 30px;
+        }
+
+        .social-wrapper p {
+            margin-bottom: 10px;
+            color: #4d453e;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .icon {
+            width: 35px;
+            height: 35px;
+            border: 1px solid #b48b56;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #b48b56;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        /* RIGHT FORM */
+        .right-form {
+            padding-right: 40px;
+        }
+
+        /* .right-form label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #a69d92;
+    display: block;
+    margin-bottom: 5px;
+} */
+
+        .right-form input[type="text"],
+        .right-form input[type="email"] {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #d8cfc5;
+            padding: 10px 0;
+            margin-bottom: 30px;
+            background: transparent;
+            outline: none;
+            color: #3f3b37;
+        }
+
+        /* CHECKBOX ROW */
+        .checkbox-row {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            gap: 10px;
+        }
+
+        input::placeholder {
+            font-size: 0.8rem;
+        }
+
+        .checkbox-row label {
+            font-size: 14px;
+            color: #6a645e;
+        }
+
+        /* BUTTON */
+        .btn-contact {
+            background: #996B1E;
+            border: none;
+            padding: 0.5rem 2rem;
+            color: white;
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+            /* border-radius: 4px; */
+        }
+
+        .btn:hover {
+            color: white;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .contact-section {
+                grid-template-columns: 1fr;
+            }
+
+            .decor-left,
+            .decor-right {
+                display: none;
+            }
+
+            .right-form {
+                padding-right: 0;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="preloader  ">
+        <button class="vs-btn preloaderCls">Cancel Preloader </button>
+        <div class="preloader-inner">
+            <div class="loader"></div>
+        </div>
+    </div><svg viewBox="0 0 150 150" class="svg-hidden">
+        <path id="textPath" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
+    </svg><!--==============================
+    Mobile Menu
+  ============================== -->
+    <div class="vs-menu-wrapper">
+        <div class="vs-menu-area text-center">
+            <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><img src="assets/img/logo.svg" alt="Wellnez"></a>
+            </div>
+            <div class="vs-mobile-menu">
+                <ul>
+                    <li class="menu-item-has-children">
+                        <a href="index.html">Demos</a>
+                        <ul class="sub-menu">
+                            <li><a href="index.html">Demo Style 1</a></li>
+                            <li><a href="index-2.html">Demo Style 2</a></li>
+                            <li><a href="index-3.html">Demo Style 3</a></li>
+                            <li><a href="index-4.html">Demo Style 4</a></li>
+                            <li><a href="index-5.html">Demo Style 5</a></li>
+                            <li><a href="index-6.html">Demo Style 6</a></li>
+                            <li><a href="index-7.html">Demo Style 7<span class="new-label">New</span></a></li>
+                            <li><a href="index-8.html">Demo Style 8<span class="new-label">New</span></a></li>
+                            <li><a href="index-9.html">Demo Style 9<span class="new-label">New</span></a></li>
+                            <li><a href="index-10.html">Demo Style 10<span class="new-label">New</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="match.html">Service</a>
+                        <ul class="sub-menu">
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="service-details.html">Service Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="blog.html">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="blog.html">Blog One</a></li>
+                            <li><a href="blog-2.html">Blog Two</a></li>
+                            <li><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="shop-details.html">Shop Details</a></li>
+                            <li><a href="gallery.html">Portfolio</a></li>
+                            <li><a href="gallery-details.html">Portfolio Details</a></li>
+                            <li><a href="appointment.html">Appointment</a></li>
+                            <li><a href="price-plan.html">Price Plan</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="error.html">Error Page</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    Sidemenu
+============================== -->
+    <div class="sidemenu-wrapper d-none d-lg-block  ">
+        <div class="sidemenu-content">
+            <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
+            <div class="widget  ">
+                <div class="footer-logo">
+                    <img src="assets/img/logo.svg" alt="logo">
+                </div>
+                <div class="info-media1">
+                    <div class="media-icon"><i class="fal fa-map-marker-alt"></i></div>
+                    <span class="media-label">Centerl Park West La, New York</span>
+                </div>
+                <div class="info-media1">
+                    <div class="media-icon"><i class="far fa-phone-alt "></i></div>
+                    <span class="media-label"><a href="tel:+01234567890" class="text-inherit">+0 123 456 7890</a></span>
+                </div>
+                <div class="info-media1">
+                    <div class="media-icon"><i class="fal fa-envelope"></i></div>
+                    <span class="media-label"><a class="text-inherit"
+                            href="mailto:info@example.com">info@example.com</a></span>
+                </div>
+            </div>
+            <div class="widget  ">
+                <h3 class="widget_title">Latest post</h3>
+                <div class="recent-post-wrap">
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-details.html"><img src="assets/img/widget/recent-post-1-1.jpg"
+                                    alt="Blog Image"></a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Skinscent Experience
+                                    Oskarsson</a></h4>
+                            <div class="recent-post-meta">
+                                <a href="blog.html"><i class="fas fa-calendar-alt"></i>march 10, 2023</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-details.html"><img src="assets/img/widget/recent-post-1-2.jpg"
+                                    alt="Blog Image"></a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Lorem ipsum is
+                                    placeholder recent popular</a></h4>
+                            <div class="recent-post-meta">
+                                <a href="blog.html"><i class="fas fa-calendar-alt"></i>Augest 10, 2023</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-details.html"><img src="assets/img/widget/recent-post-1-3.jpg"
+                                    alt="Blog Image"></a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">From its medieval
+                                    origins health custom</a></h4>
+                            <div class="recent-post-meta">
+                                <a href="blog.html"><i class="fas fa-calendar-alt"></i>July 11, 2023</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-details.html"><img src="assets/img/widget/recent-post-1-4.jpg"
+                                    alt="Blog Image"></a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Letraset's
+                                    dry-transfer sheets later</a></h4>
+                            <div class="recent-post-meta">
+                                <a href="blog.html"><i class="fas fa-calendar-alt"></i>March 05, 2023</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--==============================
+    Popup Search Box
+    ============================== -->
+    <div class="popup-search-box d-none d-lg-block  ">
+        <button class="searchClose"><i class="fal fa-times"></i></button>
+        <form action="#">
+            <input type="text" class="border-theme" placeholder="What are you looking for">
+            <button type="submit"><i class="fal fa-search"></i></button>
+        </form>
+    </div>
+    <!--==============================
+    Header Area
+    ==============================-->
+    <header class="main-header">
+        <div class="header-inner">
+            <div style="display: flex; gap: 3rem; align-items: center;"> <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="assets/img/home/goldlogo.png" alt="Logo" class="logo-img">
+                </a>
+
+                <!-- Navigation -->
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html" class="active">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <!-- Header Icons -->
+            <div class="header-icons">
+                <button type="button" aria-label="Search">
+                    <i class="far fa-search"></i>
+                </button>
+                <a href="shop.html" aria-label="Cart">
+                    <i class="far fa-shopping-bag"></i>
+                </a>
+                <button type="button" class="grid-menu" aria-label="Menu">
+                    <span></span><span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcumb-wrapper " style="background: #FDF9F580;">
+        <div class="container z-index-common">
+            <div class="breadcumb-content">
+                <h1 class="breadcumb-title">Contact Us</h1>
+                <div class="breadcumb-menu-wrap">
+                    <ul class="breadcumb-menu">
+                        <li><a style="font-size: 0.6rem;" href="index.html">Home</a></li>
+                        <li style="font-size: 0.6rem;">Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section class="contact-section">
+
+        <!-- LEFT botanical decoration -->
+        <img style="position: absolute;
+    left: -9%;
+    width: 15rem;
+    top: 22%;" src="assets/img/home/Section.png" alt="">
+        <img src="assets/img/hallo-flower.png" class="decor-left">
+        <img style="position: absolute;
+    transform: scaleX(-1);
+    right: -7%;
+    width: 15rem;
+    top: 63%;
+" src="assets/img/home/Section.png" alt="">
+        <div class="left-content">
+            <div style="position: relative;">
+                <div style=" position: absolute;
+                         left: 20%;
+                          top: 50%;
+                         transform: translate(-50%, -50%) rotate(90deg);
+                           z-index: 0;">
+                    <img class="overlay-1" src="assets/img/home/Section.png" alt=""
+                        style="height: auto; width: 8rem; opacity: 0.4;">
+                </div>
+                <h1 style="font-size: 2.5rem; color: #4B4036;">Contact Us</h1>
+                <!-- <p class="subtitle">
+                    Vitae sapien pellentesque habitant morbi tristique
+                </p> -->
+            </div>
+
+            <p class="desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500. Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500
+            </p>
+
+            <p class="info">
+                <strong>Address:</strong> 58 A, East Madison Street, Baltimore, MD, USA 4508
+            </p>
+
+            <p class="info">
+                <strong>Mail:</strong> info@creamz.com &nbsp;&nbsp;&nbsp;
+                <strong>Phone:</strong> 0000 - 123 - 456789
+            </p>
+
+            <div class="social-wrapper">
+                <p>Social Media :</p>
+                <div class="social-icons">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="28" height="28" rx="14" fill="#996B1E" />
+                        <path d="M9.71247 11.3921H6.48047V21.8401H9.71247V11.3921Z" fill="white" />
+                        <path
+                            d="M8.08016 10.016C9.15216 10.032 10.0162 9.16801 10.0322 8.11201C10.0322 7.04001 9.18416 6.17601 8.11216 6.16001C7.04016 6.14401 6.17616 7.00801 6.16016 8.06401V8.08001C6.16016 9.15201 7.00816 10.016 8.08016 10.016Z"
+                            fill="white" />
+                        <path
+                            d="M14.8813 16.3519C14.8813 14.8799 15.5533 14 16.8493 14C18.0333 14 18.6093 14.8479 18.6093 16.3519V21.8399H21.8413V15.216C21.8413 12.4159 20.2573 11.056 18.0333 11.056C16.7533 11.04 15.5533 11.696 14.8813 12.784V11.3759H11.7773V21.8399H14.8813V16.3519Z"
+                            fill="white" />
+                    </svg>
+
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="28" height="28" rx="14" fill="#996B1E" />
+                        <path
+                            d="M12.0308 21.8402H15.1828V13.9362H17.3908L17.6148 11.2802H15.1828V9.77616C15.1828 9.15216 15.3108 8.91216 15.9028 8.91216H17.6148V6.16016H15.4388C13.0868 6.16016 12.0308 7.20016 12.0308 9.16816V11.2802H10.3828V13.9682H12.0308V21.8402Z"
+                            fill="white" />
+                    </svg>
+
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="28" height="28" rx="14" fill="#996B1E" />
+                        <path
+                            d="M14.0002 7.56797C16.0962 7.56797 16.3362 7.56797 17.1682 7.61597C17.6642 7.61597 18.1602 7.71197 18.6242 7.88797C19.3122 8.14397 19.8402 8.68797 20.1122 9.37597C20.2882 9.83997 20.3682 10.336 20.3842 10.832C20.4162 11.664 20.4322 11.904 20.4322 14C20.4322 16.096 20.4162 16.336 20.3842 17.168C20.3842 17.664 20.2882 18.16 20.1122 18.624C19.8402 19.312 19.3122 19.84 18.6242 20.112C18.1602 20.288 17.6642 20.384 17.1682 20.384C16.3362 20.416 16.0962 20.432 14.0002 20.432C11.9042 20.432 11.6642 20.416 10.8322 20.384C10.3362 20.384 9.84016 20.288 9.37616 20.112C9.04016 19.984 8.72016 19.792 8.48016 19.52C8.22416 19.264 8.01616 18.96 7.88816 18.624C7.71216 18.16 7.63216 17.664 7.61616 17.168C7.58416 16.336 7.56816 16.08 7.56816 14C7.56816 11.92 7.56816 11.664 7.61616 10.832C7.61616 10.336 7.71216 9.83997 7.88816 9.37597C8.14416 8.68797 8.68816 8.14397 9.37616 7.88797C9.84016 7.71197 10.3362 7.63197 10.8322 7.61597C11.6642 7.58397 11.9042 7.56797 14.0002 7.56797ZM14.0002 6.15997C11.8722 6.15997 11.6002 6.17597 10.7682 6.20797C10.1122 6.22397 9.47216 6.35197 8.86416 6.57597C7.80816 6.97597 6.97616 7.80797 6.57616 8.86397C6.35216 9.47197 6.22416 10.112 6.20816 10.768C6.17616 11.6 6.16016 11.872 6.16016 14C6.16016 16.128 6.17616 16.4 6.20816 17.232C6.22416 17.888 6.35216 18.528 6.57616 19.136C6.97616 20.192 7.80816 21.024 8.86416 21.424C9.47216 21.648 10.1122 21.776 10.7682 21.792C11.6002 21.824 11.8722 21.84 14.0002 21.84C16.1282 21.84 16.4002 21.824 17.2322 21.792C17.8882 21.776 18.5282 21.648 19.1362 21.424C20.1922 21.024 21.0242 20.192 21.4242 19.136C21.6482 18.528 21.7762 17.888 21.7922 17.232C21.8242 16.4 21.8402 16.128 21.8402 14C21.8402 11.872 21.8242 11.6 21.7922 10.768C21.7762 10.112 21.6482 9.47197 21.4242 8.86397C21.0242 7.80797 20.1922 6.97597 19.1362 6.57597C18.5282 6.35197 17.8882 6.22397 17.2322 6.20797C16.4002 6.17597 16.1282 6.15997 14.0002 6.15997Z"
+                            fill="white" />
+                        <path
+                            d="M14.0008 9.96777C11.7768 9.96777 9.96875 11.7758 9.96875 13.9998C9.96875 16.2238 11.7768 18.0318 14.0008 18.0318C16.2248 18.0318 18.0167 16.2238 18.0327 14.0158C18.0327 11.7758 16.2248 9.96777 14.0008 9.96777ZM14.0008 16.6078C12.5608 16.6078 11.3928 15.4398 11.3928 13.9998C11.3928 12.5598 12.5608 11.3918 14.0008 11.3918C15.4408 11.3918 16.6088 12.5598 16.6088 13.9998C16.6088 15.4398 15.4408 16.6078 14.0008 16.6078Z"
+                            fill="white" />
+                        <path
+                            d="M19.1185 9.80777C19.1185 10.3198 18.7025 10.7518 18.1745 10.7518C17.6625 10.7518 17.2305 10.3358 17.2305 9.80777C17.2305 9.29577 17.6465 8.86377 18.1745 8.86377C18.7025 8.87977 19.1185 9.29577 19.1185 9.80777Z"
+                            fill="white" />
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT botanical decoration -->
+        <!-- <img src="assets/img/flowers-right.png" class="decor-right"> -->
+
+        <!-- RIGHT FORM -->
+        <div class="right-form">
+
+            <!-- <label>YOUR NAME</label> -->
+            <input type="text" placeholder="YOUR NAME">
+
+            <!-- <label>YOUR EMAIL</label> -->
+            <input type="email" placeholder="YOUR EMAIL">
+
+            <!-- <label>CONTACT NUMBER</label> -->
+            <input type="text" placeholder="CONTACT NUMBER">
+
+            <!-- <label>COMMENTS</label> -->
+            <input type="text" placeholder="COMMENTS">
+
+            <div class="checkbox-row">
+                <input type="checkbox" id="copy">
+                <label for="copy">Send copy of this message to my e-mail address</label>
+            </div>
+
+            <button class="btn-contact">SEND MESSAGE</button>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section style="position: relative; padding-bottom: 3rem;">
+        <svg style="position: absolute; right: 2%; bottom: 15%;" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_24_1887)">
+                <rect x="3" y="2" width="40" height="40" rx="20" fill="white" />
+                <g clip-path="url(#clip0_24_1887)">
+                    <g clip-path="url(#clip1_24_1887)">
+                        <path
+                            d="M22.9987 30.371L25.4779 27.8918L27.1404 29.5252L22.9987 33.6668L18.857 29.5252L20.5195 27.8918L22.9987 30.371ZM14.6279 22.0002L17.107 24.4793L15.4737 26.1418L11.332 22.0002L15.4737 17.8585L17.107 19.521L14.6279 22.0002ZM31.3695 22.0002L28.8904 19.521L30.5237 17.8585L34.6654 22.0002L30.5237 26.1418L28.8904 24.4793L31.3695 22.0002ZM22.9987 13.6293L20.5195 16.1085L18.857 14.4752L22.9987 10.3335L27.1404 14.4752L25.4779 16.1085L22.9987 13.6293Z"
+                            fill="#666666" />
+                    </g>
+                </g>
+            </g>
+            <defs>
+                <filter id="filter0_d_24_1887" x="0" y="0" width="46" height="46" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha" />
+                    <feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect1_dropShadow_24_1887" />
+                    <feOffset dy="1" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_1887" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_1887" result="shape" />
+                </filter>
+                <clipPath id="clip0_24_1887">
+                    <rect width="28" height="28" fill="white" transform="translate(9 8)" />
+                </clipPath>
+                <clipPath id="clip1_24_1887">
+                    <rect width="28" height="28" fill="white" transform="translate(9 8)" />
+                </clipPath>
+            </defs>
+        </svg>
+
+        <div style="display: flex;">
+            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img1.png" alt="">
+            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img2.png" alt="">
+            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img3.png" alt="">
+            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img4.png" alt="">
+            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img5.png" alt="">
+            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img6.png" alt="">
+            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img7.png" alt="">
+        </div>
+        <div style="display: flex;">
+            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img8.png" alt="">
+            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img9.png" alt="">
+            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img10.png" alt="">
+            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img11.png" alt="">
+            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img12.png" alt="">
+            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img13.png" alt="">
+            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img14.png" alt="">
+        </div>
+    </section>
+
+
+
+
+
+
+    <div class="gallery-strip">
+        <div class="gallery-strip-item">
+            <img src="assets/img/hallo-gallery1.png" alt="Gallery">
+        </div>
+        <div class="gallery-strip-item">
+            <img src="assets/img/hallo-gallery2.png" alt="Gallery">
+        </div>
+        <div class="gallery-strip-item">
+            <img src="assets/img/hallo-gallery3.png" alt="Gallery">
+        </div>
+        <div class="gallery-strip-item">
+            <img src="assets/img/hallo-gallery4.png" alt="Gallery">
+        </div>
+        <div class="gallery-strip-item">
+            <img src="assets/img/hallo-gallery5.png" alt="Gallery">
+        </div>
+        <!-- <div class="gallery-strip-item">
+            <img src="assets/img/home/blog/13.avif" alt="Gallery">
+        </div> -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <!-- Left Column - Follow Us -->
+            <div class="footer-left">
+                <h4 style="color: white;">Follow Us</h4>
+                <ul class="footer-contact-list">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+(1) 000 123 456 789</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>info@example.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>No: 58 A, East Madison Street,<br>Baltimore, MD, USA 4508</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Center Column - Logo -->
+            <div class="footer-center">
+                <img src="assets/img/home/whitelogo.png" alt="Hallo Point" class="footer-logo-img">
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Column - Newsletter -->
+            <div class="footer-right">
+                <h4 style="color: white;">Subscribe To Our Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="YOUR MAIL">
+                    <button type="submit"><i class="far fa-paper-plane"></i></button>
+                </form>
+                <p class="newsletter-note">We do not spam. We send offers instead.</p>
+                <div class="payment-methods">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="Skrill"
+                        style="background: #fff; padding: 6px 12px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa"
+                        style="background: #fff; padding: 6px 12px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard"
+                        style="background: #fff; padding: 6px 12px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" alt="Apple Pay"
+                        style="background: #fff; padding: 6px 12px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p style="color: #B2A69B;">© 2023 <a href="#">Wedesigntech</a> | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!--==============================
+    About Area
+    ==============================-->
+    <!-- Scroll To Top -->
+    <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+
+    <!--********************************
+			Code End  Here 
+	******************************** -->
+
+    <!--==============================
+        All Js File
+    ============================== -->
+    <!-- Jquery -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- <script src="assets/js/app.min.js"></script> -->
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Parallax Scroll -->
+    <script src="assets/js/universal-parallax.min.js"></script>
+    <!-- Wow.js Animation -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- jQuery Datepicker -->
+    <script src="assets/js/jquery.datetimepicker.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Isotope Filter -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- Main Js File -->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1548 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Wellnez - Spa Beauty & Wellness Salon HTML5 Template - About Us</title>
+    <meta name="author" content="Vecuro">
+    <meta name="description" content="Wellnez - Spa Beauty & Wellness Salon HTML5 Template">
+    <meta name="keywords"
+        content="beauty, beauty salon, beauty shop, beauty spa, cosmetics, hairdresser, health, lifestyle, massage, salon, spa, spa booking, wellness, wellness template, yoga">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Marcellus&display=swap"
+        rel="stylesheet">
+
+
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/app.min.css"> -->
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Layerslider -->
+    <link rel="stylesheet" href="assets/css/layerslider.min.css">
+    <!-- jQuery DatePicker -->
+    <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+    <style>
+        :root {
+            --heading-font: 'Marcellus', serif;
+            --body-font: 'Lato', sans-serif;
+        }
+
+        .main-header {
+            background: transparent;
+            padding: 20px 60px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            height: 40px !important;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-family: var(--heading-font);
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--dark-brown);
+            letter-spacing: 2px;
+        }
+
+        .logo-text span {
+            display: block;
+            font-size: 12px;
+            letter-spacing: 4px;
+            color: var(--primary-gold);
+        }
+
+        /* Navigation */
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-nav ul li a {
+            font-family: var(--body-font);
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--text-dark);
+            text-decoration: none;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .main-nav ul li a:hover,
+        .main-nav ul li a.active {
+            color: #B2A69B;
+        }
+
+        /* Header Icons */
+        .header-icons {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .header-icons button,
+        .header-icons a {
+            background: none;
+            border: none;
+            font-size: 20px;
+            color: var(--text-dark);
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .header-icons button:hover,
+        .header-icons a:hover {
+            color: var(--primary-gold);
+        }
+
+        .grid-menu {
+            display: flex;
+            flex-wrap: wrap;
+            width: 20px;
+            gap: 3px;
+        }
+
+        .grid-menu span {
+            width: 5px;
+            height: 5px;
+            background: var(--text-dark);
+            border-radius: 50%;
+        }
+
+        @media (max-width: 992px) {
+            .main-header {
+                padding: 15px 30px;
+            }
+
+            .main-nav {
+                display: none;
+            }
+        }
+
+
+
+        .gallery-strip {
+            display: flex;
+            flex-wrap: nowrap;
+            background: #1a1a1a;
+        }
+
+        .gallery-strip-item {
+            position: relative;
+            overflow: hidden;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .gallery-strip-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            /* object-position: center; */
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-strip-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-strip-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0);
+            transition: background 0.3s;
+            z-index: 1;
+        }
+
+        .gallery-strip-item:hover::before {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        /* ====== Footer ====== */
+        .footer {
+            background: #996B1E;
+            padding: 80px 60px 0;
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 60px;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-bottom: 60px;
+        }
+
+        /* Left Column - Follow Us */
+        .footer-left {
+            text-align: left;
+        }
+
+        .footer-left h4 {
+            /* font-family: ; */
+            font-size: 24px;
+            font-style: italic;
+            color: var(--white);
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        .footer-contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-contact-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 15px;
+            color: #B2A69B;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-contact-list li i {
+            color: #B2A69B;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        /* Center Column - Logo */
+        .footer-center {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-logo-img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .footer-social a {
+            width: 45px;
+            height: 45px;
+            background: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #996B1E;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .footer-social a:hover {
+            background: var(--dark-brown);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        /* Right Column - Newsletter */
+        .footer-right {
+            text-align: right;
+        }
+
+        .footer-right h4 {
+            font-family: var(--heading-font);
+            font-size: 24px;
+            font-style: italic;
+            color: var(--white);
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        .newsletter-form {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .newsletter-form input {
+            width: 100%;
+            padding: 15px 50px 15px 0;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+            background: transparent;
+            color: var(--white);
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .newsletter-form input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 2px;
+        }
+
+        .newsletter-form input:focus {
+            outline: none;
+            border-bottom-color: var(--white);
+        }
+
+        .newsletter-form button {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 18px;
+            cursor: pointer;
+            padding: 10px;
+            transition: transform 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            transform: translateY(-50%) translateX(5px);
+        }
+
+        .newsletter-note {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 25px;
+        }
+
+        .payment-methods {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+
+        .payment-methods img {
+            height: 28px;
+            background: var(--white);
+            border-radius: 4px;
+            padding: 4px 10px;
+        }
+
+        /* Footer Bottom */
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 25px 0;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 13px;
+        }
+
+        .footer-bottom a {
+            color: #B2A69B;
+            text-decoration: none;
+        }
+
+        /* .footer-bottom a:hover {
+            color: var(--white);
+        } */
+
+
+
+        @media (max-width: 992px) {
+            .gallery-strip {
+                flex-wrap: wrap;
+            }
+
+            .gallery-strip-item {
+                flex: 0 0 33.333%;
+            }
+
+            .footer-main {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .footer-left,
+            .footer-right {
+                text-align: center;
+            }
+
+            .footer-contact-list li {
+                justify-content: center;
+            }
+
+            .payment-methods {
+                justify-content: center;
+            }
+        }
+
+
+
+        @media (max-width: 576px) {
+            .gallery-strip-item {
+                flex: 0 0 50%;
+            }
+
+            .gallery-strip-item img {
+                height: 150px;
+            }
+
+            .footer {
+                padding: 40px 20px 0;
+            }
+
+            .footer-left h4,
+            .footer-right h4 {
+                font-size: 18px;
+            }
+
+            .payment-methods {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        .nourish-section {
+            display: flex;
+            align-items: center;
+            padding: 80px 60px;
+            position: relative;
+            gap: 70px;
+            padding-bottom: 0;
+        }
+
+        /* LEFT AREA */
+        .left-area {
+            width: 50%;
+            position: relative;
+        }
+
+        /* Beige curved background */
+        .bg-shape {
+            width: 420px;
+            height: 520px;
+            background: #f2e8dc;
+            border-radius: 300px 300px 0 0;
+            position: absolute;
+            left: 0;
+            top: 75px;
+            z-index: 0;
+        }
+
+        /* Main Model Image */
+        .model {
+            width: 420px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Flower overlay */
+        .flowers {
+            position: absolute;
+            left: 7%;
+            bottom: 60px;
+            width: 232px;
+            z-index: 2;
+            transform: rotate(-40deg);
+            top: 51%;
+        }
+
+
+        /* RIGHT AREA */
+        .right-area {
+            width: 50%;
+        }
+
+        .right-area h2 {
+            /* font-family: "Cormorant Garamond", serif; */
+            font-size: 48px;
+            color: #4b4136;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .desc {
+            width: 90%;
+            font-size: 15px;
+            color: #6c655d;
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+
+        /* IMAGE CARDS ROW */
+        .icon-row {
+            display: flex;
+            gap: 3rem;
+            margin-bottom: 40px;
+        }
+
+        .icon-card {
+            width: 10rem;
+            height: 60px;
+            /* border-radius: 50px; */
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            overflow: hidden;
+            background: #eee;
+        }
+
+        .icon-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .icon-card.yellow {
+            background: #f2d7a2;
+        }
+
+        /* BUTTON */
+        .btn-nourish {
+            background: #A37528;
+            color: #fff;
+            padding: 6px 45px;
+            border: none;
+            font-size: 0.8rem;
+            /* border-radius: 4px; */
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+
+        .btn-nourish:hover {
+            color: white;
+        }
+
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .nourish-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 60px 20px;
+            }
+
+            .left-area,
+            .right-area {
+                width: 100%;
+            }
+
+            .bg-shape {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .model {
+                margin: 0 auto;
+            }
+
+            .flowers {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .desc {
+                width: 100%;
+            }
+
+            .icon-row {
+                justify-content: center;
+            }
+        }
+
+        .services-section {
+            position: relative;
+            /* background: #F3F3F3; */
+            padding: 70px 40px;
+            overflow: hidden;
+        }
+
+        .services-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 15%;
+            background-image: url('assets/img/hallo-service-starbg.png');
+            background-repeat: repeat;
+            background-size: 100rem;
+            opacity: 1;
+            /* Adjust if needed */
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .services-section>* {
+            position: relative;
+            z-index: 2;
+        }
+
+        .title {
+            /* font-family: "Cormorant Garamond", serif; */
+            font-size: 42px;
+            margin-bottom: 60px;
+        }
+
+        /* MAIN FLEX CONTAINER */
+        .services-container {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            gap: 60px;
+            margin-top: 5rem;
+        }
+
+        /* SERVICE LISTS */
+        .service-list {
+            width: 280px;
+            text-align: left;
+        }
+
+        .service-list h4 {
+            /* font-family: "Cormorant Garamond"; */
+            font-size: 1.3rem;
+            color: #4B4036;
+            margin-bottom: 4px;
+        }
+
+        .service-list p {
+            font-size: 0.9rem;
+            color: #B2A69B;
+            margin-bottom: 3rem;
+            line-height: 1.5;
+        }
+
+        /* CENTER IMAGES */
+        .center-images {
+            text-align: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-box {
+            width: 20rem;
+            border-radius: 150px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            margin-top: -4rem;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        /* CURVED TEXT */
+        .curve-text {
+            /* font-family: "Cormorant Garamond"; */
+            font-size: 26px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .curve-text.top {
+            top: -60px;
+            transform: translateX(-50%) rotate(-10deg);
+        }
+
+        .curve-text.bottom {
+            bottom: -60px;
+            transform: translateX(-50%) rotate(10deg);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 1000px) {
+            .services-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+            }
+
+            .service-list {
+                width: 90%;
+                text-align: center;
+            }
+
+            .curve-text.top,
+            .curve-text.bottom {
+                position: static;
+                transform: none;
+                margin: 20px 0;
+            }
+        }
+
+        .testimonial-section {
+            display: flex;
+            align-items: center;
+            padding: 7rem 8rem;
+            gap: 60px;
+            background: #F3F3F3;
+            padding-bottom: 0;
+        }
+
+        /* LEFT IMAGE */
+        .left-img img {
+            height: 28rem;
+            object-fit: contain;
+        }
+
+        /* RIGHT SIDE CONTENT */
+        .right-content {
+            flex: 1;
+            position: relative;
+            padding-right: 80px;
+        }
+
+        .heading {
+            /* font-family: "Cormorant Garamond", serif; */
+            font-size: 46px;
+            margin-bottom: 25px;
+            color: #4b4136;
+        }
+
+        .text {
+            font-size: 15px;
+            color: #5b5349;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        /* STAR RATINGS */
+        .stars {
+            font-size: 20px;
+            color: #4B4036;
+            margin-bottom: 20px;
+        }
+
+        /* AUTHOR */
+        .author {
+            margin-bottom: 35px;
+            font-size: 15px;
+            color: #4c4438;
+        }
+
+        .author span {
+            color: #a5a1a0;
+            letter-spacing: 2px;
+        }
+
+        /* PAGINATION DOTS */
+        .dots {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .dots span {
+            width: 10px;
+            height: 10px;
+            border: 1px solid #8c8c8c;
+            border-radius: 50%;
+            display: block;
+        }
+
+        .dots span.active {
+            background: #4c4438;
+            border-color: #4c4438;
+        }
+
+        /* QUOTE ICONS */
+        .quotes {
+            position: absolute;
+            right: 0;
+            bottom: 20px;
+            display: flex;
+            gap: 18px;
+        }
+
+        .quotes img {
+            width: 48px;
+            opacity: 0.85;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .testimonial-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .right-content {
+                padding-right: 0;
+            }
+
+            .quotes {
+                position: relative;
+                justify-content: center;
+                bottom: 0;
+                margin-top: 30px;
+            }
+        }
+
+        .team-section {
+    padding: 100px 40px;
+    text-align: center;
+}
+
+/* Title Header */
+.team-header {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.team-header h2 {
+    /* font-family: "Cormorant Garamond", serif; */
+    font-size: 48px;
+    color: #3f362f;
+    margin-bottom: 10px;
+}
+
+.team-header p {
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: #a99f95;
+}
+
+/* Decorative Leaf Image */
+.team-header .decor {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 110px;
+    opacity: 0.4;
+    transform: translateX(-50%);
+}
+
+/* ======================================================
+   TEAM GRID
+====================================================== */
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.member {
+    text-align: center;
+}
+
+.member img {
+   width: 12rem;
+    height: 16rem;
+    object-fit: cover;
+    /* border-radius: 3px; */
+    background: #ddd;
+    margin-bottom: 20px;
+}
+
+.member h3 {
+    /* font-family: "Cormorant Garamond", serif; */
+    font-size: 22px;
+    color: #4B4036;
+    margin-bottom: 4px;
+}
+
+.member span {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: #B2A69B;
+}
+
+@media (max-width: 900px) {
+    .team-grid {
+        gap: 30px;
+    }
+
+    .member img {
+        width: 220px;
+        height: 270px;
+    }
+}
+
+@media (max-width: 600px) {
+    .team-header h2 {
+        font-size: 36px;
+    }
+
+    .decor {
+        width: 80px;
+    }
+}
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="preloader  ">
+        <button class="vs-btn preloaderCls">Cancel Preloader </button>
+        <div class="preloader-inner">
+            <div class="loader"></div>
+        </div>
+    </div><svg viewBox="0 0 150 150" class="svg-hidden">
+        <path id="textPath" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
+    </svg><!--==============================
+    Mobile Menu
+  ============================== -->
+    <div class="vs-menu-wrapper">
+        <div class="vs-menu-area text-center">
+            <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><img src="assets/img/logo.svg" alt="Wellnez"></a>
+            </div>
+            <div class="vs-mobile-menu">
+                <ul>
+                    <li class="menu-item-has-children">
+                        <a href="index.html">Demos</a>
+                        <ul class="sub-menu">
+                            <li><a href="index.html">Demo Style 1</a></li>
+                            <li><a href="index-2.html">Demo Style 2</a></li>
+                            <li><a href="index-3.html">Demo Style 3</a></li>
+                            <li><a href="index-4.html">Demo Style 4</a></li>
+                            <li><a href="index-5.html">Demo Style 5</a></li>
+                            <li><a href="index-6.html">Demo Style 6</a></li>
+                            <li><a href="index-7.html">Demo Style 7<span class="new-label">New</span></a></li>
+                            <li><a href="index-8.html">Demo Style 8<span class="new-label">New</span></a></li>
+                            <li><a href="index-9.html">Demo Style 9<span class="new-label">New</span></a></li>
+                            <li><a href="index-10.html">Demo Style 10<span class="new-label">New</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="match.html">Service</a>
+                        <ul class="sub-menu">
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="service-details.html">Service Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="blog.html">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="blog.html">Blog One</a></li>
+                            <li><a href="blog-2.html">Blog Two</a></li>
+                            <li><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="shop-details.html">Shop Details</a></li>
+                            <li><a href="gallery.html">Portfolio</a></li>
+                            <li><a href="gallery-details.html">Portfolio Details</a></li>
+                            <li><a href="appointment.html">Appointment</a></li>
+                            <li><a href="price-plan.html">Price Plan</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="error.html">Error Page</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    Sidemenu
+============================== -->
+    <div class="sidemenu-wrapper d-none d-lg-block  ">
+        <div class="sidemenu-content">
+            <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
+            <div class="widget  ">
+                <div class="footer-logo">
+                    <img src="assets/img/logo.svg" alt="logo">
+                </div>
+                <div class="info-media1">
+                    <div class="media-icon"><i class="fal fa-map-marker-alt"></i></div>
+                    <span class="media-label">Centerl Park West La, New York</span>
+                </div>
+                <div class="info-media1">
+                    <div class="media-icon"><i class="far fa-phone-alt "></i></div>
+                    <span class="media-label"><a href="tel:+01234567890" class="text-inherit">+0 123 456 7890</a></span>
+                </div>
+                <div class="info-media1">
+                    <div class="media-icon"><i class="fal fa-envelope"></i></div>
+                    <span class="media-label"><a class="text-inherit"
+                            href="mailto:info@example.com">info@example.com</a></span>
+                </div>
+            </div>
+            <div class="widget  ">
+                <h3 class="widget_title">Latest post</h3>
+                <div class="recent-post-wrap">
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-details.html"><img src="assets/img/widget/recent-post-1-1.jpg"
+                                    alt="Blog Image"></a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Skinscent Experience
+                                    Oskarsson</a></h4>
+                            <div class="recent-post-meta">
+                                <a href="blog.html"><i class="fas fa-calendar-alt"></i>march 10, 2023</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-details.html"><img src="assets/img/widget/recent-post-1-2.jpg"
+                                    alt="Blog Image"></a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Lorem ipsum is
+                                    placeholder recent popular</a></h4>
+                            <div class="recent-post-meta">
+                                <a href="blog.html"><i class="fas fa-calendar-alt"></i>Augest 10, 2023</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-details.html"><img src="assets/img/widget/recent-post-1-3.jpg"
+                                    alt="Blog Image"></a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">From its medieval
+                                    origins health custom</a></h4>
+                            <div class="recent-post-meta">
+                                <a href="blog.html"><i class="fas fa-calendar-alt"></i>July 11, 2023</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-details.html"><img src="assets/img/widget/recent-post-1-4.jpg"
+                                    alt="Blog Image"></a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Letraset's
+                                    dry-transfer sheets later</a></h4>
+                            <div class="recent-post-meta">
+                                <a href="blog.html"><i class="fas fa-calendar-alt"></i>March 05, 2023</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--==============================
+    Popup Search Box
+    ============================== -->
+    <div class="popup-search-box d-none d-lg-block  ">
+        <button class="searchClose"><i class="fal fa-times"></i></button>
+        <form action="#">
+            <input type="text" class="border-theme" placeholder="What are you looking for">
+            <button type="submit"><i class="fal fa-search"></i></button>
+        </form>
+    </div>
+    <!--==============================
+    Header Area
+    ==============================-->
+    <header class="main-header">
+        <div class="header-inner">
+            <div style="display: flex; gap: 3rem; align-items: center;"> <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="assets/img/home/goldlogo.png" alt="Logo" class="logo-img">
+                </a>
+
+                <!-- Navigation -->
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html" class="active">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <!-- Header Icons -->
+            <div class="header-icons">
+                <button type="button" aria-label="Search">
+                    <i class="far fa-search"></i>
+                </button>
+                <a href="shop.html" aria-label="Cart">
+                    <i class="far fa-shopping-bag"></i>
+                </a>
+                <button type="button" class="grid-menu" aria-label="Menu">
+                    <span></span><span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="nourish-section">
+
+        <!-- LEFT IMAGE AREA -->
+        <div class="left-area">
+
+            <div class="bg-shape"></div>
+
+            <img src="assets/img/hallo-service-hero-img1.png" class="model">
+
+            <img src="assets/img/hallo-flower.png" class="flowers">
+            <img src="assets/img/home/Section.png" style="position: absolute; left: -32%; top: 48%; z-index: 5;" alt="">
+
+        </div>
+
+        <!-- RIGHT TEXT AREA -->
+        <div class="right-area">
+
+            <h2>Nourish Your Face<br>And Body.</h2>
+
+            <p class="desc">
+                Blandit aliquam etiam erat velit scelerisque. Enim diam vulputate ut pharetra sit.
+                Auctor urna nunc id cursus metus aliquam. Ut enim ad minim veniam.
+            </p>
+
+            <!-- THREE IMAGE CARDS -->
+            <div class="icon-row">
+
+                <div class="icon-card">
+                    <img src="assets/img/hallo-service-hero-img2.png">
+                </div>
+
+                <div class="icon-card yellow">
+                    <img src="assets/img/hallo-service-hero-img3.png">
+                </div>
+
+                <div class="icon-card">
+                    <img src="assets/img/hallo-service-hero-img4.png">
+                </div>
+
+            </div>
+
+            <!-- BUTTON -->
+            <button class="btn-nourish">APPOINTMENT</button>
+
+        </div>
+
+    </section>
+
+
+    <section class="services-section">
+
+        <!-- Title -->
+
+        <div style="position: relative;">
+            <div style=" position: absolute;
+                         left: 50%;
+                          top: 50%;
+                         transform: translate(-50%, -50%) rotate(90deg);
+                           z-index: 0;">
+                <img class="overlay-1" src="assets/img/home/Section.png" alt=""
+                    style="height: auto; width: 10rem; opacity: 0.4;">
+            </div>
+            <h1 style="font-size: 2.5rem; color: #4B4036; text-align: center;">Our Services For You</h1>
+            <!-- <p class="subtitle">
+                Vitae sapien pellentesque habitant morbi tristique
+            </p> -->
+        </div>
+
+        <div class="services-container">
+
+            <!-- LEFT SERVICE LIST -->
+            <div class="service-list left">
+                <div class="item">
+                    <h4 style="color: #996B1E;">Threading / Eyebrows</h4>
+                    <p>Tempor commodo ullamcorper a lacus gravida fusce varius.</p>
+                </div>
+
+                <div class="item">
+                    <h4>Face Bleach / Nails / Manicure</h4>
+                    <p>Quam adipiscing vitae proin sagittis est venenatis aptent nulla fermentum.</p>
+                </div>
+
+                <div class="item">
+                    <h4>Acrylic / Nail Extension</h4>
+                    <p>Pellentesque eu tincidunt toraliq laboris nisi ut aliquip ex ea commodo.</p>
+                </div>
+
+                <div class="item">
+                    <h4>Haircut / Hair Color</h4>
+                    <p>Ipsum faucibus vitae aliquet nec deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="item">
+                    <h4>Hair Treatment / Keratin / Protein</h4>
+                    <p>Ipsum faucibus vitae aliquet nec deserunt mollit anim.</p>
+                </div>
+
+                <div class="item">
+                    <h4>Body Massage / Facial</h4>
+                    <p>Ipsum faucibus vitae aliquet nec deserunt mollit anim.</p>
+                </div>
+
+                <div class="item">
+                    <h4>Henna for Hands</h4>
+                    <p>Ipsum faucibus vitae aliquet nec deserunt mollit anim.</p>
+                </div>
+            </div>
+
+            <!-- CENTER IMAGE COLUMN -->
+            <div class="center-images">
+
+                <!-- Top curved text -->
+                <svg width="370" height="118" viewBox="0 0 370 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.9582 103.64C20.8796 104.393 21.6961 105.042 22.4077 105.587C23.1172 106.112 23.7346 106.562 24.2598 106.937C24.7939 107.301 25.2511 107.593 25.6315 107.813C26.0207 108.023 26.3557 108.188 26.6365 108.309L26.7015 108.362L23.5139 112.265L23.4488 112.211C23.2743 111.96 23.0411 111.671 22.7493 111.342C22.4664 111.002 22.0889 110.613 21.6167 110.173C21.1535 109.722 20.5892 109.207 19.924 108.628C19.2675 108.037 18.4732 107.361 17.5409 106.6L6.95479 97.9533C6.03332 97.2007 5.21782 96.5617 4.50828 96.0364C3.79676 95.4914 3.17395 95.0369 2.63985 94.6729C2.11461 94.2982 1.65739 94.006 1.2682 93.7966C0.877016 93.5675 0.541033 93.3924 0.260248 93.2715L0.195203 93.2184L0.818086 92.5886C1.008 92.4003 1.21021 92.1859 1.42471 91.9454C1.63722 91.6853 1.85415 91.4197 2.07552 91.1486C2.42084 90.7258 2.83693 90.1169 3.32376 89.3217C3.80861 88.5068 4.50704 87.541 5.41906 86.4244C6.2691 85.3837 7.19366 84.5394 8.19274 83.8915C9.20067 83.2328 10.2413 82.7996 11.3146 82.5918C12.3879 82.3841 13.4664 82.4246 14.55 82.7132C15.6316 82.9821 16.671 83.5239 17.6684 84.3385C18.4489 84.9761 19.0911 85.6723 19.595 86.4273C20.097 87.1625 20.4684 87.9358 20.7094 88.7471C20.9592 89.5476 21.0875 90.3753 21.0941 91.2301C21.0899 92.0761 20.9719 92.9286 20.7402 93.7876L33.419 94.6278C34.0503 94.6736 34.6097 94.6968 35.0972 94.6973C35.5936 94.6871 36.0387 94.6621 36.4326 94.6224C36.8245 94.5629 37.1751 94.4878 37.4842 94.3969C37.7826 94.2972 38.0582 94.1699 38.3112 94.0151L38.3762 94.0682L34.5378 98.7677C34.3052 98.632 33.9457 98.519 33.4591 98.4289C32.9705 98.319 32.4608 98.246 31.9299 98.21L19.1138 97.3389C18.9318 97.6059 18.7498 97.873 18.5679 98.14C18.375 98.3982 18.1724 98.6574 17.9599 98.9176C17.7119 99.2211 17.4487 99.5212 17.1703 99.8179C16.9007 100.104 16.6104 100.382 16.2994 100.652L19.9582 103.64ZM15.031 99.6158C15.3351 99.3763 15.6274 99.118 15.9079 98.841C16.1775 98.5552 16.4274 98.2713 16.6576 97.9895C17.3217 97.1764 17.809 96.3364 18.1195 95.4695C18.4191 94.5937 18.51 93.7191 18.392 92.8456C18.283 91.9613 17.9661 91.088 17.4414 90.2257C16.9059 89.3546 16.1395 88.5117 15.1421 87.6971C14.329 87.033 13.5166 86.523 12.7048 86.1672C11.893 85.8113 11.1089 85.6318 10.3525 85.6285C9.59415 85.6055 8.86451 85.7686 8.16359 86.1178C7.45183 86.4582 6.79489 86.997 6.19278 87.7341C5.58181 88.4821 5.13276 89.1094 4.84561 89.6158C4.55845 90.1223 4.36527 90.5248 4.26605 90.8233L15.031 99.6158ZM45.8427 87.6013C44.7317 88.6874 43.5196 89.5299 42.2062 90.1288C40.8929 90.7277 39.5481 91.0441 38.1718 91.078C36.7858 91.1019 35.3982 90.824 34.0091 90.2441C32.6203 89.6444 31.2996 88.704 30.047 87.4229C28.9413 86.2919 28.1089 85.06 27.5499 83.7274C26.981 82.3847 26.6845 81.0302 26.6604 79.664C26.6362 78.2977 26.8738 76.979 27.3732 75.7077C27.8826 74.4267 28.6577 73.2774 29.6986 72.2597C30.7295 71.2518 31.8615 70.4975 33.0945 69.9967C34.3178 69.4859 35.5824 69.2577 36.8884 69.312C38.1945 69.3466 39.5221 69.6833 40.8709 70.3221C42.22 70.9411 43.5309 71.8715 44.8037 73.1133C43.6531 74.199 42.5074 75.2897 41.3666 76.3854C40.2259 77.4812 39.0449 78.6259 37.8239 79.8197C36.9531 80.671 36.1073 81.5078 35.2863 82.33C34.4754 83.1424 33.7494 83.8815 33.1084 84.5473C34.1861 85.5295 35.2661 86.3138 36.3483 86.9001C37.4405 87.4767 38.5103 87.8401 39.5578 87.9905C40.6056 88.1212 41.6163 88.0237 42.59 87.6981C43.5737 87.3628 44.486 86.7842 45.3267 85.9622C45.9072 85.3947 46.3891 84.7963 46.7723 84.1671C47.1558 83.5182 47.4403 82.8681 47.6258 82.2169C47.8113 81.5657 47.9127 80.9185 47.9298 80.2753C47.9372 79.6221 47.8701 78.9928 47.7284 78.3874L47.9967 78.3014L49.4983 82.0599C49.2319 82.8686 48.8211 83.7399 48.2662 84.674C47.7014 85.598 46.8936 86.5738 45.8427 87.6013ZM34.8924 80.3954C35.8933 79.4168 36.8942 78.4383 37.8951 77.4598C38.8962 76.4615 39.7924 75.5461 40.5838 74.7137C39.6424 73.931 38.709 73.3167 37.7836 72.8707C36.8582 72.4247 35.9654 72.1523 35.1054 72.0535C34.2454 71.9547 33.4229 72.0345 32.638 72.2929C31.8532 72.5513 31.1404 72.9936 30.4999 73.6199C29.9194 74.1874 29.5111 74.841 29.2751 75.5808C29.0393 76.3007 28.9761 77.077 29.0855 77.9097C29.1948 78.7423 29.4819 79.6166 29.9467 80.5325C30.4017 81.4384 31.0446 82.3563 31.8754 83.2862C32.3454 82.8659 32.8306 82.4111 33.3311 81.9219C33.8315 81.4326 34.352 80.9238 34.8924 80.3954ZM40.0327 60.7315C39.269 59.8192 38.588 59.0385 37.9897 58.3893C37.3932 57.7204 36.8668 57.157 36.4105 56.6992C35.965 56.2325 35.5708 55.8597 35.2278 55.5809C34.8956 55.2931 34.603 55.0635 34.3499 54.892L34.296 54.8276L38.0148 51.7142L38.0687 51.7786C38.193 52.0579 38.3676 52.3864 38.5925 52.764C38.8174 53.1417 39.115 53.5953 39.4854 54.125C39.8558 54.6546 40.3178 55.2719 40.8714 55.9767C41.416 56.6708 42.0702 57.4741 42.834 58.3863L52.4438 69.865C53.2075 70.7772 53.8876 71.5678 54.4842 72.2368C55.0717 72.895 55.5936 73.4529 56.0499 73.9107C56.5061 74.3685 56.9004 74.7412 57.2326 75.029C57.5648 75.3168 57.8574 75.5464 58.1105 75.7179L58.1644 75.7823L54.4455 78.8957L54.3916 78.8313C54.2673 78.552 54.0927 78.2236 53.8679 77.8459C53.6537 77.4593 53.3561 77.0057 52.9749 76.485C52.6046 75.9553 52.1471 75.3435 51.6024 74.6493C51.0596 73.9355 50.4063 73.1224 49.6425 72.2101L40.0327 60.7315ZM57.0541 68.7526C56.4092 67.8543 56.0319 66.9448 55.9223 66.0241C55.8241 65.0952 55.9147 64.1773 56.194 63.2703C56.4733 62.3633 56.9032 61.486 57.4837 60.6385C58.0561 59.7796 58.7058 58.9685 59.4329 58.2053C60.1519 57.4306 60.9003 56.721 61.6782 56.0764C62.4479 55.4205 63.1698 54.8419 63.8439 54.3407L63.2194 53.4709C62.6806 52.7204 62.1187 52.1417 61.5336 51.7347C60.9484 51.3277 60.3531 51.0744 59.7475 50.975C59.1338 50.8642 58.5156 50.9031 57.8928 51.0917C57.2733 51.2608 56.6679 51.5576 56.0766 51.9821C55.6673 52.2759 55.2881 52.5998 54.9391 52.9538C54.5901 53.3077 54.2567 53.7194 53.9389 54.1888C53.6325 54.65 53.3385 55.1885 53.0568 55.8042C52.7865 56.4118 52.5295 57.1219 52.2858 57.9344L52.0417 57.9545L51.475 54.717C51.7278 54.277 51.9994 53.8753 52.2898 53.5117C52.572 53.1368 52.8763 52.7806 53.2025 52.4429C53.5288 52.1053 53.877 51.7864 54.2473 51.4861C54.6208 51.1663 55.0236 50.8513 55.4557 50.5411C56.6496 49.684 57.7734 49.1012 58.827 48.7927C59.8839 48.4648 60.8632 48.3648 61.765 48.4928C62.6699 48.6013 63.4924 48.9068 64.2323 49.4095C64.9641 49.9008 65.6075 50.533 66.1626 51.3062L70.1544 56.8664C70.8483 57.8329 71.4678 58.6719 72.013 59.3833C72.5613 60.0751 73.0403 60.6704 73.45 61.1689C73.8709 61.6593 74.2364 62.0603 74.5463 62.372C74.8676 62.6755 75.148 62.9222 75.3877 63.112L75.4367 63.1802L71.6673 65.8863L71.6183 65.8181C71.5446 65.5953 71.4374 65.3621 71.2969 65.1183C71.1678 64.8664 71.0003 64.5731 70.7945 64.2384C70.7026 64.6145 70.5694 65.029 70.3947 65.4817C70.2314 65.9263 70.0047 66.3906 69.7146 66.8746C69.4277 67.339 69.0652 67.8061 68.627 68.2757C68.2083 68.7486 67.6977 69.2014 67.095 69.634C65.1165 71.0544 63.2566 71.6918 61.5152 71.5463C59.7656 71.3894 58.2785 70.4582 57.0541 68.7526ZM64.799 55.6711C63.7724 56.4253 62.8224 57.2021 61.9489 58.0015C61.0672 58.7896 60.3793 59.6195 59.8851 60.4912C59.4022 61.3547 59.1677 62.2641 59.1814 63.2192C59.1982 64.1548 59.5822 65.1456 60.3332 66.1917C61.2964 67.5334 62.3666 68.316 63.5435 68.5393C64.7205 68.7627 65.9003 68.4499 67.0828 67.6009C67.6286 67.2091 68.0702 66.7801 68.4075 66.3139C68.748 65.8282 69.0072 65.3492 69.1851 64.8769C69.3662 64.385 69.4781 63.917 69.521 63.4726C69.5557 63.0169 69.5417 62.6134 69.479 62.2621C69.1916 61.8137 68.8601 61.328 68.4846 60.8049C68.1009 60.2705 67.6683 59.6679 67.1867 58.997L64.799 55.6711ZM80.8369 49.4959L79.6143 57.519C79.5742 57.8159 79.5316 58.1223 79.4863 58.4382C79.4531 58.7473 79.4287 59.0433 79.4129 59.3263C79.4093 59.6023 79.417 59.8558 79.436 60.0867C79.4672 60.3107 79.5174 60.4835 79.5868 60.605L76.5234 62.3536L76.4818 62.2807C76.5791 61.9995 76.7008 61.5915 76.8469 61.0569C77.0052 60.5152 77.1366 59.8842 77.2411 59.1638L78.8321 48.6095L68.8469 44.2036C68.2949 43.9707 67.7837 43.7951 67.3132 43.6768C66.8428 43.5585 66.5138 43.5045 66.3263 43.5149L66.2847 43.4419L71.281 40.59C71.3989 40.7967 71.6592 41.0833 72.0618 41.4498C72.4697 41.7972 73.0754 42.1526 73.8791 42.5158L79.3937 44.9769L80.3708 38.4719C80.4057 38.1941 80.4336 37.9042 80.4546 37.6021C80.4877 37.2931 80.5 37.0041 80.4914 36.7349C80.4881 36.4467 80.4709 36.1906 80.4397 35.9667C80.4086 35.7427 80.3583 35.5699 80.2889 35.4483L83.3523 33.6998L83.394 33.7727C83.3001 34.0036 83.1984 34.3195 83.0888 34.7205C82.9793 35.1215 82.867 35.7013 82.752 36.46L81.3595 45.8372L92.2117 50.6185C92.9373 50.9297 93.577 51.1609 94.1307 51.3122C94.6845 51.4635 95.0682 51.5427 95.2817 51.5497L95.3233 51.6227L90.3453 54.4641C90.2273 54.2575 89.9609 53.9743 89.5462 53.6148C89.1245 53.243 88.5309 52.8807 87.7654 52.5279L80.8369 49.4959ZM104.457 40.6402C104.071 39.6038 103.947 38.6271 104.084 37.71C104.234 36.7881 104.563 35.9264 105.071 35.125C105.579 34.3235 106.225 33.5905 107.008 32.9258C107.787 32.2479 108.627 31.6366 109.53 31.0918C110.427 30.5339 111.336 30.0464 112.256 29.6295C113.172 29.1994 114.02 28.8313 114.803 28.5254L114.429 27.5218C114.107 26.6559 113.717 25.9496 113.26 25.4029C112.803 24.8561 112.295 24.4551 111.737 24.1997C111.174 23.9311 110.568 23.8058 109.917 23.8238C109.275 23.8237 108.613 23.9506 107.931 24.2044C107.458 24.3801 107.007 24.5927 106.577 24.8422C106.148 25.0917 105.718 25.401 105.287 25.7702C104.87 26.1344 104.445 26.5764 104.011 27.0962C103.59 27.6112 103.155 28.2285 102.706 28.9482L102.465 28.9033L102.771 25.6308C103.131 25.273 103.499 24.9569 103.875 24.6827C104.246 24.3953 104.633 24.1318 105.037 23.892C105.44 23.6523 105.86 23.4363 106.297 23.2441C106.741 23.034 107.213 22.8362 107.711 22.6507C109.089 22.1383 110.326 21.872 111.424 21.852C112.53 21.814 113.501 21.9754 114.337 22.3364C115.182 22.6794 115.895 23.1908 116.476 23.8706C117.053 24.5372 117.507 25.3166 117.839 26.2087L120.225 32.6239C120.64 33.739 121.017 34.7115 121.355 35.5414C121.702 36.3533 122.007 37.0536 122.271 37.6424C122.548 38.2264 122.795 38.7095 123.012 39.0918C123.242 39.4692 123.448 39.781 123.629 40.0273L123.658 40.106L119.309 41.7238L119.28 41.6451C119.267 41.4108 119.225 41.1575 119.154 40.8854C119.096 40.6084 119.011 40.2813 118.901 39.9042C118.713 40.2428 118.476 40.6075 118.188 40.9983C117.913 41.3842 117.572 41.7724 117.165 42.1629C116.766 42.5354 116.293 42.8905 115.747 43.2282C115.218 43.5741 114.606 43.8764 113.911 44.135C111.628 44.9842 109.666 45.1093 108.025 44.5102C106.378 43.8981 105.189 42.6081 104.457 40.6402ZM115.374 30.0603C114.185 30.5176 113.064 31.0167 112.01 31.5579C110.952 32.0859 110.07 32.7053 109.364 33.4161C108.67 34.122 108.205 34.9374 107.966 35.8624C107.736 36.7694 107.846 37.8264 108.295 39.0334C108.871 40.5814 109.697 41.6182 110.773 42.1436C111.85 42.6691 113.07 42.678 114.435 42.1705C115.065 41.9362 115.604 41.6386 116.052 41.2778C116.508 40.8989 116.884 40.5051 117.18 40.0963C117.485 39.6695 117.716 39.2474 117.874 38.8301C118.028 38.3996 118.12 38.0067 118.153 37.6512C117.993 37.143 117.801 36.5871 117.577 35.9836C117.348 35.367 117.089 34.6717 116.801 33.8977L115.374 30.0603ZM138.124 21.6752C137.673 19.8836 136.981 18.6577 136.049 17.9976C135.118 17.3374 134.048 17.1596 132.84 17.4642C132.406 17.5737 131.941 17.7919 131.446 18.1188C130.948 18.4321 130.453 18.8167 129.962 19.2726C129.467 19.7149 128.986 20.2115 128.518 20.7624C128.051 21.3133 127.624 21.8828 127.238 22.4709L127.87 25.1482L129.112 30.075C129.403 31.2287 129.672 32.2365 129.918 33.0983C130.16 33.9465 130.388 34.676 130.599 35.2866C130.811 35.8973 131.004 36.4044 131.178 36.8081C131.352 37.2117 131.515 37.5458 131.669 37.8103L131.689 37.8917L126.986 39.0774L126.966 38.9959C126.975 38.6904 126.961 38.3187 126.923 37.8808C126.898 37.4395 126.827 36.9016 126.711 36.267C126.608 35.6289 126.462 34.879 126.273 34.017C126.095 33.1381 125.861 32.1218 125.57 30.9681L124.328 26.0412C124.037 24.8876 123.763 23.8883 123.507 23.0435C123.261 22.1817 123.032 21.4455 122.82 20.8348C122.622 20.2207 122.429 19.7136 122.242 19.3133C122.068 18.9097 121.904 18.5756 121.751 18.3111L121.73 18.2297L126.433 17.044L126.454 17.1255C126.431 17.4922 126.452 17.9487 126.518 18.4952C126.593 19.0246 126.703 19.7187 126.848 20.5773C127.288 19.9755 127.769 19.3635 128.29 18.7412C128.825 18.1155 129.395 17.5389 129.998 17.0115C130.598 16.4705 131.23 16.0008 131.894 15.6023C132.556 15.1902 133.232 14.8969 133.925 14.7224C134.983 14.4555 135.925 14.4129 136.75 14.5945C137.589 14.7728 138.315 15.1024 138.927 15.5832C139.552 16.0607 140.065 16.6605 140.463 17.3829C140.872 18.0882 141.176 18.8344 141.374 19.6217L143.119 26.5437C143.41 27.6974 143.679 28.7052 143.925 29.567C144.167 30.4152 144.395 31.1447 144.606 31.7553C144.818 32.366 145.011 32.8731 145.185 33.2768C145.359 33.6804 145.522 34.0145 145.676 34.279L145.696 34.3604L140.993 35.5461L140.973 35.4646C140.982 35.1591 140.968 34.7874 140.93 34.3495C140.905 33.9082 140.834 33.3703 140.718 32.7357C140.615 32.0976 140.469 31.3477 140.28 30.4857C140.102 29.6068 139.868 28.5905 139.577 27.4368L138.124 21.6752ZM156.252 10.7127C156.821 10.6377 157.397 10.6114 157.979 10.6336C158.56 10.6558 159.134 10.7214 159.699 10.8305C160.264 10.9397 160.806 11.0941 161.327 11.2938C161.847 11.4935 162.324 11.7343 162.756 12.0161L162.307 8.60227C162.151 7.42268 162.002 6.39757 161.859 5.52694C161.714 4.64243 161.572 3.88465 161.433 3.2536C161.293 2.62254 161.16 2.09648 161.034 1.67542C160.908 1.25435 160.784 0.903591 160.663 0.62313L160.652 0.539865L165.46 -0.0934865L165.471 -0.0102213C165.426 0.292174 165.391 0.663957 165.364 1.10513C165.351 1.54447 165.359 2.08698 165.388 2.73266C165.43 3.37651 165.489 4.14526 165.564 5.0389C165.652 5.91684 165.773 6.94561 165.929 8.1252L167.883 22.9672C168.039 24.1468 168.189 25.1789 168.334 26.0634C168.49 26.9322 168.632 27.683 168.757 28.3159C168.897 28.947 169.03 29.473 169.156 29.8941C169.296 30.3133 169.427 30.6632 169.548 30.9436L169.559 31.0269L164.959 31.6328L164.948 31.5496C164.975 31.4331 164.988 31.2689 164.989 31.0571C164.987 30.8314 164.986 30.5562 164.986 30.2315C164.337 30.7688 163.502 31.2883 162.481 31.7898C161.459 32.2914 160.241 32.6354 158.826 32.8218C157.174 33.0393 155.642 32.98 154.228 32.6438C152.814 32.3077 151.565 31.7239 150.482 30.8925C149.412 30.0592 148.531 28.9964 147.838 27.704C147.144 26.3978 146.684 24.8912 146.459 23.1842C146.253 21.6161 146.339 20.1293 146.719 18.724C147.097 17.3047 147.72 16.0367 148.59 14.9197C149.459 13.8028 150.544 12.8764 151.845 12.1403C153.146 11.4042 154.615 10.9284 156.252 10.7127ZM163.239 15.6798C162.492 14.2958 161.552 13.3254 160.42 12.7686C159.302 12.21 158.097 12.0157 156.806 12.1857C155.724 12.3282 154.75 12.6541 153.886 13.1633C153.019 13.6587 152.307 14.3101 151.75 15.1176C151.193 15.9252 150.796 16.881 150.561 17.985C150.337 19.0734 150.313 20.2836 150.488 21.6159C150.686 23.1147 151.036 24.4874 151.539 25.7342C152.042 26.9809 152.676 28.041 153.44 28.9145C154.217 29.7722 155.119 30.4087 156.148 30.8238C157.175 31.225 158.313 31.3434 159.562 31.1789C160.215 31.0929 160.815 30.9362 161.364 30.7086C161.913 30.481 162.408 30.2182 162.848 29.9201C163.289 29.622 163.672 29.3105 163.996 28.9854C164.318 28.6464 164.579 28.3227 164.779 28.014C164.728 27.4136 164.659 26.7309 164.572 25.9658C164.486 25.2007 164.382 24.3602 164.261 23.4443L163.239 15.6798ZM190.194 22.4019C190.14 23.5904 190.107 24.6328 190.095 25.529C190.097 26.4118 190.104 27.1758 190.117 27.8209C190.144 28.4667 190.183 29.0079 190.233 29.4445C190.297 29.8818 190.365 30.2491 190.435 30.5466L190.432 30.6305L185.398 30.4029L185.402 30.319C185.499 30.0291 185.592 29.669 185.682 29.2387C185.785 28.809 185.872 28.2735 185.943 27.6322C186.028 26.9915 186.105 26.2313 186.173 25.3517C186.254 24.4726 186.322 23.4318 186.377 22.2293L186.994 8.57476C187.048 7.3862 187.074 6.3505 187.072 5.46767C187.084 4.57148 187.077 3.80052 187.05 3.15476C187.037 2.50964 186.999 1.96845 186.934 1.53118C186.885 1.08056 186.825 0.70653 186.754 0.409091L186.758 0.325193L187.635 0.448921C187.899 0.488899 188.192 0.52315 188.513 0.551675C188.849 0.566848 189.191 0.582337 189.541 0.598143C190.086 0.622799 190.823 0.593066 191.752 0.508945C192.695 0.411472 193.886 0.395295 195.327 0.460413C196.669 0.521106 197.898 0.758838 199.015 1.17361C200.145 1.58901 201.114 2.16526 201.921 2.90234C202.728 3.63943 203.34 4.52879 203.755 5.57042C204.185 6.5987 204.371 7.75607 204.313 9.04251C204.267 10.0493 204.092 10.9802 203.787 11.8351C203.497 12.6767 203.098 13.4363 202.591 14.114C202.098 14.7923 201.51 15.3892 200.829 15.9049C200.147 16.4065 199.393 16.8208 198.566 17.1477L205.46 27.821C205.8 28.3548 206.116 28.8175 206.406 29.2089C206.711 29.601 206.997 29.9432 207.264 30.2355C207.545 30.5145 207.815 30.7508 208.072 30.9446C208.33 31.1244 208.597 31.2696 208.872 31.3801L208.868 31.464L202.807 31.19C202.777 30.9224 202.653 30.5665 202.435 30.1223C202.231 29.6647 201.985 29.2122 201.697 28.7648L194.746 17.9628C194.423 17.9762 194.1 17.9896 193.777 18.003C193.455 18.0025 193.126 17.9946 192.79 17.9794C192.399 17.9617 192.001 17.9297 191.597 17.8834C191.206 17.8378 190.81 17.7708 190.408 17.6826L190.194 22.4019ZM190.482 16.0465C190.855 16.1475 191.237 16.2278 191.627 16.2875C192.017 16.3331 192.394 16.3642 192.757 16.3806C193.806 16.428 194.771 16.3175 195.652 16.0491C196.533 15.7667 197.289 15.3175 197.92 14.7014C198.564 14.086 199.075 13.3105 199.454 12.3748C199.833 11.4251 200.052 10.3071 200.11 9.02064C200.157 7.97191 200.082 7.01568 199.882 6.15197C199.683 5.28825 199.359 4.552 198.91 3.94321C198.476 3.32108 197.91 2.83308 197.211 2.47923C196.513 2.11139 195.689 1.90597 194.738 1.86298C193.773 1.81936 193.002 1.83353 192.424 1.90549C191.846 1.97745 191.408 2.06272 191.109 2.16131L190.482 16.0465ZM218.521 33.5895C216.986 33.3472 215.586 32.8782 214.322 32.1826C213.057 31.487 212 30.5974 211.151 29.5139C210.303 28.4166 209.698 27.1377 209.333 25.6772C208.984 24.2051 208.95 22.5842 209.229 20.8144C209.476 19.2521 209.967 17.8487 210.702 16.6043C211.439 15.3461 212.348 14.2993 213.429 13.4639C214.51 12.6285 215.71 12.0314 217.028 11.6726C218.36 11.316 219.744 11.2512 221.182 11.4782C222.606 11.703 223.887 12.1603 225.026 12.8501C226.166 13.5261 227.104 14.404 227.841 15.4839C228.593 16.5521 229.116 17.8179 229.409 19.2813C229.719 20.733 229.756 22.3401 229.52 24.1026C227.962 23.8283 226.403 23.5609 224.843 23.3005C223.282 23.04 221.659 22.7766 219.972 22.5104C218.769 22.3205 217.593 22.1418 216.443 21.9745C215.307 21.8094 214.281 21.6686 213.364 21.5522C213.22 23.0032 213.236 24.3378 213.412 25.5559C213.602 26.7763 213.95 27.8514 214.455 28.7814C214.976 29.6997 215.657 30.4521 216.5 31.0386C217.357 31.6273 218.366 32.0133 219.527 32.1966C220.329 32.3232 221.097 32.3523 221.83 32.2839C222.58 32.2038 223.271 32.0437 223.904 31.8036C224.537 31.5634 225.117 31.2581 225.643 30.8877C226.171 30.5035 226.636 30.0738 227.037 29.5986L227.266 29.7623L225.148 33.2116C224.341 33.4809 223.397 33.6719 222.316 33.7847C221.238 33.8837 219.972 33.8187 218.521 33.5895ZM217.759 20.5031C219.142 20.7214 220.525 20.9396 221.907 21.1579C223.306 21.3645 224.575 21.5366 225.716 21.6741C225.781 20.4515 225.716 19.336 225.521 18.3274C225.326 17.3189 225.012 16.4402 224.577 15.6914C224.143 14.9426 223.587 14.3306 222.911 13.8555C222.235 13.3803 221.455 13.0729 220.57 12.9332C219.768 12.8066 219 12.8696 218.266 13.1221C217.548 13.363 216.887 13.776 216.285 14.3611C215.682 14.9461 215.152 15.6986 214.695 16.6184C214.241 17.5244 213.888 18.5883 213.639 19.8101C214.257 19.936 214.911 20.0535 215.603 20.1626C216.294 20.2717 217.013 20.3852 217.759 20.5031ZM234.226 22.4845C234.503 21.3274 234.723 20.3151 234.888 19.4476C235.069 18.5699 235.207 17.8113 235.302 17.1721C235.411 16.5361 235.475 15.9973 235.494 15.5558C235.527 15.1175 235.537 14.7456 235.524 14.4402L235.543 14.3585L240.26 15.4865L240.241 15.5682C240.091 15.8345 239.931 16.1706 239.762 16.5763C239.593 16.9821 239.407 17.4916 239.203 18.1048C238.998 18.718 238.778 19.4569 238.543 20.3217C238.311 21.1728 238.056 22.177 237.779 23.3342L235.196 34.1365C234.757 35.9744 234.172 37.5183 233.441 38.7684C232.724 40.0218 231.888 41.0811 230.932 41.9465C229.991 42.8151 228.946 43.5438 227.797 44.1328C226.66 44.7386 225.453 45.2993 224.179 45.8148L223.908 45.232C225.052 44.5989 226.035 43.8912 226.855 43.1087C227.675 42.3262 228.383 41.4447 228.977 40.4642C229.568 39.4974 230.071 38.416 230.487 37.22C230.913 36.041 231.298 34.7299 231.643 33.2869L234.226 22.4845ZM237.186 8.21022C237.258 7.91072 237.379 7.64466 237.55 7.41205C237.737 7.16907 237.949 6.97508 238.185 6.83006C238.425 6.67143 238.687 6.56859 238.972 6.52153C239.273 6.46412 239.581 6.47285 239.894 6.54772C240.207 6.62259 240.478 6.75222 240.707 6.93659C240.954 7.11061 241.148 7.3225 241.289 7.57228C241.448 7.8117 241.549 8.08057 241.593 8.37888C241.654 8.66684 241.648 8.96057 241.577 9.26007C241.427 9.88629 241.091 10.36 240.568 10.6811C240.045 11.0022 239.47 11.0878 238.844 10.9381C238.531 10.8632 238.251 10.7388 238.005 10.5648C237.775 10.3804 237.588 10.1701 237.443 9.93396C237.302 9.68418 237.2 9.41532 237.14 9.12736C237.096 8.82904 237.111 8.52333 237.186 8.21022ZM245.413 31.802C244.84 33.5587 244.766 34.9623 245.189 36.0131C245.625 37.0681 246.435 37.7887 247.62 38.1749C248.046 38.3137 248.553 38.3834 249.142 38.384C249.735 38.3712 250.358 38.3096 251.013 38.199C251.685 38.0795 252.365 37.9113 253.054 37.6943C253.757 37.4816 254.421 37.2271 255.048 36.9308C255.2 36.5536 255.346 36.152 255.485 35.7262C255.628 35.287 255.78 34.8212 255.94 34.3289L257.515 29.4981C257.884 28.3669 258.185 27.3756 258.419 26.5242C258.67 25.6638 258.869 24.9188 259.015 24.2893C259.175 23.6641 259.282 23.1323 259.336 22.6937C259.404 22.2594 259.444 21.8896 259.455 21.5841L259.481 21.5042L264.092 23.0076L264.066 23.0875C263.895 23.3409 263.709 23.6631 263.508 24.0539C263.307 24.4448 263.08 24.9376 262.828 25.5324C262.575 26.1272 262.296 26.8461 261.992 27.6892C261.692 28.5189 261.358 29.4993 260.989 30.6305L259.414 35.4613C259.045 36.5925 258.735 37.5883 258.484 38.4486C258.237 39.2957 258.041 40.034 257.894 40.6635C257.748 41.2931 257.641 41.8249 257.573 42.2592C257.505 42.6934 257.465 43.0633 257.454 43.3688L257.428 43.4486L252.817 41.9452L252.843 41.8654C253.031 41.5587 253.25 41.1589 253.499 40.6659C253.761 40.1773 254.049 39.5203 254.362 38.6949C253.665 38.9828 252.923 39.2488 252.137 39.493C251.364 39.7416 250.573 39.9327 249.763 40.0664C248.968 40.2044 248.182 40.2649 247.408 40.2479C246.642 40.2485 245.92 40.1381 245.241 39.9169C244.203 39.5784 243.376 39.1102 242.762 38.5123C242.16 37.9187 241.722 37.2532 241.447 36.5157C241.186 35.7827 241.07 35.0088 241.1 34.1941C241.143 33.3838 241.293 32.5861 241.549 31.8009L243.762 25.0138C244.13 23.8827 244.438 22.8935 244.685 22.0465C244.936 21.1861 245.135 20.4411 245.281 19.8116C245.427 19.1821 245.535 18.6502 245.603 18.216C245.671 17.7817 245.71 17.4119 245.721 17.1064L245.747 17.0265L250.359 18.5299L250.333 18.6098C250.162 18.8632 249.976 19.1853 249.775 19.5762C249.574 19.9671 249.347 20.4599 249.094 21.0547C248.841 21.6495 248.562 22.3684 248.258 23.2115C247.958 24.0412 247.624 25.0216 247.255 26.1528L245.413 31.802ZM271.976 26.1831L271.942 26.2599C271.888 26.3124 271.826 26.3997 271.756 26.5219C271.686 26.6441 271.629 26.7563 271.583 26.8586C271.406 27.2549 271.267 27.7217 271.166 28.2588C271.07 28.7831 271.01 29.4688 270.985 30.3158L270.706 43.2707L280.141 34.5797C280.544 34.192 280.979 33.7654 281.447 33.2997C281.915 32.8339 282.278 32.3134 282.534 31.7381C282.608 31.5719 282.655 31.4319 282.675 31.3182C282.701 31.1918 282.709 31.1037 282.701 31.0539L282.735 30.9772L286.187 32.5154L286.153 32.5921C285.815 32.7325 285.327 33.0362 284.69 33.5031C284.071 33.963 283.356 34.5713 282.543 35.3281L268.245 48.3805L267.114 47.8763L267.357 29.6878C267.378 29.0226 267.368 28.3746 267.327 27.7435C267.305 27.1053 267.264 26.5276 267.203 26.0102C267.155 25.4985 267.102 25.0685 267.042 24.7203C266.988 24.3593 266.947 24.1261 266.917 24.0209L266.951 23.9442L271.976 26.1831ZM286.608 57.9611C285.26 57.1891 284.118 56.2533 283.183 55.1535C282.248 54.0538 281.577 52.8466 281.168 51.532C280.766 50.2052 280.655 48.7945 280.833 47.2998C281.03 45.7999 281.574 44.2725 282.464 42.7177C283.25 41.345 284.208 40.2077 285.337 39.3058C286.473 38.3918 287.695 37.7365 289.003 37.34C290.31 36.9435 291.644 36.8118 293.003 36.9449C294.375 37.0849 295.692 37.5165 296.955 38.2398C298.206 38.9561 299.241 39.8389 300.06 40.8882C300.886 41.9254 301.451 43.0796 301.755 44.3507C302.079 45.6166 302.118 46.9856 301.872 48.4577C301.645 49.9245 301.108 51.4398 300.261 53.0034C298.902 52.1932 297.54 51.3891 296.174 50.5911C294.809 49.7931 293.385 48.9698 291.903 48.1214C290.846 47.5163 289.81 46.9313 288.795 46.3662C287.792 45.8081 286.882 45.3116 286.067 44.8769C285.416 46.182 284.957 47.4351 284.689 48.6363C284.432 49.8445 284.375 50.973 284.517 52.0217C284.677 53.0653 285.047 54.0109 285.626 54.8586C286.218 55.7133 287.023 56.4327 288.044 57.0169C288.748 57.4203 289.456 57.7204 290.166 57.9171C290.895 58.1087 291.598 58.2048 292.275 58.2053C292.952 58.2059 293.602 58.1265 294.226 57.9673C294.856 57.796 295.443 57.5595 295.987 57.2578L296.143 57.4923L292.937 59.9637C292.087 59.9283 291.136 59.7713 290.086 59.4926C289.043 59.2018 287.884 58.6913 286.608 57.9611ZM290.548 45.4587C291.763 46.1542 292.978 46.8497 294.192 47.5451C295.426 48.2354 296.552 48.8474 297.569 49.3813C298.064 48.2618 298.4 47.1961 298.576 46.1841C298.753 45.172 298.771 44.2389 298.631 43.3845C298.491 42.5302 298.189 41.7609 297.726 41.0764C297.263 40.392 296.643 39.8273 295.866 39.3822C295.161 38.9788 294.421 38.7646 293.645 38.7397C292.888 38.7096 292.124 38.8609 291.353 39.1936C290.582 39.5263 289.819 40.0413 289.065 40.7386C288.318 41.4238 287.611 42.293 286.943 43.3463C287.476 43.6836 288.046 44.0261 288.653 44.3738C289.261 44.7215 289.892 45.0832 290.548 45.4587ZM317.27 61.0129C318.359 59.5204 318.86 58.205 318.772 57.0667C318.685 55.9283 318.138 54.992 317.131 54.2576C316.769 53.9936 316.305 53.7757 315.737 53.6039C315.177 53.4208 314.565 53.2861 313.901 53.1995C313.244 53.1017 312.555 53.0492 311.832 53.0418C311.11 53.0344 310.399 53.0703 309.7 53.1495L308.045 55.3465L305.05 59.4508C304.348 60.4119 303.745 61.2625 303.24 62.0026C302.742 62.7314 302.327 63.3724 301.992 63.9255C301.658 64.4786 301.391 64.9511 301.192 65.3428C300.993 65.7346 300.84 66.074 300.735 66.3609L300.685 66.4287L296.767 63.5696L296.817 63.5018C297.058 63.3139 297.335 63.0653 297.647 62.756C297.971 62.455 298.339 62.0568 298.753 61.5615C299.178 61.0744 299.661 60.4829 300.204 59.7871C300.766 59.0882 301.397 58.2583 302.099 57.2972L305.094 53.1929C305.795 52.2318 306.389 51.3827 306.875 50.6456C307.38 49.9055 307.8 49.2589 308.135 48.7058C308.48 48.1609 308.747 47.6885 308.935 47.2884C309.134 46.8967 309.287 46.5573 309.392 46.2704L309.442 46.2025L313.359 49.0616L313.31 49.1295C313.013 49.3461 312.676 49.6543 312.297 50.054C311.938 50.4507 311.475 50.9789 310.907 51.6386C311.651 51.5925 312.429 51.5711 313.241 51.5745C314.064 51.5862 314.872 51.6554 315.663 51.7823C316.462 51.8978 317.227 52.0838 317.959 52.3402C318.698 52.5853 319.356 52.9183 319.933 53.3391C320.815 53.9827 321.45 54.6799 321.838 55.4308C322.237 56.1899 322.447 56.9585 322.468 57.7365C322.501 58.5228 322.367 59.3001 322.066 60.0683C321.785 60.8335 321.405 61.544 320.927 62.1998L316.718 67.9662C316.017 68.9273 315.414 69.7779 314.908 70.518C314.411 71.2469 313.995 71.8878 313.661 72.4409C313.326 72.9941 313.06 73.4665 312.86 73.8583C312.661 74.25 312.509 74.5894 312.403 74.8763L312.354 74.9442L308.436 72.0851L308.486 72.0172C308.727 71.8293 309.003 71.5807 309.316 71.2715C309.639 70.9705 310.008 70.5723 310.421 70.0769C310.846 69.5898 311.33 68.9984 311.872 68.3025C312.434 67.6037 313.066 66.7737 313.767 65.8126L317.27 61.0129ZM318.444 71.8636C319.188 71.0453 319.998 70.4863 320.876 70.1868C321.764 69.8967 322.68 69.7934 323.625 69.8771C324.571 69.9607 325.519 70.1979 326.469 70.5885C327.428 70.9687 328.357 71.4346 329.255 71.9863C330.163 72.5275 331.013 73.1112 331.806 73.7372C332.609 74.3528 333.325 74.9379 333.956 75.4924L334.676 74.7C335.298 74.0163 335.746 73.3458 336.022 72.6886C336.298 72.0313 336.421 71.3962 336.392 70.7833C336.372 70.1599 336.205 69.5635 335.89 68.9939C335.595 68.4233 335.179 67.8933 334.64 67.4038C334.267 67.0649 333.871 66.7617 333.452 66.4944C333.033 66.2271 332.561 65.987 332.035 65.7743C331.52 65.571 330.932 65.396 330.271 65.2492C329.621 65.1118 328.873 65.0088 328.027 64.9402L327.956 64.7058L331.004 63.4752C331.487 63.6305 331.937 63.8121 332.353 64.0201C332.778 64.2178 333.19 64.4409 333.589 64.6894C333.987 64.9379 334.372 65.2118 334.743 65.5112C335.134 65.8096 335.526 66.1377 335.919 66.4954C337.007 67.4839 337.812 68.4611 338.334 69.4271C338.875 70.3921 339.178 71.3289 339.241 72.2375C339.324 73.1452 339.197 74.0133 338.86 74.842C338.532 75.6603 338.048 76.4216 337.408 77.126L332.805 82.1914C332.005 83.0718 331.314 83.853 330.732 84.5348C330.17 85.2156 329.688 85.8084 329.286 86.3131C328.894 86.8273 328.578 87.2685 328.338 87.6367C328.109 88.0143 327.926 88.3401 327.791 88.6141L327.734 88.6762L324.3 85.5555L324.357 85.4933C324.559 85.3746 324.765 85.2211 324.974 85.0328C325.193 84.8539 325.445 84.6288 325.729 84.3576C325.342 84.3463 324.909 84.3026 324.43 84.2264C323.961 84.1596 323.46 84.035 322.926 83.8524C322.412 83.6689 321.879 83.4119 321.328 83.0815C320.778 82.7708 320.229 82.3661 319.68 81.8671C317.877 80.2291 316.865 78.5433 316.644 76.8099C316.432 75.0662 317.032 73.4174 318.444 71.8636ZM332.855 76.7044C331.903 75.858 330.945 75.0913 329.98 74.4041C329.025 73.7065 328.07 73.2072 327.114 72.906C326.169 72.6143 325.231 72.5749 324.3 72.7878C323.388 72.9998 322.499 73.5823 321.633 74.5353C320.522 75.7576 319.981 76.9676 320.008 78.1653C320.036 79.363 320.588 80.4513 321.665 81.4304C322.163 81.8823 322.674 82.2244 323.201 82.4569C323.747 82.6885 324.27 82.8419 324.769 82.9171C325.287 82.9914 325.769 83.0031 326.212 82.9522C326.665 82.8909 327.057 82.793 327.387 82.6583C327.766 82.2835 328.171 81.8578 328.604 81.3813C329.047 80.8945 329.546 80.3454 330.101 79.7343L332.855 76.7044ZM336.895 96.5518C337.18 96.8607 337.516 97.1122 337.904 97.3064C338.302 97.511 338.727 97.6621 339.179 97.7599C339.64 97.8679 340.112 97.9369 340.597 97.9666C341.101 97.9972 341.596 97.9977 342.082 97.9681L342.147 98.1937L338.737 99.4803C338.561 99.4136 338.342 99.3303 338.078 99.2304C337.835 99.1312 337.558 98.9862 337.249 98.7952C336.939 98.624 336.602 98.3922 336.237 98.0999C335.863 97.8171 335.462 97.444 335.035 96.9808C333.764 95.6013 333.144 94.184 333.174 92.7291C333.224 91.2749 334.041 89.8176 335.627 88.3571L345.927 78.8685L343.444 76.3596L344.803 75.1077C345.076 75.4458 345.412 75.841 345.809 76.2931C346.207 76.7453 346.647 77.2339 347.131 77.7589C347.852 77.0753 348.477 76.462 349.004 75.9189C349.552 75.3767 350.012 74.8954 350.386 74.4748C350.78 74.0551 351.097 73.6867 351.338 73.3697C351.579 73.0527 351.773 72.7784 351.921 72.5467L351.983 72.4898L355.269 76.057L355.207 76.1139C354.955 76.2323 354.661 76.3985 354.325 76.6126C353.99 76.8267 353.597 77.1028 353.147 77.441C352.707 77.7894 352.189 78.209 351.595 78.6998C351.02 79.1913 350.357 79.7733 349.606 80.4459C350.214 81.085 350.808 81.7086 351.387 82.3168C351.986 82.9259 352.528 83.4731 353.014 83.9586C353.519 84.4449 353.943 84.8536 354.286 85.1846C354.649 85.5165 354.892 85.7296 355.017 85.8238L353.186 86.9969C352.713 86.4624 352.221 85.8974 351.71 85.3019C351.276 84.7888 350.77 84.2083 350.192 83.5606C349.614 82.9128 349.017 82.2444 348.402 81.5555L337.778 91.3428C337.139 91.9308 336.681 92.4766 336.403 92.9803C336.144 93.4849 336.001 93.9495 335.974 94.3744C335.956 94.8095 336.034 95.204 336.208 95.5578C336.391 95.9219 336.62 96.2533 336.895 96.5518ZM346.33 110.776C345.386 109.543 344.695 108.238 344.258 106.862C343.821 105.487 343.669 104.114 343.8 102.743C343.943 101.364 344.385 100.02 345.128 98.7107C345.89 97.4039 346.982 96.2057 348.404 95.1161C349.66 94.1542 350.983 93.4757 352.373 93.0808C353.774 92.6773 355.155 92.5456 356.514 92.6857C357.873 92.8258 359.154 93.22 360.356 93.8684C361.566 94.528 362.614 95.4355 363.5 96.5911C364.377 97.7356 364.989 98.95 365.339 100.234C365.699 101.51 365.773 102.793 365.563 104.083C365.372 105.375 364.878 106.653 364.082 107.915C363.305 109.18 362.224 110.37 360.838 111.484C359.899 110.212 358.953 108.943 358.003 107.679C357.052 106.415 356.057 105.105 355.019 103.75C354.278 102.783 353.549 101.843 352.831 100.929C352.122 100.026 351.476 99.2169 350.892 98.5006C349.787 99.4526 348.879 100.431 348.167 101.434C347.463 102.45 346.974 103.468 346.699 104.49C346.443 105.514 346.419 106.529 346.625 107.535C346.84 108.552 347.305 109.527 348.02 110.461C348.513 111.105 349.05 111.655 349.628 112.111C350.226 112.57 350.838 112.93 351.462 113.193C352.086 113.455 352.716 113.634 353.353 113.728C354 113.814 354.633 113.822 355.251 113.755L355.304 114.031L351.393 115.071C350.622 114.709 349.806 114.197 348.946 113.534C348.096 112.862 347.224 111.943 346.33 110.776ZM354.799 100.77C355.65 101.881 356.502 102.993 357.353 104.104C358.224 105.218 359.025 106.217 359.756 107.103C360.646 106.262 361.368 105.409 361.922 104.544C362.476 103.679 362.854 102.826 363.055 101.984C363.257 101.142 363.276 100.316 363.114 99.5053C362.952 98.6951 362.598 97.9344 362.053 97.2232C361.559 96.5788 360.96 96.095 360.254 95.7718C359.567 95.4513 358.804 95.2953 357.964 95.3039C357.125 95.3125 356.222 95.4925 355.257 95.8439C354.303 96.1868 353.315 96.7149 352.292 97.428C352.652 97.9451 353.046 98.4814 353.471 99.037C353.897 99.5925 354.34 100.17 354.799 100.77Z"
+                        fill="black" />
+                </svg>
+
+
+                <div class="image-box">
+                    <img src="assets/img/hallo-services-img1.jpg">
+                    <img src="assets/img/hallo-services-img2.jpg">
+                    <img src="assets/img/hallo-services-img3.jpg">
+                    <img src="assets/img/hallo-services-img4.jpg">
+                </div>
+
+                <!-- Bottom curved text -->
+                <svg style="margin-top: -11rem;" width="456" height="232" viewBox="0 0 456 232" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M443.96 30.9896C444.274 31.9411 444.461 32.9337 444.519 33.9676C444.591 35.004 444.535 36.039 444.351 37.0726C444.079 38.6024 443.567 39.9685 442.813 41.171C442.071 42.3897 441.139 43.3901 440.02 44.1721C438.9 44.9542 437.61 45.4928 436.15 45.788C434.69 46.0832 433.113 46.0803 431.418 45.7793C429.998 45.5272 428.678 45.0368 427.457 44.3081C426.233 43.5933 425.205 42.6572 424.373 41.5001C423.538 40.3567 422.946 39.0076 422.596 37.4528C422.258 35.9143 422.258 34.1941 422.596 32.2922C422.635 32.0717 422.695 31.7766 422.775 31.4069C422.852 31.0511 422.95 30.6563 423.07 30.2226C423.19 29.7889 423.328 29.3301 423.485 28.8462C423.642 28.3623 423.817 27.8959 424.011 27.4469C424.28 26.8123 424.564 26.1732 424.863 25.5297C425.174 24.9025 425.5 24.3065 425.842 23.7417C426.039 23.8335 426.375 23.9429 426.85 24.0699C427.338 24.1994 427.864 24.3212 428.427 24.4353C428.987 24.5632 429.535 24.6818 430.07 24.791C430.618 24.9027 431.058 24.9879 431.389 25.0467L447.307 27.8735C448.478 28.0815 449.502 28.242 450.377 28.3548C451.264 28.4839 452.03 28.5771 452.674 28.6346C453.315 28.7058 453.856 28.738 454.298 28.7312C454.738 28.7382 455.11 28.726 455.414 28.6947L455.496 28.7094L454.648 33.4848L454.566 33.4701C454.291 33.336 453.946 33.1966 453.531 33.0518C453.116 32.907 452.596 32.7508 451.972 32.5831C451.348 32.4154 450.597 32.2394 449.72 32.0552C448.857 31.8735 447.84 31.6786 446.668 31.4705L443.96 30.9896ZM431.081 28.7024C429.965 28.5042 429.04 28.3471 428.307 28.2312C427.572 28.129 426.98 28.0594 426.532 28.0225C425.988 28.523 425.476 29.2425 424.997 30.1809C424.517 31.1194 424.172 32.1812 423.962 33.3664C423.788 34.3449 423.822 35.275 424.064 36.1567C424.305 37.0383 424.74 37.8334 425.367 38.542C425.995 39.2505 426.804 39.8563 427.795 40.3593C428.784 40.876 429.94 41.2519 431.263 41.4869C432.751 41.7512 434.154 41.8581 435.471 41.8076C436.802 41.7596 437.98 41.5282 439.006 41.1133C440.046 40.7009 440.907 40.0933 441.59 39.2905C442.273 38.4877 442.725 37.4661 442.945 36.2258C443.131 35.1783 443.091 34.1619 442.825 33.1764C442.56 32.191 442.076 31.3091 441.376 30.5307L431.081 28.7024ZM418.479 53.4007L436.07 50.8405C436.735 50.758 437.38 50.6474 438.004 50.5088C438.641 50.3742 439.214 50.2353 439.722 50.0922C440.227 49.9626 440.65 49.8382 440.991 49.7191C441.345 49.6039 441.573 49.5245 441.673 49.4809L441.753 49.5044L440.211 54.7847L440.13 54.7611C440.071 54.7146 439.976 54.665 439.845 54.6123C439.715 54.5596 439.596 54.5176 439.489 54.4862C439.072 54.3645 438.591 54.2895 438.045 54.2613C437.509 54.2504 436.813 54.3097 435.959 54.4392L422.241 56.4687L432.689 65.0332C433.123 65.3934 433.604 65.7674 434.133 66.155C434.657 66.5562 435.222 66.8451 435.826 67.0217C436.001 67.0727 436.146 67.1005 436.261 67.105C436.39 67.1135 436.478 67.1102 436.527 67.0951L436.607 67.1186L435.547 70.7463L435.467 70.7227C435.282 70.4063 434.916 69.9638 434.367 69.3953C433.828 68.8441 433.129 68.217 432.27 67.5139L412.184 51.2117C411.75 50.8515 411.271 50.4709 410.746 50.0697C410.218 49.682 409.651 49.3999 409.047 49.2232C408.872 49.1722 408.727 49.1444 408.612 49.1399C408.483 49.1314 408.394 49.1347 408.346 49.1498L408.266 49.1263L409.367 45.3576L409.447 45.3811C409.628 45.711 409.988 46.1515 410.527 46.7027C411.048 47.2634 411.732 47.8933 412.578 48.5924L418.479 53.4007ZM420.375 80.1413C421.796 80.835 422.982 81.7406 423.932 82.8583C424.894 83.9821 425.598 85.2211 426.043 86.5752C426.482 87.942 426.646 89.3771 426.535 90.8806C426.424 92.3841 426.016 93.8591 425.31 95.3058C424.616 96.7273 423.726 97.944 422.641 98.9561C421.561 99.9869 420.361 100.756 419.038 101.263C417.716 101.771 416.303 101.985 414.8 101.905C413.291 101.838 411.763 101.427 410.215 100.672C408.92 100.04 407.785 99.2058 406.811 98.1697C405.837 97.1337 405.105 95.9513 404.617 94.6226C404.128 93.2939 403.92 91.853 403.993 90.2998C404.072 88.7653 404.517 87.1678 405.327 85.5073C406.015 84.0984 406.895 82.8849 407.968 81.8666C409.041 80.8484 410.239 80.0856 411.561 79.5783C412.884 79.071 414.293 78.8477 415.79 78.9084C417.299 78.9753 418.827 79.3862 420.375 80.1413ZM406.493 86.6135C406.057 87.5067 405.834 88.4103 405.824 89.3243C405.808 90.251 406.001 91.1474 406.404 92.0137C406.807 92.88 407.412 93.6974 408.221 94.4658C409.03 95.2343 410.038 95.9132 411.246 96.5025C412.604 97.1655 413.933 97.6347 415.231 97.9101C416.542 98.1917 417.76 98.2488 418.886 98.0815C420.017 97.9328 421.034 97.5412 421.935 96.9065C422.837 96.2718 423.57 95.3758 424.135 94.2185C424.571 93.3253 424.794 92.4217 424.804 91.5076C424.826 90.5997 424.646 89.7094 424.262 88.8367C423.871 87.9765 423.272 87.1622 422.463 86.3938C421.667 85.6315 420.665 84.9556 419.458 84.3663C418.099 83.7033 416.764 83.231 415.453 82.9495C414.136 82.6804 412.902 82.6235 411.752 82.7786C410.614 82.9398 409.591 83.3284 408.683 83.9444C407.781 84.5791 407.051 85.4688 406.493 86.6135ZM403.377 105.456C401.821 104.46 400.482 104.033 399.358 104.178C398.228 104.334 397.326 104.937 396.654 105.986C396.412 106.363 396.217 106.836 396.068 107.406C395.931 107.983 395.833 108.602 395.776 109.263C395.722 109.944 395.713 110.645 395.75 111.366C395.778 112.1 395.857 112.807 395.986 113.488C396.313 113.731 396.665 113.973 397.042 114.214C397.431 114.464 397.843 114.728 398.279 115.007L402.557 117.749C403.559 118.391 404.442 118.932 405.208 119.372C405.977 119.832 406.648 120.212 407.22 120.512C407.785 120.824 408.273 121.062 408.683 121.225C409.086 121.401 409.434 121.532 409.727 121.62L409.798 121.665L407.181 125.749L407.11 125.704C406.908 125.474 406.643 125.213 406.316 124.92C405.988 124.627 405.568 124.283 405.057 123.889C404.545 123.494 403.919 123.044 403.18 122.537C402.453 122.037 401.588 121.467 400.586 120.825L396.308 118.083C395.306 117.441 394.421 116.891 393.651 116.431C392.894 115.979 392.229 115.602 391.657 115.302C391.084 115.002 390.597 114.764 390.193 114.589C389.79 114.414 389.442 114.282 389.15 114.194L389.079 114.149L391.696 110.065L391.766 110.111C392.016 110.37 392.347 110.683 392.762 111.048C393.169 111.425 393.732 111.869 394.452 112.38C394.349 111.633 394.278 110.848 394.24 110.025C394.194 109.214 394.209 108.401 394.283 107.584C394.35 106.779 394.489 106.004 394.701 105.258C394.894 104.517 395.182 103.846 395.567 103.245C396.157 102.326 396.818 101.644 397.551 101.2C398.277 100.767 399.032 100.511 399.815 100.431C400.59 100.362 401.368 100.445 402.149 100.679C402.922 100.926 403.656 101.271 404.352 101.717L410.362 105.569C411.364 106.211 412.244 106.758 413.001 107.21C413.771 107.67 414.442 108.05 415.014 108.35C415.586 108.65 416.074 108.888 416.477 109.063C416.88 109.238 417.228 109.37 417.521 109.458L417.592 109.503L414.975 113.586L414.904 113.541C414.702 113.312 414.437 113.051 414.109 112.758C413.782 112.465 413.362 112.121 412.85 111.726C412.338 111.332 411.713 110.881 410.974 110.374C410.246 109.875 409.382 109.304 408.38 108.662L403.377 105.456ZM396.95 125.942C397.886 126.676 398.714 127.299 399.434 127.811C400.156 128.342 400.787 128.784 401.329 129.137C401.861 129.502 402.324 129.785 402.717 129.987C403.102 130.2 403.435 130.364 403.719 130.479L403.785 130.531L400.79 134.347L400.724 134.295C400.54 134.008 400.292 133.689 399.981 133.338C399.661 132.997 399.227 132.586 398.681 132.104C398.702 132.779 398.705 133.467 398.69 134.166C398.675 134.866 398.612 135.546 398.503 136.208C398.393 136.869 398.229 137.497 398.012 138.091C397.786 138.697 397.483 139.242 397.103 139.726C396.869 140.024 396.65 140.269 396.444 140.464C396.249 140.667 396.055 140.835 395.862 140.968C395.679 141.109 395.499 141.226 395.32 141.317C395.153 141.417 394.99 141.511 394.831 141.6L392.312 138.315L392.598 138.086C393.186 138.334 393.766 138.389 394.337 138.25C394.92 138.12 395.457 137.741 395.95 137.114C396.218 136.772 396.438 136.367 396.611 135.897C396.784 135.428 396.911 134.914 396.993 134.356C397.086 133.806 397.141 133.227 397.157 132.616C397.184 132.015 397.186 131.412 397.163 130.806C396.861 130.534 396.523 130.25 396.149 129.957C395.774 129.663 395.378 129.352 394.959 129.023L390.698 125.679C389.762 124.945 388.933 124.312 388.211 123.781C387.5 123.258 386.874 122.821 386.333 122.467C385.792 122.114 385.329 121.831 384.944 121.618C384.56 121.405 384.226 121.241 383.943 121.125L383.877 121.074L386.871 117.258L386.937 117.31C387.116 117.557 387.355 117.843 387.653 118.166C387.943 118.5 388.328 118.882 388.808 119.312C389.28 119.754 389.855 120.258 390.531 120.824C391.21 121.41 392.017 122.071 392.953 122.805L396.95 125.942ZM382.407 164.446C383.609 163.313 384.641 162.235 385.503 161.211C386.375 160.197 387.105 159.298 387.693 158.513C388.364 157.593 388.934 156.738 389.403 155.95L391.292 158.843C391.16 158.948 390.967 159.111 390.713 159.331C390.459 159.551 390.179 159.795 389.874 160.064C389.559 160.341 389.234 160.629 388.898 160.926C388.562 161.242 388.241 161.535 387.936 161.803C387.641 162.081 387.376 162.321 387.143 162.522C386.908 162.743 386.74 162.901 386.638 162.997L377.913 171.219C377.811 171.315 377.648 171.469 377.424 171.68C377.199 171.911 376.939 172.165 376.644 172.444C376.358 172.732 376.052 173.03 375.726 173.337C375.399 173.664 375.093 173.972 374.807 174.261C374.511 174.559 374.246 174.828 374.011 175.069C373.776 175.309 373.602 175.492 373.489 175.618L370.714 173.56C371.539 173.129 372.43 172.606 373.389 171.99C374.208 171.45 375.148 170.775 376.212 169.965C377.286 169.165 378.423 168.199 379.626 167.066L365.875 152.473C365.059 151.607 364.334 150.858 363.699 150.225C363.064 149.612 362.51 149.085 362.038 148.646C361.555 148.215 361.14 147.866 360.792 147.598C360.433 147.34 360.122 147.133 359.859 146.977L359.802 146.916L363.454 143.474L363.512 143.535C363.652 143.807 363.846 144.125 364.092 144.488C364.339 144.852 364.663 145.288 365.063 145.795C365.464 146.302 365.957 146.886 366.541 147.547C367.135 148.218 367.84 148.986 368.656 149.852L382.407 164.446ZM361.168 163.498C361.902 164.434 362.558 165.236 363.135 165.904C363.71 166.592 364.218 167.171 364.66 167.643C365.09 168.124 365.472 168.509 365.806 168.799C366.129 169.097 366.414 169.336 366.662 169.515L366.714 169.581L362.898 172.575L362.846 172.509C362.735 172.186 362.57 171.818 362.351 171.402C362.121 170.996 361.798 170.493 361.382 169.894C361.242 170.556 361.082 171.224 360.9 171.9C360.719 172.576 360.496 173.222 360.233 173.838C359.969 174.454 359.661 175.025 359.308 175.551C358.944 176.085 358.52 176.542 358.036 176.923C357.738 177.156 357.466 177.342 357.22 177.482C356.983 177.633 356.754 177.75 356.535 177.833C356.324 177.927 356.121 177.997 355.926 178.044C355.74 178.101 355.559 178.154 355.384 178.202L353.718 174.412L354.051 174.258C354.563 174.639 355.113 174.83 355.701 174.831C356.298 174.843 356.91 174.603 357.538 174.111C357.879 173.843 358.19 173.502 358.469 173.087C358.748 172.672 358.994 172.203 359.207 171.68C359.428 171.169 359.62 170.619 359.78 170.03C359.95 169.452 360.095 168.867 360.217 168.273C359.988 167.937 359.727 167.581 359.434 167.207C359.14 166.832 358.829 166.436 358.501 166.017L355.157 161.755C354.423 160.819 353.768 160.007 353.193 159.319C352.627 158.643 352.123 158.069 351.682 157.597C351.24 157.125 350.858 156.739 350.535 156.441C350.212 156.143 349.927 155.904 349.68 155.725L349.628 155.659L353.444 152.665L353.496 152.731C353.611 153.014 353.775 153.348 353.988 153.733C354.19 154.126 354.473 154.589 354.837 155.121C355.19 155.663 355.628 156.289 356.15 157C356.67 157.731 357.297 158.564 358.032 159.5L361.168 163.498ZM332.531 167.203C333.836 166.36 335.191 165.776 336.598 165.45C338.004 165.125 339.385 165.083 340.74 165.324C342.103 165.576 343.408 166.125 344.654 166.97C345.895 167.834 347.002 169.019 347.975 170.524C348.833 171.852 349.403 173.225 349.686 174.642C349.976 176.071 349.997 177.458 349.748 178.801C349.5 180.145 349.004 181.39 348.262 182.536C347.508 183.69 346.519 184.662 345.296 185.452C344.086 186.235 342.826 186.749 341.518 186.994C340.217 187.251 338.933 187.223 337.664 186.909C336.391 186.615 335.157 186.021 333.962 185.126C332.763 184.251 331.664 183.078 330.664 181.608C332.008 180.773 333.348 179.932 334.684 179.086C336.02 178.239 337.405 177.353 338.839 176.426C339.862 175.765 340.858 175.113 341.826 174.471C342.783 173.836 343.641 173.257 344.402 172.732C343.541 171.555 342.639 170.571 341.695 169.781C340.74 168.999 339.764 168.429 338.767 168.073C337.767 167.737 336.757 167.631 335.738 167.756C334.707 167.889 333.698 168.274 332.71 168.912C332.028 169.353 331.437 169.843 330.936 170.383C330.431 170.943 330.023 171.523 329.711 172.125C329.4 172.726 329.171 173.34 329.027 173.967C328.889 174.605 328.83 175.236 328.848 175.857L328.568 175.888L327.845 171.906C328.267 171.166 328.843 170.394 329.573 169.589C330.31 168.796 331.296 168.001 332.531 167.203ZM341.827 176.445C340.651 177.205 339.475 177.965 338.3 178.724C337.12 179.503 336.059 180.222 335.118 180.88C335.885 181.834 336.677 182.622 337.495 183.244C338.313 183.865 339.134 184.31 339.957 184.578C340.78 184.846 341.602 184.931 342.423 184.835C343.243 184.738 344.03 184.446 344.782 183.96C345.464 183.519 345.994 182.96 346.373 182.282C346.747 181.624 346.964 180.876 347.022 180.038C347.081 179.2 346.974 178.286 346.701 177.296C346.435 176.318 345.988 175.29 345.359 174.213C344.815 174.532 344.249 174.881 343.661 175.26C343.073 175.64 342.462 176.035 341.827 176.445ZM326.576 178.738C327.074 179.725 327.307 180.682 327.273 181.609C327.226 182.542 326.995 183.435 326.579 184.288C326.163 185.141 325.603 185.941 324.898 186.689C324.2 187.449 323.433 188.15 322.596 188.791C321.766 189.446 320.917 190.031 320.049 190.548C319.187 191.077 318.385 191.537 317.641 191.928L318.124 192.884C318.54 193.709 319.006 194.367 319.522 194.86C320.037 195.352 320.586 195.695 321.169 195.886C321.758 196.091 322.375 196.148 323.019 196.058C323.657 195.986 324.301 195.786 324.951 195.458C325.401 195.231 325.826 194.97 326.225 194.674C326.625 194.378 327.018 194.023 327.404 193.608C327.778 193.2 328.152 192.713 328.525 192.149C328.886 191.59 329.25 190.928 329.616 190.163L329.86 190.181L329.92 193.467C329.602 193.863 329.272 194.218 328.929 194.532C328.592 194.859 328.236 195.164 327.862 195.447C327.487 195.73 327.094 195.992 326.682 196.231C326.263 196.489 325.817 196.738 325.342 196.978C324.03 197.64 322.83 198.043 321.741 198.185C320.646 198.345 319.663 198.293 318.792 198.027C317.915 197.78 317.149 197.351 316.496 196.74C315.849 196.142 315.311 195.418 314.882 194.568L311.797 188.458C311.261 187.396 310.778 186.471 310.349 185.684C309.914 184.916 309.533 184.254 309.205 183.698C308.865 183.149 308.566 182.696 308.308 182.34C308.038 181.991 307.799 181.704 307.591 181.479L307.553 181.404L311.695 179.313L311.733 179.388C311.772 179.619 311.842 179.866 311.943 180.129C312.031 180.398 312.152 180.713 312.303 181.076C312.452 180.718 312.648 180.329 312.89 179.909C313.12 179.495 313.416 179.071 313.777 178.638C314.133 178.223 314.563 177.818 315.068 177.422C315.555 177.019 316.13 176.651 316.792 176.316C318.966 175.219 320.902 174.876 322.6 175.289C324.304 175.714 325.63 176.864 326.576 178.738ZM316.903 190.466C318.034 189.88 319.093 189.259 320.079 188.604C321.072 187.962 321.88 187.248 322.503 186.463C323.113 185.685 323.486 184.822 323.62 183.877C323.747 182.95 323.521 181.911 322.941 180.762C322.196 179.287 321.26 178.349 320.132 177.946C319.003 177.544 317.789 177.671 316.49 178.327C315.89 178.63 315.387 178.985 314.982 179.394C314.571 179.821 314.241 180.254 313.992 180.693C313.737 181.151 313.554 181.597 313.443 182.029C313.338 182.474 313.29 182.875 313.298 183.231C313.512 183.719 313.765 184.25 314.055 184.825C314.352 185.412 314.686 186.074 315.058 186.811L316.903 190.466ZM296.931 187.131C296.54 187.286 296.185 187.51 295.865 187.803C295.531 188.101 295.238 188.443 294.985 188.83C294.719 189.222 294.485 189.638 294.284 190.08C294.074 190.539 293.897 191.001 293.75 191.466L293.516 191.446L293.537 187.801C293.662 187.661 293.818 187.486 294.006 187.276C294.186 187.084 294.42 186.878 294.71 186.658C294.98 186.429 295.318 186.198 295.721 185.962C296.119 185.714 296.611 185.473 297.197 185.241C298.94 184.549 300.485 184.477 301.833 185.027C303.173 185.594 304.24 186.879 305.036 188.883L310.204 201.899L313.436 200.48L314.117 202.197C313.704 202.332 313.215 202.503 312.65 202.712C312.086 202.921 311.472 203.158 310.808 203.421C311.188 204.34 311.537 205.142 311.855 205.829C312.165 206.535 312.449 207.137 312.708 207.637C312.959 208.155 313.189 208.583 313.398 208.921C313.608 209.26 313.795 209.54 313.958 209.761L313.989 209.839L309.481 211.629L309.45 211.551C309.43 211.272 309.38 210.938 309.3 210.548C309.221 210.158 309.104 209.693 308.949 209.152C308.782 208.616 308.575 207.982 308.33 207.251C308.077 206.538 307.771 205.711 307.413 204.769C306.598 205.108 305.803 205.438 305.028 205.761C304.245 206.102 303.539 206.412 302.912 206.692C302.277 206.989 301.744 207.238 301.312 207.44C300.872 207.66 300.586 207.811 300.453 207.894L300.014 205.764C300.682 205.514 301.386 205.257 302.125 204.993C302.76 204.772 303.483 204.507 304.295 204.2C305.107 203.893 305.944 203.575 306.808 203.247L301.478 189.821C301.157 189.015 300.812 188.391 300.441 187.951C300.063 187.529 299.68 187.229 299.294 187.051C298.894 186.879 298.498 186.81 298.105 186.846C297.699 186.886 297.308 186.981 296.931 187.131ZM279.844 205.479C280.074 206.374 280.368 207.122 280.725 207.724C281.068 208.329 281.47 208.797 281.931 209.126C282.381 209.473 282.877 209.685 283.417 209.763C283.961 209.855 284.531 209.824 285.127 209.67C285.534 209.566 285.967 209.368 286.427 209.076C286.887 208.785 287.351 208.427 287.82 208.003C288.28 207.596 288.733 207.139 289.181 206.634C289.616 206.132 290.016 205.61 290.383 205.068C290.299 204.627 290.192 204.156 290.063 203.654C289.937 203.166 289.802 202.637 289.655 202.068L288.39 197.147C288.094 195.995 287.821 194.988 287.571 194.128C287.324 193.28 287.093 192.552 286.879 191.942C286.664 191.333 286.469 190.826 286.293 190.424C286.118 190.021 285.952 189.687 285.798 189.424L285.777 189.342L290.474 188.135L290.495 188.216C290.487 188.522 290.503 188.893 290.543 189.331C290.57 189.772 290.643 190.31 290.763 190.944C290.869 191.582 291.018 192.331 291.211 193.192C291.393 194.07 291.632 195.085 291.928 196.237L293.193 201.159C293.49 202.311 293.768 203.309 294.028 204.152C294.278 205.013 294.511 205.748 294.725 206.358C294.926 206.971 295.121 207.477 295.311 207.877C295.486 208.28 295.652 208.613 295.806 208.877L295.827 208.958L291.13 210.165L291.109 210.084C291.137 209.744 291.122 209.322 291.065 208.816C290.997 208.328 290.903 207.709 290.782 206.96C290.352 207.533 289.879 208.11 289.363 208.69C288.847 209.271 288.306 209.807 287.739 210.3C287.158 210.796 286.562 211.231 285.95 211.605C285.338 211.979 284.707 212.25 284.056 212.417C283.283 212.616 282.572 212.69 281.924 212.64C281.275 212.59 280.682 212.446 280.144 212.209C279.606 211.972 279.126 211.654 278.706 211.256C278.272 210.862 277.905 210.414 277.603 209.914C277.169 210.531 276.686 211.154 276.153 211.782C275.611 212.427 275.041 213.022 274.444 213.566C273.833 214.113 273.198 214.594 272.539 215.009C271.866 215.428 271.184 215.726 270.492 215.904C269.435 216.176 268.493 216.223 267.667 216.045C266.827 215.87 266.1 215.544 265.486 215.066C264.858 214.592 264.343 213.994 263.941 213.274C263.529 212.57 263.222 211.825 263.02 211.039L261.243 204.125C260.947 202.973 260.674 201.966 260.423 201.106C260.177 200.259 259.946 199.53 259.732 198.921C259.517 198.311 259.322 197.805 259.146 197.402C258.957 197.003 258.785 196.671 258.63 196.407L258.609 196.326L263.327 195.113L263.348 195.194C263.34 195.5 263.356 195.872 263.396 196.309C263.423 196.751 263.489 197.29 263.595 197.927C263.701 198.565 263.851 199.314 264.043 200.175C264.239 201.05 264.485 202.063 264.781 203.216L266.261 208.971C266.721 210.76 267.418 211.983 268.352 212.638C269.287 213.294 270.357 213.467 271.564 213.157C271.984 213.049 272.431 212.847 272.904 212.552C273.364 212.261 273.829 211.903 274.298 211.479C274.767 211.055 275.224 210.583 275.668 210.064C276.117 209.559 276.524 209.035 276.89 208.493C276.821 208.337 276.766 208.178 276.724 208.015C276.682 207.852 276.642 207.697 276.604 207.547L274.827 200.634C274.531 199.481 274.257 198.475 274.007 197.614C273.747 196.77 273.516 196.042 273.315 195.429C273.101 194.819 272.906 194.313 272.73 193.91C272.541 193.511 272.369 193.179 272.214 192.915L272.193 192.834L276.891 191.627L276.912 191.708C276.903 192.014 276.919 192.385 276.96 192.823C277 193.261 277.073 193.798 277.179 194.436C277.285 195.073 277.434 195.823 277.627 196.684C277.823 197.558 278.069 198.572 278.365 199.724L279.844 205.479ZM245.751 197.557C247.296 197.387 248.769 197.471 250.173 197.809C251.576 198.147 252.83 198.727 253.934 199.548C255.041 200.384 255.962 201.458 256.698 202.771C257.422 204.099 257.882 205.654 258.079 207.435C258.252 209.007 258.148 210.49 257.767 211.884C257.387 213.292 256.786 214.541 255.963 215.632C255.139 216.723 254.139 217.615 252.963 218.308C251.772 219.002 250.453 219.43 249.006 219.589C247.573 219.747 246.217 219.644 244.937 219.278C243.659 218.926 242.523 218.326 241.528 217.478C240.521 216.646 239.683 215.562 239.014 214.228C238.334 212.909 237.875 211.368 237.638 209.606C239.214 209.46 240.788 209.308 242.362 209.148C243.936 208.988 245.571 208.815 247.268 208.628C248.479 208.494 249.661 208.357 250.814 208.215C251.953 208.076 252.981 207.941 253.896 207.812C253.653 206.374 253.286 205.091 252.795 203.962C252.29 202.835 251.672 201.889 250.94 201.125C250.195 200.376 249.339 199.83 248.372 199.486C247.391 199.144 246.316 199.037 245.147 199.166C244.34 199.255 243.592 199.429 242.902 199.688C242.2 199.963 241.576 200.3 241.028 200.698C240.481 201.096 240.002 201.543 239.592 202.039C239.183 202.549 238.848 203.086 238.587 203.65L238.322 203.552L239.457 199.667C240.165 199.195 241.026 198.762 242.038 198.368C243.053 197.989 244.29 197.719 245.751 197.557ZM249.932 209.982C248.54 210.135 247.149 210.289 245.758 210.442C244.354 210.611 243.084 210.779 241.948 210.947C242.207 212.144 242.563 213.203 243.017 214.124C243.47 215.046 244.005 215.811 244.622 216.419C245.238 217.027 245.935 217.471 246.712 217.751C247.489 218.031 248.323 218.123 249.214 218.024C250.021 217.935 250.745 217.672 251.387 217.235C252.016 216.814 252.544 216.241 252.972 215.518C253.399 214.795 253.712 213.93 253.91 212.922C254.111 211.928 254.17 210.809 254.089 209.565C253.46 209.606 252.798 209.665 252.102 209.742C251.406 209.819 250.683 209.899 249.932 209.982ZM229.966 219.439C229.084 219.914 228.139 220.271 227.132 220.509C226.124 220.761 225.095 220.886 224.045 220.886C222.491 220.886 221.057 220.619 219.741 220.087C218.411 219.569 217.264 218.827 216.298 217.861C215.333 216.895 214.577 215.719 214.031 214.333C213.486 212.947 213.213 211.394 213.213 209.672C213.214 208.23 213.466 206.845 213.97 205.515C214.46 204.185 215.202 203.01 216.196 201.988C217.176 200.966 218.401 200.148 219.871 199.532C221.327 198.931 223.021 198.63 224.952 198.63C225.176 198.63 225.477 198.637 225.855 198.652C226.219 198.666 226.625 198.694 227.073 198.736C227.521 198.778 227.997 198.834 228.501 198.904C229.005 198.974 229.495 199.065 229.97 199.177C230.642 199.331 231.321 199.5 232.007 199.682C232.679 199.878 233.323 200.095 233.938 200.333C233.882 200.543 233.833 200.893 233.791 201.383C233.749 201.887 233.721 202.425 233.707 202.999C233.679 203.573 233.658 204.133 233.644 204.679C233.63 205.239 233.622 205.687 233.622 206.023L233.619 222.19C233.619 223.38 233.64 224.415 233.681 225.297C233.709 226.193 233.751 226.963 233.807 227.607C233.849 228.251 233.912 228.79 233.996 229.224C234.065 229.657 234.142 230.021 234.226 230.315L234.226 230.399L229.376 230.398L229.376 230.314C229.46 230.02 229.537 229.657 229.607 229.223C229.677 228.789 229.741 228.25 229.797 227.606C229.853 226.962 229.895 226.192 229.923 225.296C229.951 224.415 229.965 223.379 229.966 222.189L229.966 219.439ZM229.969 206.358C229.969 205.224 229.962 204.286 229.949 203.544C229.921 202.803 229.886 202.208 229.844 201.76C229.256 201.312 228.458 200.934 227.451 200.626C226.443 200.317 225.337 200.163 224.133 200.163C223.14 200.163 222.23 200.359 221.404 200.75C220.578 201.142 219.871 201.709 219.283 202.451C218.695 203.192 218.24 204.095 217.917 205.159C217.581 206.222 217.413 207.426 217.413 208.77C217.412 210.282 217.552 211.681 217.832 212.969C218.112 214.271 218.545 215.391 219.133 216.329C219.721 217.281 220.469 218.023 221.379 218.555C222.289 219.087 223.374 219.353 224.633 219.353C225.697 219.354 226.691 219.137 227.615 218.703C228.539 218.269 229.323 217.64 229.967 216.814L229.969 206.358ZM194.295 211.157C194.085 212.993 194.3 214.384 194.938 215.33C195.577 216.277 196.515 216.821 197.753 216.962C198.198 217.013 198.71 216.973 199.288 216.841C199.865 216.724 200.464 216.539 201.084 216.286C201.703 216.047 202.329 215.752 202.961 215.401C203.592 215.051 204.192 214.668 204.761 214.254L205.115 211.526L205.691 206.478C205.826 205.296 205.931 204.258 206.004 203.365C206.077 202.486 206.121 201.723 206.139 201.077C206.156 200.431 206.155 199.888 206.135 199.449C206.114 199.01 206.079 198.64 206.029 198.338L206.038 198.255L210.857 198.805L210.848 198.888C210.731 199.171 210.613 199.524 210.494 199.947C210.362 200.369 210.238 200.897 210.123 201.532C209.995 202.165 209.866 202.918 209.738 203.791C209.595 204.677 209.456 205.71 209.321 206.892L208.745 211.941C208.61 213.123 208.513 214.154 208.455 215.035C208.381 215.928 208.335 216.698 208.318 217.344C208.286 217.989 208.288 218.531 208.322 218.972C208.342 219.411 208.378 219.781 208.428 220.083L208.418 220.166L203.599 219.616L203.609 219.533C203.76 219.198 203.901 218.763 204.032 218.228C204.148 217.706 204.29 217.018 204.458 216.164C203.834 216.572 203.168 216.975 202.461 217.373C201.739 217.769 201.003 218.108 200.253 218.389C199.5 218.683 198.743 218.9 197.981 219.038C197.217 219.19 196.48 219.226 195.771 219.145C194.686 219.021 193.79 218.728 193.081 218.267C192.359 217.804 191.797 217.24 191.394 216.574C190.977 215.907 190.71 215.165 190.592 214.348C190.458 213.544 190.437 212.738 190.529 211.932L191.339 204.839C191.474 203.657 191.579 202.619 191.652 201.726C191.725 200.847 191.769 200.084 191.787 199.438C191.804 198.792 191.803 198.249 191.782 197.81C191.762 197.371 191.727 197.001 191.677 196.699L191.686 196.616L196.505 197.166L196.496 197.25C196.379 197.532 196.261 197.885 196.142 198.308C196.01 198.73 195.886 199.258 195.771 199.893C195.642 200.526 195.514 201.28 195.386 202.153C195.243 203.038 195.104 204.072 194.969 205.254L194.295 211.157ZM179.735 195.537C179.324 195.45 178.904 195.441 178.475 195.508C178.032 195.572 177.599 195.695 177.174 195.877C176.736 196.057 176.311 196.275 175.899 196.531C175.471 196.799 175.067 197.086 174.688 197.392L174.504 197.246L176.536 194.219C176.718 194.172 176.945 194.112 177.217 194.041C177.473 193.981 177.783 193.938 178.145 193.915C178.497 193.874 178.906 193.868 179.373 193.894C179.842 193.907 180.385 193.979 181.001 194.109C182.836 194.495 184.164 195.29 184.983 196.492C185.786 197.706 185.966 199.367 185.521 201.476L182.635 215.18L186.112 215.784L185.732 217.592C185.313 217.475 184.81 217.348 184.224 217.21C183.638 217.072 182.996 216.93 182.297 216.783C182.106 217.758 181.953 218.62 181.839 219.368C181.707 220.127 181.611 220.786 181.551 221.346C181.473 221.916 181.429 222.4 181.416 222.798C181.404 223.196 181.405 223.532 181.418 223.807L181.401 223.889L176.655 222.889L176.673 222.807C176.81 222.564 176.953 222.258 177.102 221.889C177.251 221.52 177.411 221.067 177.581 220.531C177.738 219.992 177.916 219.35 178.115 218.605C178.299 217.871 178.501 217.013 178.722 216.029C177.857 215.861 177.011 215.698 176.187 215.538C175.345 215.39 174.586 215.258 173.909 215.144C173.216 215.041 172.633 214.954 172.162 214.884C171.674 214.824 171.352 214.792 171.195 214.787L172.006 212.77C172.702 212.93 173.431 213.105 174.192 213.294C174.844 213.46 175.593 213.639 176.439 213.832C177.285 214.024 178.159 214.223 179.06 214.427L182.037 200.292C182.216 199.443 182.273 198.732 182.207 198.16C182.125 197.6 181.972 197.138 181.748 196.776C181.51 196.412 181.218 196.135 180.871 195.948C180.511 195.758 180.132 195.621 179.735 195.537ZM158.503 206.488L158.797 206.529C158.802 206.866 158.861 207.24 158.975 207.652C159.076 208.06 159.251 208.46 159.502 208.853C159.739 209.242 160.065 209.599 160.481 209.924C160.88 210.258 161.382 210.512 161.987 210.687C162.404 210.808 162.818 210.862 163.23 210.85C163.628 210.835 164.003 210.746 164.355 210.586C164.69 210.435 164.989 210.209 165.252 209.906C165.514 209.603 165.714 209.216 165.85 208.746C166.041 208.087 166.022 207.396 165.794 206.675C165.548 205.962 165.202 205.221 164.754 204.45C164.303 203.693 163.807 202.916 163.266 202.118C162.711 201.316 162.218 200.503 161.786 199.678C161.355 198.854 161.044 198.014 160.855 197.157C160.648 196.311 160.667 195.464 160.913 194.617C161.111 193.931 161.427 193.294 161.86 192.705C162.288 192.13 162.832 191.66 163.491 191.297C164.136 190.931 164.903 190.701 165.789 190.608C166.659 190.524 167.638 190.64 168.727 190.955C169.372 191.142 169.96 191.378 170.489 191.662C171.006 191.943 171.474 192.239 171.894 192.55C172.296 192.87 172.655 193.193 172.969 193.517C173.266 193.85 173.526 194.159 173.75 194.442L172.439 198.216L172.116 198.122C172.165 197.452 172.131 196.815 172.014 196.213C171.896 195.611 171.697 195.065 171.417 194.575C171.118 194.096 170.745 193.674 170.296 193.311C169.844 192.962 169.315 192.699 168.71 192.524C167.715 192.236 166.849 192.284 166.111 192.668C165.36 193.048 164.856 193.682 164.599 194.569C164.392 195.282 164.405 195.992 164.637 196.7C164.852 197.418 165.182 198.141 165.628 198.867C166.073 199.593 166.566 200.333 167.105 201.087C167.631 201.837 168.107 202.609 168.533 203.402C168.955 204.209 169.261 205.041 169.45 205.897C169.622 206.763 169.57 207.673 169.294 208.628C169.068 209.408 168.721 210.079 168.251 210.643C167.765 211.216 167.2 211.657 166.557 211.967C165.896 212.285 165.173 212.469 164.386 212.519C163.599 212.568 162.783 212.47 161.936 212.224C160.82 211.901 159.927 211.512 159.257 211.056C158.571 210.609 158.063 210.222 157.736 209.894L158.503 206.488ZM146.854 190.558C146.394 191.564 145.792 192.343 145.047 192.895C144.29 193.442 143.448 193.819 142.522 194.027C141.596 194.235 140.621 194.298 139.597 194.215C138.568 194.144 137.541 193.983 136.517 193.731C135.488 193.492 134.5 193.195 133.555 192.84C132.603 192.497 131.742 192.158 130.973 191.822L130.528 192.796C130.144 193.636 129.921 194.411 129.858 195.121C129.795 195.831 129.871 196.474 130.086 197.049C130.294 197.636 130.635 198.154 131.108 198.601C131.562 199.054 132.121 199.432 132.783 199.735C133.241 199.944 133.711 200.112 134.191 200.24C134.672 200.367 135.194 200.452 135.76 200.494C136.312 200.531 136.926 200.519 137.6 200.458C138.261 200.391 139.005 200.261 139.832 200.069L139.97 200.271L137.442 202.371C136.934 202.37 136.451 202.334 135.991 202.262C135.525 202.203 135.065 202.116 134.61 202.001C134.155 201.885 133.705 201.741 133.261 201.569C132.798 201.404 132.324 201.21 131.84 200.989C130.503 200.379 129.44 199.693 128.649 198.931C127.839 198.177 127.266 197.377 126.929 196.53C126.574 195.691 126.431 194.825 126.5 193.934C126.563 193.054 126.792 192.182 127.187 191.316L130.031 185.09C130.525 184.008 130.946 183.054 131.292 182.227C131.621 181.407 131.899 180.696 132.129 180.093C132.345 179.484 132.512 178.968 132.628 178.544C132.732 178.114 132.807 177.748 132.853 177.446L132.888 177.37L137.108 179.298L137.074 179.374C136.917 179.549 136.768 179.757 136.626 180C136.471 180.238 136.3 180.529 136.112 180.874C136.484 180.766 136.91 180.676 137.389 180.603C137.856 180.524 138.372 180.49 138.936 180.502C139.482 180.52 140.067 180.603 140.692 180.75C141.311 180.878 141.957 181.097 142.632 181.405C144.848 182.417 146.324 183.715 147.063 185.298C147.796 186.895 147.726 188.648 146.854 190.558ZM131.653 190.332C132.817 190.849 133.963 191.287 135.091 191.649C136.213 192.022 137.275 192.207 138.277 192.203C139.266 192.194 140.172 191.946 140.994 191.46C141.798 190.98 142.467 190.155 143.002 188.984C143.689 187.481 143.836 186.164 143.446 185.031C143.055 183.899 142.198 183.03 140.873 182.425C140.262 182.146 139.671 181.976 139.099 181.915C138.508 181.86 137.963 181.873 137.465 181.953C136.948 182.04 136.486 182.176 136.079 182.359C135.667 182.555 135.323 182.768 135.05 182.997C134.803 183.469 134.546 183.998 134.279 184.584C134.005 185.182 133.697 185.857 133.354 186.608L131.653 190.332ZM109.617 180.209C108.673 181.797 108.298 183.154 108.492 184.279C108.686 185.404 109.319 186.285 110.389 186.922C110.774 187.151 111.258 187.324 111.839 187.442C112.413 187.571 113.035 187.648 113.705 187.672C114.368 187.708 115.059 187.695 115.779 187.635C116.499 187.575 117.203 187.472 117.891 187.328L119.333 184.985L121.93 180.618C122.538 179.595 123.059 178.692 123.493 177.907C123.92 177.135 124.274 176.458 124.555 175.876C124.836 175.294 125.057 174.799 125.218 174.39C125.38 173.981 125.5 173.629 125.578 173.333L125.621 173.261L129.79 175.74L129.747 175.812C129.524 176.022 129.272 176.295 128.99 176.633C128.696 176.963 128.367 177.394 128.001 177.926C127.624 178.45 127.198 179.085 126.723 179.828C126.23 180.577 125.678 181.462 125.07 182.485L122.473 186.852C121.865 187.875 121.354 188.776 120.939 189.555C120.506 190.34 120.148 191.023 119.867 191.605C119.574 192.18 119.353 192.675 119.203 193.091C119.042 193.5 118.922 193.852 118.844 194.148L118.801 194.22L114.632 191.741L114.675 191.669C114.95 191.425 115.257 191.087 115.596 190.653C115.916 190.225 116.328 189.655 116.832 188.945C116.096 189.061 115.323 189.155 114.514 189.228C113.693 189.294 112.883 189.3 112.084 189.248C111.277 189.208 110.498 189.095 109.745 188.908C108.986 188.734 108.3 188.464 107.686 188.099C106.748 187.541 106.05 186.906 105.594 186.195C105.125 185.477 104.844 184.732 104.75 183.959C104.643 183.179 104.704 182.393 104.931 181.6C105.139 180.811 105.451 180.068 105.866 179.371L109.514 173.235C110.122 172.212 110.643 171.309 111.077 170.524C111.504 169.752 111.858 169.075 112.139 168.493C112.419 167.911 112.641 167.416 112.802 167.007C112.964 166.598 113.084 166.246 113.162 165.95L113.205 165.878L117.374 168.357L117.331 168.429C117.108 168.639 116.856 168.912 116.574 169.25C116.28 169.58 115.951 170.011 115.585 170.543C115.208 171.067 114.782 171.702 114.307 172.445C113.813 173.194 113.262 174.079 112.654 175.102L109.617 180.209ZM89.0369 175.185C88.5809 174.836 88.1545 174.449 87.758 174.023C87.3614 173.596 87.0014 173.145 86.6781 172.669C86.3548 172.193 86.0791 171.701 85.8513 171.192C85.6234 170.684 85.4557 170.177 85.3482 169.672L83.2579 172.408C82.5357 173.354 81.918 174.185 81.4049 174.903C80.8834 175.632 80.4494 176.269 80.103 176.815C79.7566 177.36 79.4796 177.827 79.2718 178.214C79.064 178.602 78.9042 178.938 78.7925 179.222L78.7415 179.289L74.8873 176.345L74.9383 176.278C75.1835 176.095 75.4712 175.857 75.8013 175.563C76.1203 175.261 76.4975 174.871 76.9329 174.393C77.3571 173.907 77.8578 173.321 78.435 172.634C78.9926 171.951 79.6325 171.136 80.3547 170.19L89.4424 158.294C90.1646 157.349 90.7866 156.511 91.3081 155.783C91.8101 155.056 92.2398 154.425 92.5973 153.887C92.9437 153.342 93.2207 152.875 93.4285 152.488C93.6252 152.092 93.7794 151.752 93.8911 151.467L93.9421 151.401L97.6294 154.218L97.5785 154.284C97.4771 154.348 97.3516 154.454 97.2019 154.604C97.0437 154.765 96.8502 154.961 96.6214 155.191C97.4606 155.269 98.4189 155.49 99.4963 155.855C100.574 156.22 101.68 156.836 102.814 157.703C104.138 158.714 105.182 159.837 105.947 161.073C106.711 162.309 107.184 163.604 107.365 164.957C107.535 166.303 107.41 167.678 106.989 169.082C106.559 170.498 105.822 171.89 104.776 173.258C103.816 174.515 102.706 175.507 101.445 176.235C100.176 176.974 98.8394 177.433 97.4352 177.611C96.0311 177.789 94.6084 177.679 93.1674 177.283C91.7263 176.887 90.3495 176.187 89.0369 175.185ZM87.5914 166.735C87.1442 168.243 87.1252 169.594 87.5346 170.787C87.9329 171.972 88.6492 172.96 89.6837 173.75C90.5513 174.413 91.4711 174.869 92.4432 175.118C93.4068 175.379 94.3709 175.419 95.3355 175.24C96.3001 175.061 97.2555 174.664 98.2016 174.048C99.1281 173.435 99.9992 172.594 100.815 171.526C101.733 170.325 102.453 169.105 102.976 167.867C103.5 166.628 103.799 165.43 103.873 164.271C103.928 163.116 103.738 162.028 103.302 161.008C102.857 159.999 102.134 159.112 101.133 158.347C100.61 157.948 100.074 157.635 99.5245 157.409C98.975 157.183 98.4389 157.02 97.9163 156.92C97.3937 156.82 96.9028 156.771 96.4436 156.773C95.976 156.786 95.5626 156.831 95.2036 156.909C94.816 157.37 94.3829 157.902 93.9045 158.506C93.426 159.109 92.9064 159.778 92.3456 160.512L87.5914 166.735ZM69.3865 146.461C68.6334 145.287 67.798 144.353 66.8804 143.659C65.9429 142.964 64.9567 142.545 63.9217 142.401C62.8668 142.257 61.7724 142.409 60.6384 142.856C59.4949 143.294 58.3251 144.072 57.1292 145.19C56.3012 145.965 55.6311 146.755 55.119 147.559C54.5967 148.374 54.263 149.175 54.1179 149.962C53.953 150.749 53.9866 151.523 54.2188 152.283C54.4407 153.053 54.8767 153.785 55.527 154.481C55.9381 154.92 56.3172 155.284 56.6641 155.573C57.0007 155.872 57.2947 156.114 57.5459 156.301C57.8457 156.519 58.1075 156.686 58.3314 156.802L69.3865 146.461ZM60.1618 161.156C59.991 160.933 59.8107 160.699 59.6207 160.455C59.4595 160.242 59.274 160.013 59.0643 159.768C58.8348 159.523 58.6006 159.272 58.3615 159.017C57.9886 158.618 57.4405 158.124 56.7174 157.536C55.9746 156.947 55.1106 156.125 54.1257 155.073C53.2078 154.091 52.5046 153.053 52.0163 151.957C51.5184 150.851 51.2586 149.733 51.2368 148.604C51.2151 147.474 51.4451 146.367 51.9269 145.284C52.3889 144.2 53.1258 143.185 54.1378 142.238C55.4974 140.967 56.9263 140.138 58.4246 139.752C59.923 139.366 61.4043 139.342 62.8687 139.678C64.333 140.014 65.7323 140.669 67.0664 141.645C68.3903 142.63 69.5623 143.862 70.5825 145.342L73.1278 142.961C73.9967 142.148 74.7486 141.426 75.3837 140.793C75.999 140.16 76.5275 139.608 76.969 139.138C77.4009 138.657 77.7515 138.243 78.0205 137.895C78.28 137.537 78.4884 137.228 78.6457 136.965L78.7071 136.908L82.1495 140.588L82.0881 140.645C81.8161 140.785 81.4977 140.977 81.133 141.223C80.7588 141.458 80.3174 141.775 79.809 142.174C79.3005 142.573 78.7147 143.063 78.0516 143.645C77.3783 144.237 76.6072 144.939 75.7383 145.752L65.7564 155.089C64.8876 155.902 64.1407 156.62 63.5158 157.243C62.8807 157.875 62.3472 158.432 61.9153 158.912C61.4731 159.403 61.1222 159.827 60.8627 160.184C60.5936 160.532 60.3805 160.837 60.2232 161.099L60.1618 161.156ZM65.1302 131.3C64.2523 131.973 63.355 132.378 62.4381 132.516C61.5127 132.643 60.5924 132.581 59.6772 132.33C58.762 132.079 57.8718 131.677 57.0066 131.123C56.1304 130.577 55.2995 129.953 54.5141 129.25C53.7175 128.555 52.985 127.829 52.3166 127.072C51.637 126.323 51.0363 125.619 50.5145 124.961L49.6645 125.612C48.9311 126.174 48.3701 126.754 47.9814 127.351C47.5928 127.949 47.3581 128.552 47.2775 129.16C47.1858 129.777 47.2439 130.393 47.4518 131.01C47.64 131.624 47.9554 132.22 48.3981 132.798C48.7045 133.198 49.04 133.567 49.4046 133.905C49.7692 134.242 50.191 134.563 50.67 134.866C51.1406 135.158 51.6879 135.435 52.3121 135.698C52.9278 135.949 53.6455 136.184 54.4652 136.402L54.4929 136.645L51.2745 137.312C50.8269 137.073 50.4169 136.814 50.0445 136.535C49.661 136.265 49.2955 135.972 48.9479 135.656C48.6004 135.341 48.2708 135.002 47.9591 134.642C47.6279 134.278 47.3005 133.885 46.977 133.463C46.0833 132.296 45.4659 131.191 45.1249 130.148C44.7643 129.102 44.634 128.126 44.7339 127.22C44.8143 126.313 45.0941 125.481 45.5736 124.726C46.0419 123.979 46.6539 123.316 47.4095 122.738L52.8431 118.575C53.7876 117.852 54.6069 117.206 55.3011 116.639C55.9756 116.07 56.5556 115.573 57.0412 115.148C57.5183 114.712 57.9078 114.334 58.2097 114.015C58.5031 113.684 58.7409 113.396 58.9232 113.151L58.9899 113.099L61.8116 116.783L61.745 116.834C61.5246 116.915 61.2948 117.029 61.0556 117.177C60.8078 117.314 60.5198 117.491 60.1917 117.707C60.5704 117.787 60.9888 117.907 61.4468 118.068C61.8962 118.217 62.3673 118.429 62.8601 118.704C63.3332 118.976 63.8113 119.324 64.2943 119.748C64.78 120.152 65.2484 120.648 65.6995 121.237C67.1806 123.17 67.8755 125.01 67.7841 126.755C67.6816 128.508 66.7969 130.023 65.1302 131.3ZM51.8146 123.965C52.6003 124.968 53.4062 125.893 54.2324 126.742C55.0474 127.598 55.8982 128.26 56.7849 128.727C57.663 129.183 58.5792 129.389 59.5334 129.346C60.468 129.3 61.4464 128.885 62.4687 128.102C63.7799 127.098 64.5289 126.004 64.7156 124.821C64.9023 123.637 64.553 122.468 63.6678 121.312C63.2592 120.779 62.8167 120.351 62.3402 120.028C61.8442 119.703 61.3574 119.459 60.8798 119.295C60.3826 119.13 59.9112 119.032 59.4658 119.003C59.0092 118.983 58.6064 119.009 58.2572 119.083C57.8179 119.384 57.3427 119.73 56.8315 120.122C56.3093 120.522 55.7204 120.973 55.0648 121.475L51.8146 123.965ZM43.6529 97.1057L47.6491 96.4644C47.9906 96.6978 48.3496 96.9861 48.726 97.3294C49.1025 97.6727 49.4721 98.045 49.8349 98.4461C50.1904 98.8353 50.5257 99.2452 50.8408 99.6757C51.1679 100.099 51.4565 100.513 51.7065 100.918C52.5962 102.359 53.2114 103.822 53.5519 105.306C53.8732 106.785 53.9046 108.222 53.6462 109.615C53.3805 110.996 52.8125 112.301 51.9422 113.53C51.0719 114.758 49.8804 115.839 48.3678 116.773C47.022 117.604 45.6193 118.116 44.1597 118.31C42.6808 118.499 41.2355 118.396 39.8236 118.001C38.4044 117.594 37.0706 116.912 35.8221 115.956C34.5736 115 33.4971 113.789 32.5926 112.324C32.1808 111.657 31.7992 110.906 31.4477 110.07C31.0842 109.241 30.808 108.474 30.619 107.768L32.873 104.625L33.1304 104.762C32.945 105.288 32.8322 105.851 32.7918 106.452C32.7321 107.048 32.7495 107.662 32.844 108.295C32.9311 108.915 33.0842 109.536 33.3033 110.158C33.5225 110.779 33.8086 111.376 34.1615 111.947C34.7351 112.876 35.4239 113.619 36.228 114.176C37.0202 114.739 37.8951 115.104 38.8527 115.269C39.8103 115.435 40.8373 115.393 41.9336 115.144C43.0107 114.89 44.121 114.41 45.2644 113.704C46.5507 112.91 47.6594 112.028 48.5906 111.058C49.5144 110.077 50.2108 109.047 50.6796 107.967C51.1292 106.884 51.3178 105.764 51.2456 104.608C51.154 103.447 50.7442 102.277 50.0162 101.098C49.678 100.55 49.2779 100.048 48.816 99.5934C48.3348 99.1337 47.8221 98.7429 47.2778 98.4209C46.7143 98.0944 46.1289 97.8389 45.5216 97.6546C44.9143 97.4702 44.2997 97.3808 43.678 97.3863L43.6529 97.1057ZM25.3926 102.454C24.3233 102.976 23.4016 103.449 22.6275 103.874C21.8346 104.292 21.1612 104.667 20.607 105C20.0468 105.32 19.5901 105.613 19.2369 105.878C18.8776 106.132 18.5843 106.36 18.357 106.565L18.2815 106.601L16.1547 102.243L16.2302 102.206C16.5312 102.152 16.892 102.062 17.3127 101.935C17.7333 101.807 18.2453 101.627 18.8485 101.395C19.4517 101.163 20.162 100.864 20.9794 100.496C21.7842 100.134 22.7213 99.6928 23.7906 99.171L33.1877 94.586L24.6482 91.1132C23.1769 90.4917 22.1267 90.3344 21.4977 90.6413L19.3617 86.2635L19.4372 86.2266C19.6974 86.5046 19.983 86.7547 20.2938 86.9768C20.5859 87.1925 20.9126 87.3991 21.2738 87.5967C21.6288 87.7817 22.0245 87.9702 22.4608 88.1622C22.8784 88.3478 23.3492 88.5464 23.8729 88.7581L31.6088 91.8287L36.8708 79.8698C37.0371 79.5083 37.2004 79.1249 37.3609 78.7196C37.5087 78.3204 37.6377 77.9304 37.7478 77.5496C37.858 77.1688 37.9397 76.8096 37.9931 76.4721C38.0464 76.1345 38.0461 75.8466 37.9921 75.6082L38.0675 75.5713L40.7375 81.0436C40.4105 81.2032 40.1138 81.4569 39.8475 81.8049C39.575 82.1403 39.2757 82.6601 38.9496 83.3644L34.1878 94.098L37.2447 92.6065C38.314 92.0848 39.2451 91.6149 40.0379 91.197C40.8182 90.7851 41.4854 90.4129 42.0395 90.0802C42.5936 89.7475 43.0503 89.4546 43.4096 89.2014C43.7689 88.9483 44.0622 88.7195 44.2896 88.5151L44.365 88.4783L46.4918 92.8372L46.4164 92.874C46.1153 92.9274 45.7545 93.0178 45.3338 93.1452C44.907 93.26 44.3951 93.4397 43.798 93.6843C43.1948 93.9163 42.4908 94.2131 41.686 94.5747C40.8624 94.9297 39.916 95.3681 38.8467 95.8899L25.3926 102.454ZM32.7201 78.4834C31.6828 78.8665 30.7057 78.9885 29.789 78.8496C28.8674 78.6975 28.0065 78.3663 27.2063 77.856C26.4061 77.3458 25.6746 76.6982 25.0118 75.9134C24.3358 75.1335 23.7265 74.2916 23.1839 73.3878C22.6281 72.4888 22.1429 71.5788 21.7281 70.6576C21.3002 69.7413 20.9343 68.8916 20.6302 68.1086L19.6257 68.4795C18.7591 68.7995 18.0518 69.1875 17.504 69.6435C16.9561 70.0995 16.5538 70.6061 16.2971 71.1635C16.0272 71.7257 15.9005 72.332 15.9168 72.9825C15.9152 73.6247 16.0405 74.2872 16.2926 74.97C16.4672 75.4427 16.6787 75.8943 16.9272 76.3248C17.1757 76.7553 17.484 77.1861 17.852 77.6172C18.2153 78.0351 18.6563 78.4617 19.1751 78.8968C19.689 79.3188 20.3053 79.7552 21.0238 80.2061L20.9784 80.4467L17.7067 80.1329C17.3497 79.7723 17.0345 79.4037 16.7612 79.0272C16.4747 78.6555 16.2121 78.2675 15.9733 77.8633C15.7345 77.4591 15.5196 77.0386 15.3285 76.6018C15.1194 76.1568 14.9227 75.6848 14.7384 75.1858C14.2293 73.8071 13.9661 72.5688 13.9487 71.4711C13.9133 70.3651 14.0771 69.3944 14.4401 68.5591C14.7851 67.7154 15.2982 67.0037 15.9794 66.4239C16.6474 65.849 17.4279 65.3967 18.3208 65.0669L24.7418 62.696C25.8579 62.2838 26.8313 61.9095 27.6619 61.5729C28.4746 61.228 29.1757 60.9244 29.7652 60.6619C30.3498 60.3864 30.8335 60.1406 31.2163 59.9247C31.5943 59.6956 31.9066 59.4907 32.1533 59.3101L32.232 59.281L33.8394 63.6339L33.7606 63.663C33.5263 63.6749 33.2729 63.7162 33.0006 63.7869C32.7235 63.8445 32.3962 63.928 32.0188 64.0375C32.357 64.226 32.7212 64.4646 33.1113 64.7533C33.4965 65.0288 33.8839 65.3707 34.2734 65.7789C34.6449 66.1789 34.9988 66.6525 35.3352 67.1998C35.6798 67.7291 35.9806 68.3417 36.2376 69.0376C37.0813 71.3223 37.2016 73.2848 36.5987 74.925C35.9826 76.57 34.6897 77.7561 32.7201 78.4834ZM22.1665 67.5413C22.6209 68.7314 23.1173 69.8536 23.6559 70.9081C24.1814 71.9675 24.7987 72.8512 25.5078 73.5592C26.212 74.2541 27.0263 74.7219 27.9508 74.9625C28.8572 75.1948 29.9144 75.0879 31.1225 74.6418C32.6719 74.0696 33.7106 73.2459 34.2387 72.1706C34.7667 71.0952 34.7786 69.8748 34.2743 68.5092C34.0416 67.8789 33.7453 67.3392 33.3855 66.8901C33.0078 66.4328 32.6148 66.0556 32.2068 65.7587C31.7807 65.4535 31.3592 65.2212 30.9422 65.0618C30.5121 64.9073 30.1194 64.8135 29.7641 64.7806C29.2554 64.9386 28.6991 65.1291 28.0951 65.3521C27.4779 65.58 26.782 65.837 26.0073 66.1231L22.1665 67.5413ZM38.4108 45.1584C38.1366 44.0582 37.7824 43.1584 37.3484 42.4587C36.9279 41.7557 36.4462 41.2122 35.9033 40.8282C35.357 40.4306 34.7529 40.1773 34.0909 40.0682C33.4392 39.9421 32.745 39.906 32.0083 39.9598C31.2681 40.0001 30.4957 40.1133 29.691 40.2995C28.8829 40.472 28.0511 40.665 27.1954 40.8783L26.5231 41.0459C27.0421 41.6233 27.5475 42.3485 28.0391 43.2213C28.5172 44.0975 28.9035 45.1264 29.1981 46.308C29.601 47.9243 29.7153 49.4537 29.5412 50.8964C29.3671 52.3391 28.9283 53.6459 28.2247 54.8166C27.5178 55.9738 26.5615 56.9695 25.3557 57.8038C24.1364 58.6415 22.6915 59.2686 21.0209 59.685C19.4862 60.0676 17.9991 60.1786 16.5598 60.0181C15.1171 59.844 13.8019 59.4289 12.6141 58.7729C11.423 58.1033 10.4001 57.2114 9.54531 56.0973C8.67359 54.973 8.04814 53.6503 7.66895 52.1291C7.50644 51.4772 7.4118 50.8661 7.38503 50.2957C7.35826 49.7254 7.38239 49.1856 7.45743 48.6764C7.51549 48.157 7.61598 47.6632 7.75888 47.1948C7.88482 46.7162 8.03451 46.2461 8.20796 45.7845L6.75117 46.364L6.66968 46.3843L5.54735 41.882L5.62884 41.8617C5.93437 41.8721 6.30781 41.8655 6.74916 41.8421C7.18712 41.805 7.72526 41.7358 8.36356 41.6344C8.99848 41.5194 9.75563 41.3739 10.635 41.198C11.4974 41.0119 12.5059 40.7749 13.6603 40.4871L27.5137 37.0338C28.7633 36.7223 30.0212 36.5891 31.2874 36.6341C32.5639 36.6621 33.7637 36.9617 34.8871 37.5328C36.007 38.0903 37.0079 38.9516 37.8898 40.1166C38.7716 41.2817 39.4546 42.8353 39.9388 44.7775C40.1081 45.4566 40.2111 46.1594 40.248 46.8859C40.2984 47.609 40.3064 48.3067 40.272 48.9789C40.2512 49.6476 40.1948 50.2604 40.1027 50.8171C40.0107 51.3738 39.9204 51.8218 39.8319 52.1612L36.0778 53.7678L35.915 53.4622C36.54 52.9602 37.048 52.3647 37.4389 51.6758C37.8399 50.97 38.1341 50.2403 38.3213 49.4868C38.5221 48.7298 38.6228 47.9762 38.6233 47.226C38.634 46.4587 38.5632 45.7695 38.4108 45.1584ZM27.4823 45.762C27.2386 44.7841 26.8555 43.9419 26.3332 43.2354C25.8075 42.5154 25.2596 41.9379 24.6896 41.5029L14.544 44.032C13.7834 44.2216 13.0992 44.3993 12.4914 44.5653C11.87 44.7346 11.3081 44.8819 10.8056 45.0072C10.3843 45.4584 10.0377 45.9487 9.76574 46.4781C9.47682 46.9973 9.26427 47.5336 9.1281 48.0869C8.97496 48.6299 8.89312 49.1697 8.88257 49.706C8.85844 50.2458 8.90731 50.7602 9.02919 51.2491C9.2865 52.2813 9.70856 53.1643 10.2954 53.898C10.8822 54.6317 11.6083 55.2008 12.4737 55.6054C13.3222 55.9997 14.3014 56.2245 15.4115 56.2796C16.5046 56.3244 17.7031 56.1844 19.007 55.8593C20.4738 55.4937 21.7981 54.9905 22.98 54.3496C24.1618 53.7088 25.1435 52.9592 25.9249 52.1008C26.6893 51.2323 27.2196 50.2634 27.5156 49.1942C27.7981 48.1284 27.787 46.9843 27.4823 45.762ZM24.804 23.2294C25.0086 24.7695 24.9575 26.2449 24.6506 27.6553C24.3438 29.0657 23.7918 30.3322 22.9949 31.4547C22.1841 32.5791 21.1305 33.5239 19.8343 34.2892C18.5223 35.0424 16.9782 35.5369 15.2022 35.7728C13.6342 35.9811 12.1492 35.9101 10.7471 35.5598C9.33118 35.2113 8.06887 34.6376 6.96022 33.8388C5.85157 33.04 4.93771 32.06 4.21865 30.8989C3.49775 29.7238 3.04146 28.4147 2.84977 26.9717C2.65993 25.5425 2.73367 24.1842 3.07099 22.8968C3.39444 21.6112 3.96895 20.4618 4.79452 19.4484C5.60438 18.423 6.66898 17.5615 7.98834 16.8638C9.29198 16.154 10.8221 15.6613 12.5788 15.3856C12.7593 16.9572 12.9468 18.5279 13.1412 20.0977C13.3356 21.6675 13.5452 23.2988 13.7701 24.9916C13.9304 26.1987 14.094 27.3772 14.2609 28.5271C14.4259 29.663 14.5831 30.687 14.7325 31.5991C16.1645 31.3242 17.4393 30.9289 18.5569 30.4133C19.6727 29.8839 20.6045 29.2447 21.3522 28.4959C22.0842 27.735 22.6114 26.8671 22.9338 25.8924C23.2543 24.9037 23.3372 23.8266 23.1824 22.6611C23.0755 21.8563 22.8848 21.1121 22.6104 20.4284C22.3203 19.7327 21.9701 19.1155 21.5596 18.577C21.1492 18.0385 20.6916 17.5697 20.1867 17.1708C19.668 16.7738 19.1238 16.4507 18.5542 16.2016L18.6459 15.9352L22.5552 16.9833C23.0433 17.681 23.4952 18.5317 23.9109 19.5355C24.3128 20.5411 24.6105 21.7724 24.804 23.2294ZM12.4756 27.684C12.2913 26.2964 12.107 24.9089 11.9227 23.5213C11.7227 22.1218 11.5263 20.8558 11.3335 19.7236C10.1429 20.0088 9.09195 20.3885 8.18062 20.8625C7.26929 21.3366 6.51655 21.8884 5.92241 22.518C5.32827 23.1477 4.89966 23.8541 4.63658 24.6374C4.3735 25.4208 4.30094 26.2564 4.4189 27.1445C4.52581 27.9493 4.8048 28.6676 5.25587 29.2996C5.69123 29.9196 6.2751 30.4351 7.00748 30.8461C7.73985 31.2572 8.61196 31.5508 9.6238 31.727C10.6218 31.9051 11.7419 31.9399 12.9842 31.8314C12.929 31.2033 12.8553 30.5424 12.7632 29.8486C12.671 29.1548 12.5752 28.4333 12.4756 27.684ZM5.32467 2.08582L5.37945 2.37765C5.0621 2.48959 4.72651 2.66537 4.3727 2.905C4.01828 3.13064 3.69487 3.42498 3.4025 3.78802C3.10951 4.13708 2.87581 4.5606 2.70142 5.0586C2.51242 5.54322 2.43167 6.10017 2.45916 6.72945C2.47809 7.16296 2.55904 7.57274 2.702 7.95879C2.84435 8.33087 3.04779 8.65824 3.31233 8.94091C3.56228 9.21021 3.87271 9.42082 4.24363 9.57275C4.61454 9.72467 5.04472 9.78995 5.53416 9.76857C6.21938 9.73864 6.86747 9.50017 7.47843 9.05316C8.07479 8.59278 8.66657 8.02751 9.25377 7.35737C9.82699 6.68784 10.4051 5.96906 10.988 5.20102C11.5703 4.41901 12.183 3.69171 12.8262 3.01912C13.4693 2.34653 14.1663 1.78368 14.9171 1.33057C15.6533 0.864075 16.4619 0.611588 17.3429 0.573106C18.0561 0.541954 18.7608 0.637269 19.457 0.859052C20.1392 1.08145 20.7576 1.44673 21.3122 1.95492C21.8662 2.44912 22.329 3.10141 22.7007 3.91181C23.0578 4.70884 23.261 5.67371 23.3105 6.80642C23.3398 7.47765 23.3044 8.10968 23.2042 8.70251C23.1034 9.28136 22.9728 9.81947 22.8123 10.3169C22.6373 10.8009 22.4465 11.2435 22.2399 11.6449C22.0186 12.0328 21.8095 12.3782 21.6126 12.681L17.618 12.6454L17.6033 12.3097C18.2545 12.1412 18.8466 11.9052 19.3798 11.6017C19.9129 11.2982 20.3664 10.9351 20.7403 10.5124C21.0995 10.0764 21.3794 9.58784 21.58 9.04667C21.7665 8.50611 21.846 7.92119 21.8185 7.29191C21.7733 6.25709 21.4509 5.45154 20.8513 4.87527C20.2511 4.28502 19.4895 4.01005 18.5666 4.05036C17.8254 4.08274 17.1564 4.32212 16.5594 4.76852C15.9478 5.20154 15.3691 5.74522 14.8232 6.39955C14.2774 7.05387 13.7337 7.75714 13.1921 8.50936C12.6499 9.24759 12.0709 9.9454 11.4551 10.6028C10.8253 11.2608 10.1351 11.8163 9.38427 12.2694C8.61888 12.7092 7.73974 12.9507 6.74688 12.9941C5.9358 13.0295 5.18823 12.9151 4.50417 12.6507C3.80551 12.373 3.20685 11.9788 2.70818 11.4682C2.19491 10.9442 1.78925 10.3174 1.49118 9.58789C1.19311 8.85834 1.02483 8.05307 0.986347 7.17207C0.935648 6.0114 1.01936 5.041 1.23748 4.26088C1.441 3.46739 1.64577 2.86299 1.85181 2.44768L5.32467 2.08582Z"
+                        fill="black" />
+                </svg>
+
+
+            </div>
+
+            <!-- RIGHT SERVICE LIST -->
+            <div class="service-list right">
+
+                <div class="item">
+                    <h4>Eyelash Extension / Makeup</h4>
+                    <p>Tempor commodo vestibulum aptent ultricies mattis.</p>
+                </div>
+
+                <div class="item">
+                    <h4>Pedicure / Gel Manicure</h4>
+                    <p>Luctus accumsan tortor posuere nibh neque dictum nam vivamus.</p>
+                </div>
+
+                <div class="item">
+                    <h4>Full Body Wax & Halwa</h4>
+                    <p>Mi bibendum neque egestas cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+
+                <div class="item">
+                    <h4>Blow Dry</h4>
+                    <p>Amet commodo nulla facilisi mollit incididunt ut labore.</p>
+                </div>
+
+                <div class="item">
+                    <h4>Henna for Hair / Hair Spa</h4>
+                    <p>Amet commodo nulla facilisi mollit incididunt ut labore.</p>
+                </div>
+
+                <div class="item">
+                    <h4>Deep Facial / Cleansing</h4>
+                    <p>Amet commodo nulla facilisi mollit incididunt ut labore.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+
+        <!-- LEFT MODEL IMAGE -->
+        <div class="left-img">
+            <img src="assets/img/hallo-testimonial-img.png" alt="">
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="right-content">
+
+            <h2 class="heading">Testimonials</h2>
+
+            <p class="text">
+                Vestibulum feugiat finibus accumsan. Nunc facilisis ullamcorper turpis a malesuada.
+                Suspendisse odio orci, aliquet et feugiat et, pretium nec enim. Praesent elit odio,
+                tempor eu orci nec, faucibus posuere massa. Quisque purus nulla, porttitor eu nisi sed,
+                molestie ullamcorper turpis. Maecenas ante lorem, vestibulum ac sapien in, tristique
+                luctus nisl. Sed vel egestas purus, ac dignissim diam. Aenean auctor leo bibendum
+                eleifend ornare. Aenean a porta nunc.
+            </p>
+
+            <!-- STAR RATINGS -->
+            <div class="stars">
+                ★★★★☆
+            </div>
+
+            <!-- AUTHOR -->
+            <p class="author">
+                <strong>Jessica Thomas</strong> – <span>MANAGER</span>
+            </p>
+
+            <!-- PAGINATION DOTS -->
+            <div class="dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- QUOTE ICONS -->
+            <div class="quotes">
+                <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5.16313 72.72H16.6831C23.4031 72.72 29.5231 76.44 32.7631 82.32L41.1631 98.16C41.7631 99.2401 42.8431 99.9601 44.1631 99.9601H50.4031C52.3231 99.9601 53.7631 98.4 53.7631 96.6V24C53.7631 21.84 51.9631 20.04 49.8031 20.04H5.16313C3.00313 20.16 1.20312 21.84 1.20312 24V68.76C1.20312 70.92 3.00313 72.72 5.16313 72.72Z"
+                        fill="#B2A69B" fill-opacity="0.4" />
+                    <path
+                        d="M66.2422 24V68.76C66.2422 70.92 68.0422 72.72 70.2022 72.72H81.6022C88.3222 72.72 94.4422 76.44 97.6822 82.32L106.082 98.16C106.682 99.2401 107.762 99.9601 109.082 99.9601H115.442C117.362 99.9601 118.802 98.4 118.802 96.6V72.72V24C118.802 21.84 117.002 20.04 114.842 20.04H70.2022C68.0422 20.16 66.2422 21.84 66.2422 24Z"
+                        fill="#B2A69B" fill-opacity="0.4" />
+                </svg>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="team-section">
+
+    <!-- Heading -->
+    
+        <div style="position: relative;">
+            <div style=" position: absolute;
+                         left: 50%;
+                          top: 50%;
+                         transform: translate(-50%, -50%) rotate(90deg);
+                           z-index: 0;">
+                <img class="overlay-1" src="assets/img/home/Section.png" alt=""
+                    style="height: auto; width: 8rem; opacity: 0.3;">
+            </div>
+            <h1 style="font-size: 2.5rem; color: #4B4036;">Meet Our Team</h1>
+            <p class="subtitle" style="padding-bottom: 2rem;">
+               At urna condime sit amet
+            </p>
+        </div>
+
+    <!-- Team Grid -->
+    <div class="team-grid">
+
+        <div class="member">
+            <img src="assets/img/hallo-team-img1.jpg" alt="">
+            <h3>Amos Vazquez</h3>
+            <span>CEO</span>
+        </div>
+
+        <div class="member">
+            <img src="assets/img/hallo-team-img2.jpg" alt="">
+            <h3>Keith Blanchard</h3>
+            <span>RELATIONSHIP MANAGER</span>
+        </div>
+
+        <div class="member">
+            <img src="assets/img/hallo-team-img3.jpg" alt="">
+            <h3>Hayden Black</h3>
+            <span>SENIOR THERAPIST</span>
+        </div>
+
+        <div class="member">
+            <img src="assets/img/hallo-team-img4.jpg" alt="">
+            <h3>Camron Lyons</h3>
+            <span>JUNIOR THERAPIST</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <div class="gallery-strip">
+        <div class="gallery-strip-item">
+            <img src="assets/img/hallo-gallery1.png" alt="Gallery">
+        </div>
+        <div class="gallery-strip-item">
+            <img src="assets/img/hallo-gallery2.png" alt="Gallery">
+        </div>
+        <div class="gallery-strip-item">
+            <img src="assets/img/hallo-gallery3.png" alt="Gallery">
+        </div>
+        <div class="gallery-strip-item">
+            <img src="assets/img/hallo-gallery4.png" alt="Gallery">
+        </div>
+        <div class="gallery-strip-item">
+            <img src="assets/img/hallo-gallery5.png" alt="Gallery">
+        </div>
+        <!-- <div class="gallery-strip-item">
+            <img src="assets/img/home/blog/13.avif" alt="Gallery">
+        </div> -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <!-- Left Column - Follow Us -->
+            <div class="footer-left">
+                <h4 style="color: white;">Follow Us</h4>
+                <ul class="footer-contact-list">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+(1) 000 123 456 789</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>info@example.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>No: 58 A, East Madison Street,<br>Baltimore, MD, USA 4508</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Center Column - Logo -->
+            <div class="footer-center">
+                <img src="assets/img/home/whitelogo.png" alt="Hallo Point" class="footer-logo-img">
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Column - Newsletter -->
+            <div class="footer-right">
+                <h4 style="color: white;">Subscribe To Our Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="YOUR MAIL">
+                    <button type="submit"><i class="far fa-paper-plane"></i></button>
+                </form>
+                <p class="newsletter-note">We do not spam. We send offers instead.</p>
+                <div class="payment-methods">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="Skrill"
+                        style="background: #fff; padding: 6px 12px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa"
+                        style="background: #fff; padding: 6px 12px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard"
+                        style="background: #fff; padding: 6px 12px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" alt="Apple Pay"
+                        style="background: #fff; padding: 6px 12px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p style="color: #B2A69B;">© 2023 <a href="#">Wedesigntech</a> | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!--==============================
+    About Area
+    ==============================-->
+    <!-- Scroll To Top -->
+    <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+
+    <!--********************************
+			Code End  Here 
+	******************************** -->
+
+    <!--==============================
+        All Js File
+    ============================== -->
+    <!-- Jquery -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- <script src="assets/js/app.min.js"></script> -->
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Parallax Scroll -->
+    <script src="assets/js/universal-parallax.min.js"></script>
+    <!-- Wow.js Animation -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- jQuery Datepicker -->
+    <script src="assets/js/jquery.datetimepicker.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Isotope Filter -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- Main Js File -->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
