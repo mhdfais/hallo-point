@@ -53,6 +53,9 @@
             --heading-font: 'Marcellus', serif;
             --body-font: 'Lato', sans-serif;
         }
+        body{
+            max-width: 100%;
+        }
 
         .main-header {
             background: transparent;
@@ -146,10 +149,12 @@
         }
 
         .grid-menu {
-            display: flex;
-            flex-wrap: wrap;
-            width: 20px;
-            gap: 3px;
+            display: none; /* Hidden by default, shown on mobile */
+            cursor: pointer;
+        }
+        
+        .grid-menu svg {
+            display: block;
         }
 
         .grid-menu span {
@@ -157,6 +162,117 @@
             height: 5px;
             background: var(--text-dark);
             border-radius: 50%;
+        }
+
+        /* Mobile Menu Styles */
+        .mobile-menu-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.60);
+            z-index: 999999;
+            width: 100%;
+            height: 100%;
+            transition: all ease 0.8s;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .mobile-menu-wrapper.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-menu-area {
+            width: 100%;
+            max-width: 310px;
+            background-color: #fff;
+            border-right: 3px solid #9A563A;
+            height: 100%;
+            position: relative;
+            left: -110%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all ease 1s;
+            z-index: 1;
+        }
+
+        .mobile-menu-wrapper.active .mobile-menu-area {
+            left: 0;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-menu-toggle {
+            border: none;
+            font-size: 22px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            padding: 0;
+            line-height: 1;
+            width: 33px;
+            height: 33px;
+            line-height: 34px;
+            font-size: 18px;
+            z-index: 1;
+            color: #fff;
+            background-color: #9A563A;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .mobile-menu-toggle:hover {
+            background-color: #A37528;
+            color: #fff;
+        }
+
+        .mobile-logo {
+            padding: 30px 20px;
+            padding-top: 40px;
+            display: block;
+            text-align: center;
+            background-color: rgba(163, 117, 40, 0.1);
+        }
+
+        .mobile-logo img {
+            max-width: 180px;
+        }
+
+        .mobile-menu {
+            overflow-y: auto;
+            max-height: calc(100vh - 175px);
+            padding: 20px 0;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-menu > ul > li {
+            border-bottom: 1px solid rgba(154, 86, 58, 0.1);
+        }
+
+        .mobile-menu > ul > li > a {
+            display: block;
+            padding: 15px 30px;
+            font-family: var(--body-font);
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-dark);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu > ul > li > a:hover,
+        .mobile-menu > ul > li > a.active {
+            color: #9A563A;
+            background-color: rgba(163, 117, 40, 0.05);
         }
 
         @media (max-width: 992px) {
@@ -167,6 +283,10 @@
             .main-nav {
                 display: none;
             }
+
+            .grid-menu {
+                display: flex; /* Show grid menu on mobile */
+            }
         }
 
 
@@ -174,7 +294,8 @@
         .gallery-strip {
             display: flex;
             flex-wrap: nowrap;
-            background: #1a1a1a;
+                background: #ffffff;
+    justify-content: center;
         }
 
         .gallery-strip-item {
@@ -791,7 +912,7 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="service.html">Services</a></li>
+                        <li><a href="services.html">Services</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html" class="active">Contact Us</a></li>
                     </ul>
@@ -801,18 +922,49 @@
 
             <!-- Header Icons -->
             <div class="header-icons">
-                <button type="button" aria-label="Search">
+                <!-- <button type="button" aria-label="Search">
                     <i class="far fa-search"></i>
                 </button>
                 <a href="shop.html" aria-label="Cart">
                     <i class="far fa-shopping-bag"></i>
-                </a>
-                <button type="button" class="grid-menu" aria-label="Menu">
-                    <span></span><span></span><span></span><span></span>
+                </a> -->
+                <button type="button" class="grid-menu" aria-label="Menu" style="background: none; border: none; padding: 0; cursor: pointer;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.317 1.51579C20.2875 1.51579 21.8539 3.08211 21.8539 5.05263C21.8539 7.02316 20.2875 8.58947 18.317 8.58947C16.3465 8.58947 14.7802 7.02316 14.7802 5.05263C14.7802 3.08211 16.3465 1.51579 18.317 1.51579ZM5.68544 1.51579C7.65597 1.51579 9.22229 3.08211 9.22229 5.05263C9.22229 7.02316 7.65597 8.58947 5.68544 8.58947C3.71492 8.58947 2.1486 7.02316 2.1486 5.05263C2.1486 3.08211 3.71492 1.51579 5.68544 1.51579ZM18.317 15.4105C20.2875 15.4105 21.8539 16.9768 21.8539 18.9474C21.8539 20.9179 20.2875 22.4842 18.317 22.4842C16.3465 22.4842 14.7802 20.9179 14.7802 18.9474C14.7802 16.9768 16.3465 15.4105 18.317 15.4105ZM5.68544 15.4105C7.65597 15.4105 9.22229 16.9768 9.22229 18.9474C9.22229 20.9179 7.65597 22.4842 5.68544 22.4842C3.71492 22.4842 2.1486 20.9179 2.1486 18.9474C2.1486 16.9768 3.71492 15.4105 5.68544 15.4105ZM18.317 0C15.5381 0 13.2644 2.27368 13.2644 5.05263C13.2644 7.83158 15.5381 10.1053 18.317 10.1053C21.096 10.1053 23.3697 7.83158 23.3697 5.05263C23.3697 2.27368 21.096 0 18.317 0ZM5.68544 0C2.9065 0 0.632812 2.27368 0.632812 5.05263C0.632812 7.83158 2.9065 10.1053 5.68544 10.1053C8.46439 10.1053 10.7381 7.83158 10.7381 5.05263C10.7381 2.27368 8.46439 0 5.68544 0ZM18.317 13.8947C15.5381 13.8947 13.2644 16.1684 13.2644 18.9474C13.2644 21.7263 15.5381 24 18.317 24C21.096 24 23.3697 21.7263 23.3697 18.9474C23.3697 16.1684 21.096 13.8947 18.317 13.8947ZM5.68544 13.8947C2.9065 13.8947 0.632812 16.1684 0.632812 18.9474C0.632812 21.7263 2.9065 24 5.68544 24C8.46439 24 10.7381 21.7263 10.7381 18.9474C10.7381 16.1684 8.46439 13.8947 5.68544 13.8947Z" fill="#4B4036"/>
+                    </svg>
                 </button>
             </div>
         </div>
     </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-wrapper">
+        <div class="mobile-menu-area text-center">
+            <button class="mobile-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><img src="assets/img/home/goldlogo.png" alt="Hallo Point"></a>
+            </div>
+            <div class="mobile-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="active">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <div class="breadcumb-wrapper " style="background: #FDF9F580;">
         <div class="container z-index-common">
@@ -837,13 +989,14 @@
         <img style="position: absolute;
     left: -9%;
     width: 15rem;
-    top: 22%;" src="assets/img/home/Section.png" alt="">
+    top: 22%;  opacity: 0.3;" src="assets/img/home/Section.png" alt="">
         <img src="assets/img/hallo-flower.png" class="decor-left">
         <img style="position: absolute;
     transform: scaleX(-1);
-    right: -7%;
+    right: 0%;
     width: 15rem;
     top: 63%;
+    opacity: 0.3;
 " src="assets/img/home/Section.png" alt="">
         <div class="left-content">
             <div style="position: relative;">
@@ -984,22 +1137,22 @@
         </svg>
 
         <div style="display: flex;">
-            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img1.png" alt="">
-            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img2.png" alt="">
-            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img3.png" alt="">
-            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img4.png" alt="">
-            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img5.png" alt="">
-            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img6.png" alt="">
-            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img7.png" alt="">
+            <img width="100%" height="30rem" src="assets/img/hallo-contact-map-img1.png" alt="">
+            <img width="100%" height="30rem" src="assets/img/hallo-contact-map-img2.png" alt="">
+            <img width="100%" height="30rem" src="assets/img/hallo-contact-map-img3.png" alt="">
+            <img width="100%" height="30rem" src="assets/img/hallo-contact-map-img4.png" alt="">
+            <img width="100%" height="30rem" src="assets/img/hallo-contact-map-img5.png" alt="">
+            <img width="100%" height="30rem" src="assets/img/hallo-contact-map-img6.png" alt="">
+            <img width="100%" height="30rem" src="assets/img/hallo-contact-map-img7.png" alt="">
         </div>
         <div style="display: flex;">
-            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img8.png" alt="">
-            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img9.png" alt="">
-            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img10.png" alt="">
-            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img11.png" alt="">
-            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img12.png" alt="">
-            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img13.png" alt="">
-            <img width="190rem" height="30rem" src="assets/img/hallo-contact-map-img14.png" alt="">
+            <img width="100%" height="30rem" src="assets/img/hallo-contact-map-img8.png" alt="">
+            <img width="100%" height="30rem" src="assets/img/hallo-contact-map-img9.png" alt="">
+            <img width="100%" height="30rem" src="assets/img/hallo-contact-map-img10.png" alt="">
+            <img width="100%" height="30rem" src="assets/img/hallo-contact-map-img11.png" alt="">
+            <img width="100%" height="30rem" src="assets/img/hallo-contact-map-img12.png" alt="">
+            <img width="100%" height="30rem" src="assets/img/hallo-contact-map-img13.png" alt="">
+            <img width="100%" height="30rem" src="assets/img/hallo-contact-map-img14.png" alt="">
         </div>
     </section>
 
@@ -1125,6 +1278,36 @@
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
 
+    <script>
+        // Mobile Menu Toggle
+        $(document).ready(function() {
+            // Open menu when grid-menu is clicked
+            $('.grid-menu').on('click', function() {
+                $('.mobile-menu-wrapper').addClass('active');
+                $('body').css('overflow', 'hidden'); // Prevent body scroll
+            });
+
+            // Close menu when close button is clicked
+            $('.mobile-menu-toggle').on('click', function() {
+                $('.mobile-menu-wrapper').removeClass('active');
+                $('body').css('overflow', ''); // Restore body scroll
+            });
+
+            // Close menu when clicking outside
+            $('.mobile-menu-wrapper').on('click', function(e) {
+                if ($(e.target).hasClass('mobile-menu-wrapper')) {
+                    $(this).removeClass('active');
+                    $('body').css('overflow', '');
+                }
+            });
+
+            // Close menu when clicking on a menu link
+            $('.mobile-menu a').on('click', function() {
+                $('.mobile-menu-wrapper').removeClass('active');
+                $('body').css('overflow', '');
+            });
+        });
+    </script>
 
 </body>
 

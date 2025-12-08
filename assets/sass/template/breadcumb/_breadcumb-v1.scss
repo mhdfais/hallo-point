@@ -87,6 +87,13 @@
   }
 }
 
+// Fix for screens above 1399px - add top padding to account for absolute header
+@media (min-width: 1400px) {
+  .breadcumb-wrapper {
+    padding-top: 80px;
+  }
+}
+
 @include lg {
   .breadcumb-title {
     font-size: 46px;
