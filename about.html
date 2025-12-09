@@ -753,6 +753,7 @@
             align-items: center;
             gap: 60px;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         .stat-item {
@@ -1094,6 +1095,17 @@
             .payment-methods {
                 flex-wrap: wrap;
                 justify-content: center;
+            }
+        }
+
+        @media(max-width:500px){
+            .wellness{
+                padding: 5rem 1rem;
+            }
+        }
+        @media (max-width:900px){
+            .right-image{
+                display: none;
             }
         }
     </style>
@@ -1735,7 +1747,7 @@
 
 
         <!-- Right image blob -->
-        <div class="" style="z-index: 10;">
+        <div class="right-image" style="z-index: 10;">
             <img style="width: 25rem;" src="assets/img/hallo-about-img2.png" class="">
             <!-- <div class="play-btn">▶</div> -->
         </div>
@@ -1746,26 +1758,29 @@
     </section>
 
 
-    <div class="gallery-strip">
-        <div class="gallery-strip-item">
-            <img src="assets/img/hallo-gallery1.png" alt="Gallery">
+    <a href="https://www.instagram.com/hallopointbeauty?utm_source=qr&igsh=NzIzMnRzb3p6Yms4">
+        <div class="gallery-strip">
+            <div class="gallery-strip-item">
+                <img src="assets/img/hallo-gallery1.png" alt="Gallery">
+            </div>
+            <div class="gallery-strip-item">
+                <img src="assets/img/hallo-gallery3.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-strip-item">
+                <img src="assets/img/hallo-gallery4.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-strip-item">
+                <img src="assets/img/hallo-gallery5.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-strip-item">
+                <img src="assets/img/hallo-gallery2.jpg" alt="Gallery">
+            </div>
+            <!-- <div class="gallery-strip-item">
+                    <img src="assets/img/home/blog/13.avif" alt="Gallery">
+                </div> -->
         </div>
-        <div class="gallery-strip-item">
-            <img src="assets/img/hallo-gallery2.png" alt="Gallery">
-        </div>
-        <div class="gallery-strip-item">
-            <img src="assets/img/hallo-gallery3.png" alt="Gallery">
-        </div>
-        <div class="gallery-strip-item">
-            <img src="assets/img/hallo-gallery4.png" alt="Gallery">
-        </div>
-        <div class="gallery-strip-item">
-            <img src="assets/img/hallo-gallery5.png" alt="Gallery">
-        </div>
-        <!-- <div class="gallery-strip-item">
-            <img src="assets/img/home/blog/13.avif" alt="Gallery">
-        </div> -->
-    </div>
+    </a>
+
 
     <!-- Footer -->
     <footer class="footer">

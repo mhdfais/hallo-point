@@ -30,6 +30,9 @@
     <!-- Fontawesome Icon -->
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
     <style>
         :root {
             --primary-gold: #b49a5e;
@@ -414,7 +417,7 @@
             align-items: center;
             gap: 60px;
             flex-wrap: wrap;
-                justify-content: center;
+            justify-content: center;
         }
 
         .stat-item {
@@ -701,13 +704,16 @@
         }
 
         .skincare-decorative-images {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
+            display: flex;
+            /* grid-template-columns: repeat(3, 1fr); */
+            gap: 1rem;
             margin: 50px 0;
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
         }
 
         .skincare-deco-img {
@@ -1659,8 +1665,8 @@
         .gallery-strip {
             display: flex;
             flex-wrap: nowrap;
-                background: #ffffff;
-    justify-content: center;
+            background: #ffffff;
+            justify-content: center;
         }
 
         .gallery-strip-item {
@@ -2329,10 +2335,50 @@
             z-index: 3;
         }
 
-        @media(max-width:1200px){
-            .services-grid{
-               padding-left: 0rem;
+        @media(max-width:1200px) {
+            .services-grid {
+                padding-left: 0rem;
             }
+        }
+
+        .services-swiper {
+            padding: 2rem 3rem;
+        }
+
+        .service-card {
+            text-align: center;
+            width: 100%;
+        }
+
+        .service-card-img-wrapper {
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .tall {
+            height: 25rem;
+        }
+
+        .square {
+            height: 18.5rem;
+        }
+
+        .service-card-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .service-card h4 {
+            margin-top: 1rem;
+        }
+
+        .swiper-pagination-bullet {
+            background: #c4b8a8;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #7c6a58;
         }
     </style>
 </head>
@@ -2422,13 +2468,13 @@
             <!-- Hero Content -->
             <div class="hero-content">
                 <p class="hero-subtitle" style="color: #9A563A;">Skincare Inspires</p>
-                <h1 class="hero-title">
-                    SPA SPECIALTY<span class="star">✦</span>
-                </h1>
+                <h2 class="section-title">
+                    Luxury Beauty Experience at Home<span class="star">✦</span>
+                </h2>
                 <p class="hero-description" style="color: #4B4036;">
-                    Egestas congue quisque egestas diam in arcu cursus euismod quis.
-                    Posuere lorem ipsum dolor sit amet consectetur. Maecenas vitae
-                    venenatis lectus, eu feugiat arcu.
+                    Enjoy professional beauty services in the comfort of your space. No travel, no waiting, just pure
+                    pampering. Pick a service, choose your time, and our experts will come to you. Simple, safe and
+                    relaxing.
                 </p>
                 <a href="contact.html" class="book-btn">
                     Book Now
@@ -2499,62 +2545,142 @@
     <!-- Our Services Section -->
     <section class="services-section">
         <div class="section-header">
-            <h2 class="section-title">We offers our services at your home</h2>
+            <h2 class="section-title">We Offers Our Services At Your Home</h2>
             <p class="section-subtitle" style="color: #B2A69B;">MASSAGE SPA BEAUTY</p>
         </div>
 
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-card-img-wrapper tall">
-                    <img src="assets/img/hallo-home-img1.png" alt="Threading" class="service-card-img">
+        <div class="swiper services-swiper">
+            <div class="swiper-wrapper">
+
+                <!-- CARD 1 -->
+                <div class="swiper-slide">
+                    <div class="service-card">
+                        <div class="service-card-img-wrapper tall">
+                            <img src="assets/img/hallo-home-img1.png" />
+                        </div>
+                        <h4>Threading / Eyebrows</h4>
+                        <p>Cras quis lacus vestibulum...</p>
+                    </div>
                 </div>
-                <div class="service-card-content">
-                    <h4>Threading / Eyebrows</h4>
-                    <p>Cras quis lacus vestibulum, finibus tellus tempor incididunt ut labore et dolore.lobortis in
-                        lacus. Integer tempor blandit vulputate.</p>
+
+                <!-- CARD 2 -->
+                <div class="swiper-slide">
+                    <div class="service-card">
+                        <div class="service-card-img-wrapper square" style="margin-top: 4rem;">
+                            <img src="assets/img/hallo-service-img2.jpg" />
+                        </div>
+                        <h4>Face Bleach</h4>
+                        <p>A cras semper auctor neque...</p>
+                    </div>
                 </div>
+
+                <!-- CARD 3 -->
+                <div class="swiper-slide">
+                    <div class="service-card">
+                        <div class="service-card-img-wrapper tall">
+                            <img src="assets/img/hallo-home-img3.png" />
+                        </div>
+                        <h4>Henna for Hands</h4>
+                        <p>Pretium vulputate sapien nec...</p>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="swiper-slide">
+                    <div class="service-card">
+                        <div class="service-card-img-wrapper square" style="margin-top: 4rem;">
+                            <img src="assets/img/hallo-home-img4.jpg" />
+                        </div>
+                        <h4>Pedicure / Gel Manicure</h4>
+                        <p>Morbi quis comm aenean...</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="service-card">
+                        <div class="service-card-img-wrapper tall">
+                            <img src="assets/img/hallo-home-img5.png" />
+                        </div>
+                        <h4>Eyelash Extension / Makeup</h4>
+                        <p>Pretium vulputate sapien nec...</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="service-card">
+                        <div class="service-card-img-wrapper square" style="margin-top: 4rem;">
+                            <img src="assets/img/hallo-home-img6.jpg" />
+                        </div>
+                        <h4>Acrylic / Nail Extension</h4>
+                        <p>Pretium vulputate sapien nec...</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="service-card">
+                        <div class="service-card-img-wrapper tall">
+                            <img src="assets/img/hallo-home-img7.jpg" />
+                        </div>
+                        <h4>Full Body Wax & Halwa</h4>
+                        <p>Pretium vulputate sapien nec...</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="service-card">
+                        <div class="service-card-img-wrapper square" style="margin-top: 4rem;">
+                            <img src="assets/img/hallo-home-img8.png" />
+                        </div>
+                        <h4>Haircut / Hair Color</h4>
+                        <p>Pretium vulputate sapien nec...</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="service-card">
+                        <div class="service-card-img-wrapper tall">
+                            <img src="assets/img/hallo-home-img9.png" />
+                        </div>
+                        <h4>Blow Dry</h4>
+                        <p>Pretium vulputate sapien nec...</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="service-card">
+                        <div class="service-card-img-wrapper square" style="margin-top: 4rem;">
+                            <img src="assets/img/hallo-home-img10.png" />
+                        </div>
+                        <h4>Hair Treatment / Keratin / Protein </h4>
+                        <p>Pretium vulputate sapien nec...</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="service-card">
+                        <div class="service-card-img-wrapper tall">
+                            <img src="assets/img/hallo-home-img11.png" />
+                        </div>
+                        <h4>Henna for Hair / Hair Spa</h4>
+                        <p>Pretium vulputate sapien nec...</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="service-card">
+                        <div class="service-card-img-wrapper square" style="margin-top: 4rem;">
+                            <img src="assets/img/hallo-home-img12.png" />
+                        </div>
+                        <h4>Body Massage / Facial</h4>
+                        <p>Pretium vulputate sapien nec...</p>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="service-card">
-                <div class="service-card-img-wrapper sqaure" style="height: 18.5rem; margin-top: 4rem;">
-                    <img src="assets/img/hallo-service-img2.jpg" alt="Face Beauty" class="service-card-img">
-                </div>
-                <div class="service-card-content">
-                    <h4>Face Bleach / Nails / Manicure</h4>
-                    <p>A cras semper auctor neque vitae tempu deserunt mollit anim id est laborum. Ut ac cursus urna, eu
-                        posuere risus.</p>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="service-card-img-wrapper tall">
-                    <img src="assets/img/hallo-home-img2.png" alt="Henna" class="service-card-img">
-                </div>
-                <div class="service-card-content">
-                    <h4>Henna for Hands</h4>
-                    <p>Pretium vulputate sapien nec sagittis aliq cillum dolore eu fugiat nulla pariatur. Proin sit amet
-                        velit venenatis in sit amet sapien.</p>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="service-card-img-wrapper square" style="    margin-top: 4rem;">
-                    <img src="assets/img/hallo-home-img3.png" alt="Pedicure" class="service-card-img">
-                </div>
-                <div class="service-card-content">
-                    <h4>Pedicure / Gel M</h4>
-                    <p>Morbi quis comm aenean sed laboris n ex ea commodo. fermentum lectus s</p>
-                </div>
-            </div>
+            <!-- Pagination (dots) -->
+            <div class="swiper-pagination"></div>
         </div>
 
-        <div class="carousel-dots">
+        <!-- <div class="carousel-dots">
             <span class="active"></span>
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </div> -->
     </section>
 
     <!-- Hi-Tech Skin Care Section -->
@@ -2564,21 +2690,27 @@
                 <div class="skincare-header-icon">
                     <img src="assets/img/home/Section.png" alt="decoration">
                 </div>
-                <h2 class="skincare-title">Hi-Tech Traditional Skin care</h2>
+                <h2 class="skincare-title">You can see Our Services</h2>
                 <p class="skincare-est" style="color: #B2A69B;">EST.1980</p>
             </div>
 
             <div class="skincare-decorative-images">
                 <div class="skincare-deco-img-wrapper">
-                    <img src="assets/img/home/brand/about.svg" alt="Decoration" class="skincare-deco-img">
+                    <video src="assets/img/hallo-testimonial-video1.mp4" muted
+                        style="height: 20rem; width: 18rem; border-radius: 50px; object-fit: cover;"
+                        alt="Decoration"></video>
                     <div class="skincare-deco-play-btn"></div>
                 </div>
                 <div class="skincare-deco-img-wrapper">
-                    <img src="assets/img/home/brand/Group 1000005876.svg" alt="Decoration" class="skincare-deco-img">
+                    <video src="assets/img/hallo-testimonial-video3.mp4" muted
+                        style="height: 20rem; width: 18rem; border-radius: 50px; object-fit: cover;"
+                        alt="Decoration"></video>
                     <div class="skincare-deco-play-btn"></div>
                 </div>
                 <div class="skincare-deco-img-wrapper">
-                    <img src="assets/img/home/brand/about.svg" alt="Decoration" class="skincare-deco-img">
+                    <video src="assets/img/hallo-testimonial-video2.mp4" muted
+                        style="height: 20rem; width: 18rem; border-radius: 50px; object-fit: cover;"
+                        alt="Decoration"></video>
                     <div class="skincare-deco-play-btn"></div>
                 </div>
             </div>
@@ -2804,7 +2936,7 @@
     </section>
 
     <!-- Massage Spa Package Section -->
-    <section class="pricing-section">
+    <!-- <section class="pricing-section">
         <div class="pricing-header">
             <div class="pricing-header-icon">
                 <img class="overlay-1" src="assets/img/home/Section.png" alt="decoration">
@@ -2821,7 +2953,6 @@
         </div>
 
         <div class="pricing-grid">
-            <!-- Basic Plan -->
             <div class="pricing-card">
                 <div class="pricing-card-header"
                     style="background-image: url('assets/img/pkg-img1.png');  background-size: cover;">
@@ -2844,7 +2975,6 @@
                 </div>
             </div>
 
-            <!-- Standard Plan -->
             <div class="pricing-card">
                 <div class="popular-tag">Popular</div>
                 <div class="pricing-card-header" style="background-image: url('assets/img/pkg-img2.png');">
@@ -2867,7 +2997,6 @@
                 </div>
             </div>
 
-            <!-- Premium Plan -->
             <div class="pricing-card">
                 <div class="pricing-card-header" style="background-image: url('assets/img/pkg-img3.png'); ">
                     <span class="plan-badge">Premium Plan</span>
@@ -2889,10 +3018,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Blog Section -->
-    <section class="blog-section">
+    <!-- <section class="blog-section">
         <div class="blog-header">
             <div class="blog-header-icon">
                 <img src="assets/img/home/Section.png" alt="decoration">
@@ -2928,29 +3057,31 @@
                 <a href="services.html" class="blog-read-more"><span>READ</span> MORE</a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Gallery Strip -->
-    <div class="gallery-strip">
-        <div class="gallery-strip-item">
-            <img src="assets/img/hallo-gallery1.png" alt="Gallery">
+    <a href="https://www.instagram.com/hallopointbeauty?utm_source=qr&igsh=NzIzMnRzb3p6Yms4">
+        <div class="gallery-strip">
+            <div class="gallery-strip-item">
+                <img src="assets/img/hallo-gallery1.png" alt="Gallery">
+            </div>
+            <div class="gallery-strip-item">
+                <img src="assets/img/hallo-gallery3.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-strip-item">
+                <img src="assets/img/hallo-gallery4.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-strip-item">
+                <img src="assets/img/hallo-gallery5.jpg" alt="Gallery">
+            </div>
+            <div class="gallery-strip-item">
+                <img src="assets/img/hallo-gallery2.jpg" alt="Gallery">
+            </div>
+            <!-- <div class="gallery-strip-item">
+                    <img src="assets/img/home/blog/13.avif" alt="Gallery">
+                </div> -->
         </div>
-        <div class="gallery-strip-item">
-            <img src="assets/img/hallo-gallery2.png" alt="Gallery">
-        </div>
-        <div class="gallery-strip-item">
-            <img src="assets/img/hallo-gallery3.png" alt="Gallery">
-        </div>
-        <div class="gallery-strip-item">
-            <img src="assets/img/hallo-gallery4.png" alt="Gallery">
-        </div>
-        <div class="gallery-strip-item">
-            <img src="assets/img/hallo-gallery5.png" alt="Gallery">
-        </div>
-        <!-- <div class="gallery-strip-item">
-            <img src="assets/img/home/blog/13.avif" alt="Gallery">
-        </div> -->
-    </div>
+    </a>
 
     <!-- Footer -->
     <footer class="footer">
@@ -3010,12 +3141,15 @@
             <p>© 2023 <a href="#">Wedesigntech</a> | All Rights Reserved.</p>
         </div>
     </footer>
-    
+
 
     <!-- Jquery -->
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
     <script>
         // Mobile Menu Toggle
@@ -3047,6 +3181,66 @@
             });
         });
     </script>
+
+    <script>
+        const swiper = new Swiper(".services-swiper", {
+            loop: true,
+            autoplay: {
+                delay: 1700,
+                disableOnInteraction: false,
+            },
+            speed: 600,
+            spaceBetween: 30,
+
+            // Responsive breakpoints
+            breakpoints: {
+                0: {     // mobile
+                    slidesPerView: 1,
+                },
+                600: {   // small tablets
+                    slidesPerView: 2,
+                },
+                900: {   // tablets
+                    slidesPerView: 3,
+                },
+                1200: {  // desktop
+                    slidesPerView: 4,
+                }
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            grabCursor: true,
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll(".skincare-deco-img-wrapper").forEach(wrapper => {
+
+            const video = wrapper.querySelector("video");
+            const playBtn = wrapper.querySelector(".skincare-deco-play-btn");
+
+            // Ensure video is paused initially
+            video.pause();
+
+            playBtn.addEventListener("click", () => {
+
+                // Start video
+                video.play();
+
+                // Allow clicking video controls
+                video.style.pointerEvents = "auto";
+                video.setAttribute("controls", "true");
+
+                // Hide play button
+                playBtn.style.display = "none";
+            });
+        });
+    </script>
+
 
 </body>
 
