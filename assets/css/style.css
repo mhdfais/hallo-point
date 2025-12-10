@@ -1660,7 +1660,7 @@ textarea.is-invalid {
 }
 .scroll-btn i {
   display: inline-block;
-  background-color: var(--theme-color);
+  background-color: #996B1E;
   color: var(--white-color);
   text-align: center;
   font-size: 16px;
