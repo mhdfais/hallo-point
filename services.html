@@ -54,6 +54,11 @@
             --body-font: 'Lato', sans-serif;
         }
 
+        html {
+            /* max-width: 100%; */
+            overflow-x: hidden;
+        }
+
         .main-header {
             background: transparent;
             padding: 20px 60px;
@@ -1058,6 +1063,20 @@
                 width: 80px;
             }
         }
+
+        @media(max-width:500px) {
+            .bg-shape {
+                height: 25rem;
+            }
+
+            .quotes {
+                display: none;
+            }
+
+            .testimonial-section {
+                padding: 3rem 6rem;
+            }
+        }
     </style>
 
 </head>
@@ -1319,8 +1338,9 @@
             <h2>Nourish Your Face<br>And Body.</h2>
 
             <p class="desc">
-                Experience the ultimate in holistic self-care. From glowing facials to restorative body therapy, we
-                provide everything you need to look and feel completely refreshed.
+                Step into a sanctuary of beauty and wellness. Our expert team offers a full range of services, from
+                rejuvenating facials to professional hair repair, designed to enhance your natural beauty and leave you
+                feeling completely renewed.
             </p>
 
             <!-- THREE IMAGE CARDS -->
@@ -1502,13 +1522,13 @@
             </p>
 
             <!-- PAGINATION DOTS -->
-            <div class="dots">
+            <!-- <div class="dots">
                 <span class="active"></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </div> -->
 
             <!-- QUOTE ICONS -->
             <div class="quotes">

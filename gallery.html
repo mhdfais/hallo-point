@@ -54,8 +54,9 @@
             --heading-font: 'Marcellus', serif;
             --body-font: 'Lato', sans-serif;
         }
-        body{
+        html{
             overflow-x: hidden;
+            max-width: 100%;
         }
 
         .main-header {
@@ -632,6 +633,10 @@
                 flex-direction: column !important;
                 align-items: center !important;
             }
+            .img-gallery{
+                display: none;
+            }
+           
         }
 
         .mobile-gallery {
@@ -657,6 +662,12 @@
 
             .gallery-wrapper {
                 display: none;
+            }
+        }
+        @media(max-width:900px){
+            .mobile-gallery img{
+                height: 15rem;
+                width: 15rem;
             }
         }
     </style>
@@ -917,7 +928,7 @@
 
 
     <section style="position: relative;">
-        <img style="    position: absolute;
+        <img class="img-gallery" style="    position: absolute;
     left: -9%;
     top: 0%; width: 15rem;  opacity: 0.3;" src="assets/img/home/Section.png" alt="">
         <img style="position: absolute;
