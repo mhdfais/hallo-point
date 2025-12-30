@@ -2575,6 +2575,40 @@
                 margin-bottom: 0.7rem;
             }
         }
+
+        .whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,.35);
+  z-index: 9999;
+  animation: popIn .6s ease-out, pulse 2s infinite 1s;
+}
+
+.whatsapp-float img { width: 30px; }
+
+/* Pop-in on page load */
+@keyframes popIn {
+  0% { transform: scale(0); opacity: 0; }
+  70% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+/* Gentle attention pulse */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37,211,102,.5); }
+  70% { box-shadow: 0 0 0 12px rgba(37,211,102,0); }
+  100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+}
+
+.whatsapp-float:hover { transform: scale(1.06); }
     </style>
 </head>
 
@@ -2649,6 +2683,12 @@
         </div>
     </div>
 
+
+   <a href="https://wa.me/971525166469" target="_blank" class="whatsapp-float">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" />
+</a>
+
+
     <!-- Hero Section -->
     <section class="hero-section">
         <!-- Background Video -->
@@ -2676,7 +2716,7 @@
                     pampering. Pick a service, choose your time, and our experts will come to you. Simple, safe and
                     relaxing.
                 </p>
-                <a href="contact.html" class="book-btn">
+                <a href="https://wa.me/971525166469" class="book-btn">
                     Book Now
                     <i class="fab fa-whatsapp"></i>
                 </a>
@@ -2690,7 +2730,7 @@
                 Get professional salon-quality services in the comfort of your home.
                 Safe, hygienic and at your convenience — no waiting, no travel.
             </p>
-            <a href="contact.html" class="home-hero-btn-card">Book Your Home Service →</a>
+            <a href="https://wa.me/971525166469" class="home-hero-btn-card">Book Your Home Service →</a>
         </div>
     </section>
 
@@ -2766,7 +2806,7 @@
 
                 <div class="swiper-slide">
                     <div class="service-card">
-                        <div class="service-card-img-wrapper tall" >
+                        <div class="service-card-img-wrapper tall">
                             <img src="assets/img/hallo-home-img3.png" />
                         </div>
                         <h4>Henna for Hands</h4>
@@ -2777,7 +2817,7 @@
 
                 <div class="swiper-slide">
                     <div class="service-card">
-                        <div class="service-card-img-wrapper square"  style="margin-top: 4rem;">
+                        <div class="service-card-img-wrapper square" style="margin-top: 4rem;">
                             <img src="assets/img/hallo-gallery-img22.jpg" />
                         </div>
                         <h4>Manicure / Pedicure</h4>
@@ -2823,7 +2863,7 @@
                 <!-- CARD 3 -->
                 <div class="swiper-slide">
                     <div class="service-card">
-                        <div class="service-card-img-wrapper square"  style="margin-top: 4rem;">
+                        <div class="service-card-img-wrapper square" style="margin-top: 4rem;">
                             <img src="assets/img/hallo-home-img21.jpeg" />
                         </div>
                         <h4>Full body Whitening</h4>
@@ -3429,7 +3469,8 @@
                 <img src="assets/img/home/whitelogo.png" alt="Hallo Point" class="footer-logo-img">
                 <div class="footer-social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/hallopointbeauty?utm_source=qr&igsh=NzIzMnRzb3p6Yms4"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/hallopointbeauty?utm_source=qr&igsh=NzIzMnRzb3p6Yms4"><i
+                            class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
@@ -3504,10 +3545,10 @@
     <script>
         const swiper = new Swiper(".services-swiper", {
             //  loop: true,
-             autoplay: {
-                 delay: 2500,
-                 disableOnInteraction: false,
-             },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             speed: 800,
             spaceBetween: 30,
 

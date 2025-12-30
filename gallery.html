@@ -670,12 +670,52 @@
                 width: 15rem;
             }
         }
+
+        
+        .whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,.35);
+  z-index: 9999;
+  animation: popIn .6s ease-out, pulse 2s infinite 1s;
+}
+
+.whatsapp-float img { width: 30px; }
+
+/* Pop-in on page load */
+@keyframes popIn {
+  0% { transform: scale(0); opacity: 0; }
+  70% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+/* Gentle attention pulse */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37,211,102,.5); }
+  70% { box-shadow: 0 0 0 12px rgba(37,211,102,0); }
+  100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+}
+
+.whatsapp-float:hover { transform: scale(1.06); }
     </style>
 
 </head>
 
 
 <body>
+
+     <a href="https://wa.me/971525166469" target="_blank" class="whatsapp-float">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" />
+</a>
+
 
 
     <div class="preloader  ">
@@ -959,41 +999,41 @@
             <div style="display: flex; justify-content: center; gap: 1.5rem; padding-bottom: 2rem;">
                 <div style="padding-top: 4rem;"><img
                         style="object-fit: cover; width: 22rem; height: 25rem; border-radius: 15px;"
-                        src="assets/img/hallo-gallery-img13.jpg" alt=""></div>
+                        src="assets/img/hallo-gallery-img13.webp" alt=""></div>
                 <div> <img style="object-fit: cover; width: 15rem; height: 20rem; border-radius: 15px;"
-                        src="assets/img/hallo-gallery-img1.jpg" alt=""></div>
+                        src="assets/img/hallo-gallery-img1.webp" alt=""></div>
                 <div style="padding-top: 8rem;"> <img
                         style="object-fit: cover; width: 22rem; height: 25rem; border-radius: 15px;"
-                        src="assets/img/hallo-gallery-img14.jpg" alt=""></div>
+                        src="assets/img/hallo-gallery-img14.webp" alt=""></div>
                 <div style="padding-top: 3rem;"> <img
                         style="object-fit: cover; width: 15rem; height: 20rem; border-radius: 15px;"
-                        src="assets/img/hallo-gallery-img15.jpg" alt=""></div>
+                        src="assets/img/hallo-gallery-img15.webp" alt=""></div>
             </div>
             <div style="display: flex; justify-content: center; gap: 1.5rem; padding-bottom: 2rem;">
                 <div style="padding-top: 4rem;"><img
                         style="object-fit: cover; width: 16rem; height: 25rem; border-radius: 15px;"
-                        src="assets/img/hallo-gallery-img2.jpg" alt=""></div>
+                        src="assets/img/hallo-gallery-img2.webp" alt=""></div>
                 <div> <img style="object-fit: cover; width: 22rem; height: 25rem; border-radius: 15px;"
-                        src="assets/img/hallo-gallery3.jpg" alt=""></div>
+                        src="assets/img/hallo-gallery3.webp" alt=""></div>
                 <div style="padding-top: 8rem;"> <img
                         style="object-fit: cover; width: 16rem; height: 25rem; border-radius: 15px;"
-                        src="assets/img/hallo-gallery-img16.jpg" alt=""></div>
+                        src="assets/img/hallo-gallery-img16.webp" alt=""></div>
                 <div style="padding-top: 3rem;"> <img
                         style="object-fit: cover; width: 22rem; height: 25rem; border-radius: 15px;"
-                        src="assets/img/hallo-gallery-img22.jpg" alt=""></div>
+                        src="assets/img/hallo-gallery-img22.webp" alt=""></div>
             </div>
             <div style="display: flex; justify-content: center; gap: 1.5rem;">
                 <div style="padding-top: 5rem;"><img
                         style="object-fit: cover; width: 22rem; height: 25rem; border-radius: 15px;"
-                        src="assets/img/hallo-gallery-img18.jpg" alt=""></div>
+                        src="assets/img/hallo-gallery-img18.webp" alt=""></div>
                 <div> <img style="object-fit: cover; width: 15rem; height: 20rem; border-radius: 15px;"
-                        src="assets/img/hallo-gallery-img23.jpg" alt=""></div>
+                        src="assets/img/hallo-gallery-img23.webp" alt=""></div>
                 <div style="padding-top: 8rem;"> <img
                         style="object-fit: cover; width: 22rem; height: 25rem; border-radius: 15px;"
-                        src="assets/img/hallo-gallery-img20.jpg" alt=""></div>
+                        src="assets/img/hallo-gallery-img20.webp" alt=""></div>
                 <div style="padding-top: 3rem;"> <img
                         style="object-fit: cover; width: 15rem; height: 20rem; border-radius: 15px;"
-                        src="assets/img/hallo-gallery-img24.jpg" alt=""></div>
+                        src="assets/img/hallo-gallery-img24.webp" alt=""></div>
             </div>
         </div>
     </section>
@@ -1103,7 +1143,7 @@
     About Area
     ==============================-->
     <!-- Scroll To Top -->
-    <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+    <!-- <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a> -->
 
     <!--********************************
 			Code End  Here 
